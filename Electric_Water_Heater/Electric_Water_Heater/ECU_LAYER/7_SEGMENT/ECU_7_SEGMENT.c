@@ -37,7 +37,6 @@ seven_segment_pins_t seg1 = {
 		.segment_pins[3].logic = GPIO_LOW,
 		.segment_type = COMMON_ANODE
 };
-uint8 *Data_Seven_Seg;
 Std_ReturnType SEVEN_SEGMENT_INIT(const seven_segment_pins_t *segment){
 	Std_ReturnType ret = E_OK;
 	if(NULL == segment){
@@ -53,7 +52,7 @@ Std_ReturnType SEVEN_SEGMENT_INIT(const seven_segment_pins_t *segment){
 }
 Std_ReturnType SEVEN_SEGMENT_WRITE_NUMBER(const seven_segment_pins_t *segment, uint8 Number){
 	Std_ReturnType ret = E_OK;
-	if((NULL == segment) && (Number > 9)){
+	if((NULL == segment) || (Number > 9)){
 		ret = E_NOT_OK;
 	}
 	else{
@@ -64,17 +63,17 @@ Std_ReturnType SEVEN_SEGMENT_WRITE_NUMBER(const seven_segment_pins_t *segment, u
 	}
 	return ret;
 }
-Std_ReturnType SEVEN_SEGMENT_2_DIGIT_WRITE(const seven_segment_pins_t *segment, uint8 Number){
+Std_ReturnType SEVEN_SEGMENT_2_DIGIT_WRITE(const seven_segment_pins_t *segment, uint8 *Number){
 	Std_ReturnType ret = E_OK;
 	if((NULL == segment)){
 		ret = E_NOT_OK;
 	}
 	else{
-		ret = SEVEN_SEGMENT_WRITE_NUMBER(segment, (uint8)Number/10);
+		ret = SEVEN_SEGMENT_WRITE_NUMBER(segment, Number[0]);
 		ret = GPIO_PIN_WRITE_LOGIC(&segment_enable2, GPIO_HIGH);
 		_delay_ms(5);
 		ret = GPIO_PIN_WRITE_LOGIC(&segment_enable1, GPIO_LOW);
-		ret = SEVEN_SEGMENT_WRITE_NUMBER(segment, Number%10);
+		ret = SEVEN_SEGMENT_WRITE_NUMBER(segment, Number[1]);
 		ret = GPIO_PIN_WRITE_LOGIC(&segment_enable1, GPIO_HIGH);
 		_delay_ms(5);
 		ret = GPIO_PIN_WRITE_LOGIC(&segment_enable2, GPIO_LOW);

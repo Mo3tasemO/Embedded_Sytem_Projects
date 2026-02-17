@@ -27,13 +27,12 @@ typedef struct {
 }seven_segment_pins_t;
 
 extern seven_segment_pins_t seg1;
-extern uint8 *Data_Seven_Seg;
 /* Section: Function Declarations */
 
 
 Std_ReturnType SEVEN_SEGMENT_INIT(const seven_segment_pins_t *segment);
 Std_ReturnType SEVEN_SEGMENT_WRITE_NUMBER(const seven_segment_pins_t *segment, uint8 Number);
-Std_ReturnType SEVEN_SEGMENT_2_DIGIT_WRITE(const seven_segment_pins_t *segment, uint8 Number);
+Std_ReturnType SEVEN_SEGMENT_2_DIGIT_WRITE(const seven_segment_pins_t *segment, uint8 *Number);
 
 
 #endif /* ECU_LAYER_7_SEGMENT_ECU_7_SEGMENT_H_ */

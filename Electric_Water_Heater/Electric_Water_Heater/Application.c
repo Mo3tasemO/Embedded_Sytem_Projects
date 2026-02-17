@@ -8,22 +8,23 @@
 #include "Application.h"
 void application_init(void);
 
+pin_config_t TEST_PIN ={
+		.port = PORTC_INDEX,
+		.pin = GPIO_PIN1,
+		.direction = GPIO_DIRECTION_OUTPUT,
+		.logic = GPIO_LOW
+};
 
+uint8 Data_Seven_Seg[2];
+uint8 digits[2];
 
 int main(){
 	Std_ReturnType ret = E_OK;
 
 	application_init();
-	for(int i = 0; i < 2; i++){
-		ret = EXT_EEPROM_READ_BYTE(0x10 + i, &Data_Seven_Seg[i], 2);
-		Data_Seven_Seg[i] -= '0';
-		_delay_ms(100);
-	}
-
 	while(1){
 
-		ret = SEVEN_SEGMENT_2_DIGIT_WRITE(&seg1, Data_Seven_Seg);
-
+		ret = SEVEN_SEGMENT_2_DIGIT_WRITE(&seg1, digits);
 
 	}
 
@@ -35,14 +36,21 @@ int main(){
 
 void application_init(void){
 	Std_ReturnType ret = E_OK;
-//	SET_BIT(SREG, I_BIT);	//SET I_BIT -> 1, Global Interrupt
+	//	SET_BIT(SREG, I_BIT);	//SET I_BIT -> 1, Global Interrupt
 	ECU_LAYER_INIT();
 
-
+	ret = GPIO_PIN_INIT(&TEST_PIN);
 	ret = SEVEN_SEGMENT_INIT(&seg1);
 	ret = EXT_EEPROM_INIT(100000);
 	ret = EXT_EEPROM_WRITE_BYTE(0x10, "35");
 	_delay_ms(100);
+
+	ret = EXT_EEPROM_WRITE_BYTE(0x20, "45");
+
+	_delay_ms(100);
+	ret = EXT_EEPROM_READ_BYTE(0x20, Data_Seven_Seg, 2);
+	digits[0] = Data_Seven_Seg[0] - '0';
+	digits[1] = Data_Seven_Seg[1] - '0';
 
 }
 

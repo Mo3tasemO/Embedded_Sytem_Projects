@@ -38,31 +38,39 @@ Std_ReturnType I2C_INIT(uint32 SCL){
 		TWSR = 3;
 		break;
 	}
+	SET_BIT(TWCR, TWEN);
 	return ret;
 }
 Std_ReturnType I2C_START_CON(void){
 	Std_ReturnType ret = E_OK;
+	SET_BIT(TWCR, TWSTA);	//Start_Condition
 	SET_BIT(TWCR, TWEN);	//Enable
-	SET_BIT(TWCR, TWSTA);	//START_CONDITION
 	SET_BIT(TWCR, TWINT);	//CLEAR_FLAG
+	CLEAR_BIT(TWCR, TWSTO);
 	while(READ_BIT(TWCR, TWINT) == 0);
-	while((TWSR & 0xF8) != 0x08); // Address 0x08 is the status address for START_CONDITION transmitted
+	if ((TWSR & 0xF8) != 0x08){
+		return E_NOT_OK; // Address 0x08 is the status address for START_CONDITION transmitted
+	}
 	return ret;
 }
 Std_ReturnType I2C_REPEAT_START_CON(void){
 	Std_ReturnType ret = E_OK;
+	SET_BIT(TWCR, TWSTA);	//Start_Condition
 	SET_BIT(TWCR, TWEN);	//Enable
-	SET_BIT(TWCR, TWSTA);	//START_CONDITION
 	SET_BIT(TWCR, TWINT);	//CLEAR_FLAG
+	CLEAR_BIT(TWCR, TWSTO);
 	while(READ_BIT(TWCR, TWINT) == 0);
-	while((TWSR & 0xF8) != 0x10); // Address 0x10 is the status address for REPEAT_START_CONDITION transmitted
+	if ((TWSR & 0xF8) != 0x10){
+		return E_NOT_OK; // Address 0x10 is the status address for REPEAT_START_CONDITION transmitted
+	}
 	return ret;
 }
 Std_ReturnType I2C_STOP_CON(void){
 	Std_ReturnType ret = E_OK;
-	SET_BIT(TWCR, TWEN);	//Enable
 	SET_BIT(TWCR, TWSTO);	//STOP_CONDITION
+	SET_BIT(TWCR, TWEN);	//Enable
 	SET_BIT(TWCR, TWINT);	//CLEAR_FLAG
+	CLEAR_BIT(TWCR, TWSTA);
 	return ret;
 }
 Std_ReturnType I2C_SEND_ADDRESS(uint8 Address){
@@ -70,6 +78,8 @@ Std_ReturnType I2C_SEND_ADDRESS(uint8 Address){
 	TWDR = Address;	// Shift left to sent the MSB First
 	SET_BIT(TWCR, TWINT);
 	SET_BIT(TWCR, TWEN);
+	CLEAR_BIT(TWCR, TWSTA);
+	CLEAR_BIT(TWCR, TWSTO);
 	while(READ_BIT(TWCR, TWINT) == 0);
 	if (((TWSR & 0xF8) != 0x18) && ((TWSR & 0xF8) != 0x40))
 	{
@@ -82,6 +92,7 @@ Std_ReturnType I2C_SEND_DATA(uint8 Data){
 	TWDR = Data;
 	SET_BIT(TWCR, TWINT);
 	SET_BIT(TWCR, TWEN);
+
 	while(READ_BIT(TWCR, TWINT) == 0);
 	if ((TWSR & 0xF8) != 0x28){
 		return E_NOT_OK; // Address 0x28 is the status address for data transmitted and ack received
@@ -91,34 +102,34 @@ Std_ReturnType I2C_SEND_DATA(uint8 Data){
 
 
 uint8 I2C_READ_DATA(void){
-	SET_BIT(TWCR, TWEN);	//Enable
-	SET_BIT(TWCR, TWEA);	//Acknowledgment
-	SET_BIT(TWCR, TWINT);	//CLEAR_FLAG
+		SET_BIT(TWCR, TWEN);	//Enable
+		SET_BIT(TWCR, TWINT);	//CLEAR_FLAG
+
+
 	while(READ_BIT(TWCR, TWINT) == 0);
-	while((TWSR & 0xF8) != 0x50); // Address 0x60 is the status address for Receive address
+	if((TWSR & 0xF8) != 0x50){
+		return 0; // Address 0x50 is the status address for Receive address
+	}
 	return TWDR;
 }
 
 uint8 I2C_READ_ACK(void)
 {
+	SET_BIT(TWCR, TWINT);	//CLEAR_FLAG
 	SET_BIT(TWCR, TWEN);	//Enable
 	SET_BIT(TWCR, TWEA);	//Acknowledgment
-	SET_BIT(TWCR, TWINT);	//CLEAR_FLAG
+	CLEAR_BIT(TWCR, TWSTA);
+	CLEAR_BIT(TWCR, TWSTO);
+
 	while(READ_BIT(TWCR, TWINT) == 0);
-	/* Check status: 0x50 = Data received, ACK returned */
-	if ((TWSR & 0xF8) != 0x50){
-		return 0;
-	}
 	return TWDR;
 }
 uint8 I2C_READ_NACK(void)
 {
-	SET_BIT(TWCR, TWEN);	//Enable
 	SET_BIT(TWCR, TWINT);	//CLEAR_FLAG
+	SET_BIT(TWCR, TWEN);	//Enable
+	CLEAR_BIT(TWCR, TWSTA);
+	CLEAR_BIT(TWCR, TWSTO);
 	while(READ_BIT(TWCR, TWINT) == 0);
-	/* Check status: 0x58 = Data received, NACK returned */
-	if ((TWSR & 0xF8) != 0x58){
-		return 0;
-	}
 	return TWDR;
 }

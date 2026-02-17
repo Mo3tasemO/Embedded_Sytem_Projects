@@ -763,7 +763,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Crystal:Crystal_HC49-4H_Vertical"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3588,12 +3588,6 @@
 		(uuid "02ce1839-02c6-4a3f-ac52-736aec32d460")
 	)
 	(junction
-		(at 119.38 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "100de1f2-2cdd-46c3-b673-e00b3765ac3f")
-	)
-	(junction
 		(at 39.37 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3654,16 +3648,22 @@
 		(uuid "8af04eaf-ad0f-42c6-8684-a5f29183658e")
 	)
 	(junction
-		(at 119.38 64.77)
+		(at 120.65 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a350560c-5ad0-4883-bc38-20dac80ce67a")
+		(uuid "b623776e-6989-4dce-babf-aa19e770aa3e")
 	)
 	(junction
 		(at 276.86 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cd8a8832-a7c5-466e-9627-c259e8b90463")
+	)
+	(junction
+		(at 120.65 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce6c8755-5e6f-4aa3-88dd-1cf20da80e23")
 	)
 	(junction
 		(at 66.04 91.44)
@@ -3749,7 +3749,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 72.39) (xy 133.35 72.39)
+			(xy 113.03 72.39) (xy 120.65 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4219,16 +4219,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 64.77) (xy 119.38 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d63681f-6916-46fa-8b6e-4e015ee6b2ce")
-	)
-	(wire
-		(pts
 			(xy 198.12 121.92) (xy 208.28 121.92)
 		)
 		(stroke
@@ -4366,6 +4356,16 @@
 			(type default)
 		)
 		(uuid "8295c23c-75f0-44cd-b554-fd86f9ec981d")
+	)
+	(wire
+		(pts
+			(xy 120.65 72.39) (xy 133.35 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86b0f675-b754-45e1-9b52-bc54ea47a7b3")
 	)
 	(wire
 		(pts
@@ -4519,16 +4519,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 72.39) (xy 119.38 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7025da1-c4d2-4e41-a1b6-29124cdd1693")
-	)
-	(wire
-		(pts
 			(xy 66.04 93.98) (xy 66.04 91.44)
 		)
 		(stroke
@@ -4609,7 +4599,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 64.77) (xy 119.38 64.77)
+			(xy 113.03 64.77) (xy 120.65 64.77)
 		)
 		(stroke
 			(width 0)
@@ -4836,6 +4826,16 @@
 			(type default)
 		)
 		(uuid "eb121b6f-3073-403a-846e-144952763ed1")
+	)
+	(wire
+		(pts
+			(xy 120.65 64.77) (xy 133.35 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed222116-257b-45d6-a860-0441edf86c5a")
 	)
 	(wire
 		(pts
@@ -6696,6 +6696,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Crystal")
+		(at 120.65 68.58 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6c637ece-7bec-47e5-9ba6-14c17e8942da")
+		(property "Reference" "Y1"
+			(at 124.46 67.3099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "16MHz"
+			(at 124.46 69.8499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Crystal:Crystal_HC49-4H_Vertical"
+			(at 120.65 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Two pin crystal"
+			(at 120.65 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a666346c-68cb-4384-9594-3c705048a35d")
+		)
+		(pin "2"
+			(uuid "0d1226bf-dec7-44ca-ace7-ae8377286c0a")
+		)
+		(instances
+			(project ""
+				(path "/bb2186c6-1d5c-41ff-b914-7b8e78ba1812"
+					(reference "Y1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 236.22 55.88 90)
 		(unit 1)
@@ -7878,76 +7948,6 @@
 			(project "Schema&Layout"
 				(path "/bb2186c6-1d5c-41ff-b914-7b8e78ba1812"
 					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Crystal")
-		(at 119.38 68.58 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d49b3d8f-3df3-4f09-af4b-ed8112090c15")
-		(property "Reference" "Y1"
-			(at 123.19 67.3099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "16MHz"
-			(at 123.19 69.8499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 119.38 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Two pin crystal"
-			(at 119.38 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "145af36f-64b5-478c-ac0a-ae1a7895e36a")
-		)
-		(pin "2"
-			(uuid "5dba9e8f-8867-4062-9575-79785f389ecb")
-		)
-		(instances
-			(project ""
-				(path "/bb2186c6-1d5c-41ff-b914-7b8e78ba1812"
-					(reference "Y1")
 					(unit 1)
 				)
 			)
