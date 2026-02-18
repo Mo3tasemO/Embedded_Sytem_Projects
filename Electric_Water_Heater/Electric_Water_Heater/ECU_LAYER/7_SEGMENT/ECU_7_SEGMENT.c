@@ -52,7 +52,7 @@ Std_ReturnType SEVEN_SEGMENT_INIT(const seven_segment_pins_t *segment){
 }
 Std_ReturnType SEVEN_SEGMENT_WRITE_NUMBER(const seven_segment_pins_t *segment, uint8 Number){
 	Std_ReturnType ret = E_OK;
-	if((NULL == segment) || (Number > 9)){
+	if(NULL == segment){
 		ret = E_NOT_OK;
 	}
 	else{

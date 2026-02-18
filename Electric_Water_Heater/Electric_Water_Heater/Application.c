@@ -15,8 +15,9 @@ pin_config_t TEST_PIN ={
 		.logic = GPIO_LOW
 };
 
-uint8 Data_Seven_Seg[2];
-uint8 digits[2];
+uint8 Data_Seven_Seg[3];
+uint8 digits[3];
+
 
 int main(){
 	Std_ReturnType ret = E_OK;
@@ -42,10 +43,10 @@ void application_init(void){
 	ret = GPIO_PIN_INIT(&TEST_PIN);
 	ret = SEVEN_SEGMENT_INIT(&seg1);
 	ret = EXT_EEPROM_INIT(100000);
-	ret = EXT_EEPROM_WRITE_BYTE(0x10, "35");
+	ret = EXT_EEPROM_WRITE(0x10, "35", 2);
 	_delay_ms(100);
 
-	ret = EXT_EEPROM_WRITE_BYTE(0x20, "45");
+	ret = EXT_EEPROM_WRITE(0x20, "45", 2);
 
 	_delay_ms(100);
 	ret = EXT_EEPROM_READ_BYTE(0x20, Data_Seven_Seg, 2);

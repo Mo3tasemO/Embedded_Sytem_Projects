@@ -12,7 +12,7 @@ Std_ReturnType EXT_EEPROM_INIT(uint32 SCL){
 	ret = I2C_INIT(SCL);
 	return ret;
 }
-Std_ReturnType EXT_EEPROM_WRITE_BYTE(uint16 Address, uint8 *Data){
+Std_ReturnType EXT_EEPROM_WRITE_BYTE(uint16 Address, uint8 Data){
 	Std_ReturnType ret = E_OK;
 	uint8 Control_Byte = 0xA0, i = 0;
 	if((Address >= 0x00) && (Address <= 0x0FF)){
@@ -33,12 +33,17 @@ Std_ReturnType EXT_EEPROM_WRITE_BYTE(uint16 Address, uint8 *Data){
 	ret = I2C_START_CON();
 	ret = I2C_SEND_ADDRESS(Control_Byte);
 	ret = I2C_SEND_DATA((uint8)Address);
-	while(Data[i] != '\0'){
-		ret = I2C_SEND_DATA(Data[i]);
-		i++;
-	}
+	ret = I2C_SEND_DATA(Data);
 	ret = I2C_STOP_CON();
 	_delay_ms(100);
+	return ret;
+}
+Std_ReturnType EXT_EEPROM_WRITE(uint16 Address, uint8 *Data, uint8 length){
+	Std_ReturnType ret = E_OK;
+	uint8 i = 0;
+	for(i = 0; i < length; i++){
+		ret = EXT_EEPROM_WRITE_BYTE(Address + i, Data[i]);
+	}
 	return ret;
 }
 Std_ReturnType EXT_EEPROM_WRITE_PAGE(uint8 Address, uint32 Data){
@@ -47,7 +52,7 @@ Std_ReturnType EXT_EEPROM_WRITE_PAGE(uint8 Address, uint32 Data){
 
 	return ret;
 }
-Std_ReturnType EXT_EEPROM_READ_BYTE(uint16 Address, uint8 *Data, uint8 length){
+Std_ReturnType EXT_EEPROM_READ_BYTE(uint16 Address, uint8 Data[2], uint8 length){
 	Std_ReturnType ret = E_OK;
 	uint8 Control_Byte = 0xA0;
 	if((Address >= 0x00) && (Address <= 0x0FF)){

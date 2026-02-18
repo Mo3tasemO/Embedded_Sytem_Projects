@@ -28,11 +28,12 @@
 								<inputType id="de.innot.avreclipse.tool.assembler.input.2077221583" superClass="de.innot.avreclipse.tool.assembler.input"/>
 							</tool>
 							<tool id="de.innot.avreclipse.tool.compiler.winavr.app.debug.853966896" name="AVR Compiler" superClass="de.innot.avreclipse.tool.compiler.winavr.app.debug">
-								<option id="de.innot.avreclipse.compiler.option.debug.level.1563773516" name="Generate Debugging Info" superClass="de.innot.avreclipse.compiler.option.debug.level"/>
+								<option id="de.innot.avreclipse.compiler.option.debug.level.1563773516" name="Generate Debugging Info" superClass="de.innot.avreclipse.compiler.option.debug.level" value="de.innot.avreclipse.compiler.option.debug.level.g3" valueType="enumerated"/>
 								<option id="de.innot.avreclipse.compiler.option.optimize.1871319842" name="Optimization Level" superClass="de.innot.avreclipse.compiler.option.optimize"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="de.innot.avreclipse.compiler.option.undef.335884581" name="Undefine Syms (-U)" superClass="de.innot.avreclipse.compiler.option.undef" valueType="undefDefinedSymbols">
 									<listOptionValue builtIn="false" value="__AVR_ATmega16__"/>
 								</option>
+								<option id="de.innot.avreclipse.compiler.option.debug.type.1022340360" superClass="de.innot.avreclipse.compiler.option.debug.type" value="de.innot.avreclipse.compiler.option.debug.level.dwarf-2" valueType="enumerated"/>
 								<inputType id="de.innot.avreclipse.compiler.winavr.input.1267576730" name="C Source Files" superClass="de.innot.avreclipse.compiler.winavr.input"/>
 							</tool>
 							<tool id="de.innot.avreclipse.tool.cppcompiler.app.debug.1610588580" name="AVR C++ Compiler" superClass="de.innot.avreclipse.tool.cppcompiler.app.debug">
