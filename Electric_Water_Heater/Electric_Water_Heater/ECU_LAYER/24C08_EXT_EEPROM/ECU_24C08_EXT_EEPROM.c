@@ -52,7 +52,7 @@ Std_ReturnType EXT_EEPROM_WRITE_PAGE(uint8 Address, uint32 Data){
 
 	return ret;
 }
-Std_ReturnType EXT_EEPROM_READ_BYTE(uint16 Address, uint8 Data[2], uint8 length){
+Std_ReturnType EXT_EEPROM_READ_BYTE(uint16 Address, uint8 *Data, uint8 length){
 	Std_ReturnType ret = E_OK;
 	uint8 Control_Byte = 0xA0;
 	if((Address >= 0x00) && (Address <= 0x0FF)){

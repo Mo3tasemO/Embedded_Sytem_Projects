@@ -8,15 +8,10 @@
 #include "Application.h"
 void application_init(void);
 
-pin_config_t TEST_PIN ={
-		.port = PORTC_INDEX,
-		.pin = GPIO_PIN1,
-		.direction = GPIO_DIRECTION_OUTPUT,
-		.logic = GPIO_LOW
-};
 
-uint8 Data_Seven_Seg[3];
-uint8 digits[3];
+uint8 Send_Data_Seven_Seg[2] = "45";
+uint8 Recieved_Data[2];
+uint8 digits[2];
 
 
 int main(){
@@ -26,7 +21,6 @@ int main(){
 	while(1){
 
 		ret = SEVEN_SEGMENT_2_DIGIT_WRITE(&seg1, digits);
-
 	}
 
 
@@ -40,18 +34,18 @@ void application_init(void){
 	//	SET_BIT(SREG, I_BIT);	//SET I_BIT -> 1, Global Interrupt
 	ECU_LAYER_INIT();
 
-	ret = GPIO_PIN_INIT(&TEST_PIN);
 	ret = SEVEN_SEGMENT_INIT(&seg1);
+	ret = LED_INIT(&led1);
 	ret = EXT_EEPROM_INIT(100000);
-	ret = EXT_EEPROM_WRITE(0x10, "35", 2);
+	ret = EXT_EEPROM_WRITE(0x10, Send_Data_Seven_Seg, 2);
 	_delay_ms(100);
 
-	ret = EXT_EEPROM_WRITE(0x20, "45", 2);
+	ret = EXT_EEPROM_WRITE(0x20, "35", 2);
 
 	_delay_ms(100);
-	ret = EXT_EEPROM_READ_BYTE(0x20, Data_Seven_Seg, 2);
-	digits[0] = Data_Seven_Seg[0] - '0';
-	digits[1] = Data_Seven_Seg[1] - '0';
+	ret = EXT_EEPROM_READ_BYTE(0x20, Recieved_Data, 2);
+	digits[1] = Recieved_Data[0] - '0';
+	digits[0] = Recieved_Data[1] - '0';
 
 }
 

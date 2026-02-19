@@ -102,34 +102,14 @@ Std_ReturnType I2C_SEND_DATA(uint8 Data){
 
 
 uint8 I2C_READ_DATA(void){
-		SET_BIT(TWCR, TWEN);	//Enable
-		SET_BIT(TWCR, TWINT);	//CLEAR_FLAG
+	SET_BIT(TWCR, TWEN);	//Enable
+	SET_BIT(TWCR, TWINT);	//CLEAR_FLAG
 
 
 	while(READ_BIT(TWCR, TWINT) == 0);
-	if((TWSR & 0xF8) != 0x50){
-		return 0; // Address 0x50 is the status address for Receive address
+	if(((TWSR & 0xF8) != 0x50) && ((TWSR & 0xF8) != 0x58)){
+		return 0; // Address 0x50(Ack) and 0x58(Nack) is the status address for Receive address
 	}
 	return TWDR;
 }
 
-uint8 I2C_READ_ACK(void)
-{
-	SET_BIT(TWCR, TWINT);	//CLEAR_FLAG
-	SET_BIT(TWCR, TWEN);	//Enable
-	SET_BIT(TWCR, TWEA);	//Acknowledgment
-	CLEAR_BIT(TWCR, TWSTA);
-	CLEAR_BIT(TWCR, TWSTO);
-
-	while(READ_BIT(TWCR, TWINT) == 0);
-	return TWDR;
-}
-uint8 I2C_READ_NACK(void)
-{
-	SET_BIT(TWCR, TWINT);	//CLEAR_FLAG
-	SET_BIT(TWCR, TWEN);	//Enable
-	CLEAR_BIT(TWCR, TWSTA);
-	CLEAR_BIT(TWCR, TWSTO);
-	while(READ_BIT(TWCR, TWINT) == 0);
-	return TWDR;
-}

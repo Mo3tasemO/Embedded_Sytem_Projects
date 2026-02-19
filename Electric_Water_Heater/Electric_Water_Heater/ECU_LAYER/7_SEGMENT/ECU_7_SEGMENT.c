@@ -69,13 +69,15 @@ Std_ReturnType SEVEN_SEGMENT_2_DIGIT_WRITE(const seven_segment_pins_t *segment, 
 		ret = E_NOT_OK;
 	}
 	else{
+		ret = GPIO_PIN_WRITE_LOGIC(&segment_enable1, GPIO_LOW);
+		ret = GPIO_PIN_WRITE_LOGIC(&segment_enable2, GPIO_LOW);
 		ret = SEVEN_SEGMENT_WRITE_NUMBER(segment, Number[0]);
-		ret = GPIO_PIN_WRITE_LOGIC(&segment_enable2, GPIO_HIGH);
-		_delay_ms(5);
+		ret = GPIO_PIN_WRITE_LOGIC(&segment_enable1, GPIO_HIGH);
+		_delay_ms(2);
 		ret = GPIO_PIN_WRITE_LOGIC(&segment_enable1, GPIO_LOW);
 		ret = SEVEN_SEGMENT_WRITE_NUMBER(segment, Number[1]);
-		ret = GPIO_PIN_WRITE_LOGIC(&segment_enable1, GPIO_HIGH);
-		_delay_ms(5);
+		ret = GPIO_PIN_WRITE_LOGIC(&segment_enable2, GPIO_HIGH);
+		_delay_ms(2);
 		ret = GPIO_PIN_WRITE_LOGIC(&segment_enable2, GPIO_LOW);
 	}
 	return ret;

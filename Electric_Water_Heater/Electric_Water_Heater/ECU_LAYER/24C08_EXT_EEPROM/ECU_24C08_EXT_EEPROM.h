@@ -25,7 +25,7 @@
 Std_ReturnType EXT_EEPROM_INIT(uint32 SCL);
 Std_ReturnType EXT_EEPROM_WRITE_BYTE(uint16 Address, uint8 Data);
 Std_ReturnType EXT_EEPROM_WRITE_PAGE(uint8 Address, uint32 Data);
-uint8 EXT_EEPROM_READ_BYTE(uint16 Address, uint8 Data[2], uint8 length);
+uint8 EXT_EEPROM_READ_BYTE(uint16 Address, uint8 *Data, uint8 length);
 Std_ReturnType EXT_EEPROM_WRITE(uint16 Address, uint8 *Data, uint8 length);
 
 #endif /* ECU_LAYER_24C08_EXT_EEPROM_ECU_24C08_EXT_EEPROM_H_ */
