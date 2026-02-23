@@ -1,0 +1,9 @@
+MCAL/ADC/ADC.o MCAL/ADC/ADC.o: ../MCAL/ADC/ADC.c \
+  E:\COTS_AVR\Water_Heater\LIB/STD_TYPES.h \
+  E:\COTS_AVR\Water_Heater\LIB/BIT_MATH.h ../MCAL/ADC/ADC.h
+
+E:\COTS_AVR\Water_Heater\LIB/STD_TYPES.h:
+
+E:\COTS_AVR\Water_Heater\LIB/BIT_MATH.h:
+
+../MCAL/ADC/ADC.h:

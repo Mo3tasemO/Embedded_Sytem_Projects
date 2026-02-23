@@ -1,0 +1,12 @@
+MCAL/TMR0/TMR0.o MCAL/TMR0/TMR0.o: ../MCAL/TMR0/TMR0.c \
+  E:\COTS_AVR\Water_Heater\LIB/STD_TYPES.h \
+  E:\COTS_AVR\Water_Heater\LIB/BIT_MATH.h \
+  E:\COTS_AVR\Water_Heater\MCAL\DIO/DIO.h ../MCAL/TMR0/TMR0.h
+
+E:\COTS_AVR\Water_Heater\LIB/STD_TYPES.h:
+
+E:\COTS_AVR\Water_Heater\LIB/BIT_MATH.h:
+
+E:\COTS_AVR\Water_Heater\MCAL\DIO/DIO.h:
+
+../MCAL/TMR0/TMR0.h:
