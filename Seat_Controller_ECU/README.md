@@ -105,7 +105,7 @@ WA 0x20 - 3 - 10 **Writes 10 starting from 0x20 for 3 bytes**
 
 ## Authors and acknowledgment
 - **[Moatasem Osama]** – Project Manager & Lead Developer  
-- **[Ahmad Yasser]** - Responsible for communication protocols, RTE and FreeArtos
+- **[Ahmad Yasser]** - Responsible for communication protocols, RTE and FreeRTOS
 - **[Amr Yasser]** - Developed GUI for the Applications 
 - **[Noreen Adham]** - Developing backend/frontend for the EEPROM aaplication using C#
 - **[Karen Hany]** - Developing backend/frontend for the bus sniffer aaplication using C#
