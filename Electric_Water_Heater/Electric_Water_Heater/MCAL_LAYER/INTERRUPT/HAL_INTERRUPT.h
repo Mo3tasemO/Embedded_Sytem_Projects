@@ -43,6 +43,8 @@
 
 /* Section: Macro Functions Declarations */
 
+#define		INTERRUPT_GLOBAL_ENABLE()		SET_BIT(SREG, I_BIT)
+
 /* Section: Data Type Declarations */
 
 

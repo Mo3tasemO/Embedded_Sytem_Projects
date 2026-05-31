@@ -15,7 +15,7 @@
  * */
 Std_ReturnType INT0_INIT(const interrupt_pin_config_t *INT0_CFG, interrupt_sense_control_t INT0_SENSE){
 	Std_ReturnType ret = E_OK;
-	SET_BIT(SREG, I_BIT);	//SET I_BIT -> 1, Global Interrupt
+	INTERRUPT_GLOBAL_ENABLE();	//SET I_BIT -> 1, Global Interrupt
 	if(NULL == INT0_CFG){
 		ret = E_NOT_OK;
 	}

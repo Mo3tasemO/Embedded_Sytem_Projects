@@ -1,20 +1,71 @@
-18:21:58 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+23:24:52 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
 make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_CHANNEL_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:115: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_PRESCALER_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:118: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_VOLTAGE_REFERENCE_CONFIG':
+../MCAL_LAYER/ADC/HAL_ADC.c:121: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: At top level:
+../MCAL_LAYER/ADC/HAL_ADC.c:113: warning: 'ADC_CHANNEL_SELECT' defined but not used
+../MCAL_LAYER/ADC/HAL_ADC.c:116: warning: 'ADC_PRESCALER_SELECT' defined but not used
+../MCAL_LAYER/ADC/HAL_ADC.c:119: warning: 'ADC_VOLTAGE_REFERENCE_CONFIG' defined but not used
+../MCAL_LAYER/ADC/HAL_ADC.c:13: warning: 'ADC_InterruptHandler' defined but not used
+Finished building: ../MCAL_LAYER/ADC/HAL_ADC.c
+ 
+Building file: ../Application.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
+In file included from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/HAL_GPIO.h:15,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/HAL_I2C.h:14,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.h:12,
+                 from ../ECU_LAYER/ECU_INIT.h:13,
+                 from ../Application.h:13,
+                 from ../Application.c:8:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application.c: In function 'application_init':
+../Application.c:43: warning: pointer targets in passing argument 2 of 'EXT_EEPROM_WRITE' differ in signedness
+Finished building: ../Application.c
+ 
+Building target: Electric_Water_Heater.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Electric_Water_Heater.map -mmcu=atmega16 -o "Electric_Water_Heater.elf"  ./MCAL_LAYER/TIMER/HAL_TIMER.o  ./MCAL_LAYER/INTERRUPT/HAL_INTERRUPT.o  ./MCAL_LAYER/I2C/HAL_I2C.o  ./MCAL_LAYER/GPIO/HAL_GPIO.o  ./MCAL_LAYER/ADC/HAL_ADC.o  ./ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o  ./ECU_LAYER/RELAY/ECU_RELAY.o  ./ECU_LAYER/PUSH_BUTTONS/ECU_PUSH_BUTTONS.o  ./ECU_LAYER/LED/ECU_LED.o  ./ECU_LAYER/FAN_CONTROL/ECU_FAN_CONTROL.o  ./ECU_LAYER/COOLER_PELTIER/ECU_COOLER_PELTIER.o  ./ECU_LAYER/CERAMIC_HEATER/ECU_CERAMIC_HEATER.o  ./ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.o  ./ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.o  ./ECU_LAYER/ECU_INIT.o  ./Application.o   
+Finished building target: Electric_Water_Heater.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Electric_Water_Heater.elf  >"Electric_Water_Heater.lss"
+Finished building: Electric_Water_Heater.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Electric_Water_Heater.elf  "Electric_Water_Heater.hex"
+Finished building: Electric_Water_Heater.hex
+ 
 Invoking: Print Size
 avr-size --format=avr --mcu=atmega16 Electric_Water_Heater.elf
 AVR Memory Usage
 ----------------
 Device: atmega16
 
-Program:    8878 bytes (54.2% Full)
+Program:    9298 bytes (56.8% Full)
 (.text + .data + .bootloader)
 
-Data:         46 bytes (4.5% Full)
+Data:         54 bytes (5.3% Full)
 (.data + .bss + .noinit)
 
 
 Finished building: sizedummy
  
 
-18:21:58 Build Finished. 0 errors, 0 warnings. (took 515ms)
+23:24:55 Build Finished. 0 errors, 10 warnings. (took 3s.217ms)
 
