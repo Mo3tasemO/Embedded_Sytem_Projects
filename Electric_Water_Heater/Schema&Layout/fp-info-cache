@@ -1,4 +1,4 @@
-28010741553075109
+28012518502839460
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -101667,6 +101667,13 @@ GNSS GPS Receiver L1/L2/L5 L E6
 0
 79
 25
+SparkFun-GPS
+SAM-M10Q
+
+
+0
+0
+0
 SparkFun-GPS
 UM980
 

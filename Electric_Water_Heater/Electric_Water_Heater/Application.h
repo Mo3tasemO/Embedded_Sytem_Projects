@@ -14,7 +14,7 @@
 #include "MCAL_LAYER/GPIO/HAL_GPIO.h"
 #include "MCAL_LAYER/INTERRUPT/HAL_INTERRUPT.h"
 #include "MCAL_LAYER/I2C/HAL_I2C.h"
-
+#include "MCAL_LAYER/ADC/HAL_ADC.h"
 /* Section: Macro Declarations */
 
 /* Section: Macro Functions Declarations */

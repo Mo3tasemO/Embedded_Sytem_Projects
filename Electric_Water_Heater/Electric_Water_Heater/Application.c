@@ -8,7 +8,7 @@
 #include "Application.h"
 void application_init(void);
 
-
+void ADC_DefaultInterruptHandler(void);
 uint8 Send_Data_Seven_Seg[2] = "45";
 uint8 Recieved_Data[2];
 uint8 digits[2];
@@ -48,7 +48,9 @@ void application_init(void){
 	digits[0] = Recieved_Data[1] - '0';
 
 }
+void ADC_DefaultInterruptHandler(void){
 
+}
 //void __vector_2 (void)__attribute__((signal)) ;	// Vector2(address) -> ISR of interrupt 1 in vector table
 //void __vector_2 (void)
 //{
