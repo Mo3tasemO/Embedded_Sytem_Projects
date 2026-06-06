@@ -51,10 +51,8 @@ void application_init(void){
 void ADC_DefaultInterruptHandler(void){
 
 }
-//void __vector_2 (void)__attribute__((signal)) ;	// Vector2(address) -> ISR of interrupt 1 in vector table
-//void __vector_2 (void)
-//{
-//	GPIO_PIN_WRITE_LOGIC(&led1, GPIO_HIGH);
-//	_delay_ms(2000);
-//	GPIO_PIN_WRITE_LOGIC(&led1, GPIO_LOW);
-//}
+void __vector_16 (void)__attribute__((signal)) ;
+void __vector_16 (void)
+{
+
+}

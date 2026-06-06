@@ -28,10 +28,18 @@
 
 
 /*ADC Multiplexer Selection Register*/
+#define MUX0	0
+#define MUX1	1
+#define MUX2	2
+#define MUX3	3
+#define MUX4	4
 #define	ADLAR	5
 #define REFS0	6
 #define REFS1	7
 /*ADC Control and Status Register A*/
+#define ADPS0	0
+#define ADPS1	1
+#define ADPS2	2
 #define ADIE	3
 #define ADIF	4
 #define ADATE	5
@@ -42,26 +50,34 @@
 /* Section: Macro Functions Declarations */
 
 
-#define		ADC_INTERNAL_VOLTAGE_REFERENCE_OFF()	CLEAR_BIT(ADMUX, REFS0)\
-													CLEAR_BIT(ADMUX, REFS1)
-#define		ADC_AVCC_VOLTAGE_REFERENCE()			SET_BIT(ADMUX, REFS0)\
-													CLEAR_BIT(ADMUX, REFS1)
-#define		ADC_INTERNAL_VOLTAGE_REFERENCE_ON()		SET_BIT(ADMUX, REFS0)\
-													SET_BIT(ADMUX, REFS1)
+#define		ADC_INTERNAL_VOLTAGE_REFERENCE_OFF()	do{CLEAR_BIT(ADMUX, REFS0);\
+													   CLEAR_BIT(ADMUX, REFS1);\
+													}while(0)
+
+#define		ADC_AVCC_VOLTAGE_REFERENCE()			do{SET_BIT(ADMUX, REFS0);\
+													   CLEAR_BIT(ADMUX, REFS1);\
+													}while(0)
+
+#define		ADC_INTERNAL_VOLTAGE_REFERENCE_ON()		do{SET_BIT(ADMUX, REFS0);\
+													SET_BIT(ADMUX, REFS1);\
+													}while(0)
+
 #define		ADC_LEFT_ADJUST_RESULT()				SET_BIT(ADMUX, ADLAR)
 #define		ADC_RIGHT_ADJUST_RESULT()				CLEAR_BIT(ADMUX, ADLAR)
 #define		ADC_ENABLE()							SET_BIT(ADCSRA, ADEN)
 #define		ADC_DISABLE()							CLEAR_BIT(ADCSRA, ADEN)
 #define		ADC_START_CONVERSION()					SET_BIT(ADCSRA, ADSC)
 #define		ADC_AUTO_TRIGGER_ENABLE()				SET_BIT(ADCSRA, ADATE)
-#define		ADC_AUTO_TRIGGER_FREE_RUNNING_MODE()	CLEAR_BIT(SFIOR, 5)\
-													CLEAR_BIT(SFIOR, 6)\
-													CLEAR_BIT(SFIOR, 7)
+#define		ADC_AUTO_TRIGGER_FREE_RUNNING_MODE()	do{CLEAR_BIT(SFIOR, 5);\
+													   CLEAR_BIT(SFIOR, 6);\
+													   CLEAR_BIT(SFIOR, 7);\
+													}while(0)
 #define		ADC_CLEAR_INTERRUPT_FLAG()				SET_BIT(ADCSRA, ADIF)
 
 
 #if ADC_INTERRUPT_FEATURE_ENABLE
-	#define		ADC_INTERRUPT_ENABLE()					SET_BIT(ADCSRA, ADIE)	// Global Interrupt Must Be Enable ->SREG,I-bit
+	#define		ADC_INTERRUPT_ENABLE()				SET_BIT(ADCSRA, ADIE)	// Global Interrupt Must Be Enable ->SREG,I-bit
+	#define		ADC_INTERRUPT_DISABLE()				CLEAR_BIT(ADCSRA, ADIE);
 #endif
 
 
@@ -96,6 +112,11 @@ typedef enum {
 	ADC_RESULT_RIGHT_ADJUST = 0,
 	ADC_RESULT_LEFT_ADJUST
 }ADC_RESULT_ADJUST_T;
+typedef enum {
+	SINGLE_CONVERSION = 0,
+	AUTO_TRIGGER_ENABLE,
+	AUTO_TRIGGER_FREE_RUNNING_MODE
+}ADC_SOURCE_ADJUST_T;
 
 typedef struct {
 #if ADC_INTERRUPT_FEATURE_ENABLE
@@ -105,6 +126,7 @@ typedef struct {
 	ADC_PRESCALER_SELECT_T Prescaler_Select;
 	ADC_RESULT_ADJUST_T	Result_Format;
 	ADC_VOLTAGE_REFERENCE_CONFIG_T Voltage_Config;
+	ADC_SOURCE_ADJUST_T ADC_Source_Config;
 }ADC_CONFIG_T;
 
 /* Section: Function Declarations */

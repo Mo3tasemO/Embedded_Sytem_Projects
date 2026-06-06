@@ -1,4 +1,4 @@
-23:24:52 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+00:22:29 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
 make all 
 Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
 Invoking: AVR Compiler
@@ -9,17 +9,6 @@ In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
                  from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
                  from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
 d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_CHANNEL_SELECT':
-../MCAL_LAYER/ADC/HAL_ADC.c:115: warning: control reaches end of non-void function
-../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_PRESCALER_SELECT':
-../MCAL_LAYER/ADC/HAL_ADC.c:118: warning: control reaches end of non-void function
-../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_VOLTAGE_REFERENCE_CONFIG':
-../MCAL_LAYER/ADC/HAL_ADC.c:121: warning: control reaches end of non-void function
-../MCAL_LAYER/ADC/HAL_ADC.c: At top level:
-../MCAL_LAYER/ADC/HAL_ADC.c:113: warning: 'ADC_CHANNEL_SELECT' defined but not used
-../MCAL_LAYER/ADC/HAL_ADC.c:116: warning: 'ADC_PRESCALER_SELECT' defined but not used
-../MCAL_LAYER/ADC/HAL_ADC.c:119: warning: 'ADC_VOLTAGE_REFERENCE_CONFIG' defined but not used
-../MCAL_LAYER/ADC/HAL_ADC.c:13: warning: 'ADC_InterruptHandler' defined but not used
 Finished building: ../MCAL_LAYER/ADC/HAL_ADC.c
  
 Building file: ../Application.c
@@ -57,7 +46,7 @@ AVR Memory Usage
 ----------------
 Device: atmega16
 
-Program:    9298 bytes (56.8% Full)
+Program:   11036 bytes (67.4% Full)
 (.text + .data + .bootloader)
 
 Data:         54 bytes (5.3% Full)
@@ -67,5 +56,5 @@ Data:         54 bytes (5.3% Full)
 Finished building: sizedummy
  
 
-23:24:55 Build Finished. 0 errors, 10 warnings. (took 3s.217ms)
+00:22:31 Build Finished. 0 errors, 3 warnings. (took 1s.633ms)
 
