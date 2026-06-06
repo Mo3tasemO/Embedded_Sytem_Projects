@@ -296,3 +296,465 @@ Data:         54 bytes (5.3% Full)
 
 Finished building: sizedummy
  
+14:24:01 **** Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_CHANNEL_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:117: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_PRESCALER_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:120: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_VOLTAGE_REFERENCE_CONFIG':
+../MCAL_LAYER/ADC/HAL_ADC.c:124: error: called object '*39u = (volatile uint8)((unsigned char)*39u | 64u)' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:127: error: called object '*39u = *39u & 191u' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:130: error: called object '*39u = (volatile uint8)((unsigned char)*39u | 64u)' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:132: error: label at end of compound statement
+make: *** [MCAL_LAYER/ADC/HAL_ADC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:38:37 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_CHANNEL_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:117: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_PRESCALER_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:120: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_VOLTAGE_REFERENCE_CONFIG':
+../MCAL_LAYER/ADC/HAL_ADC.c:124: error: called object '*39u = (volatile uint8)((unsigned char)*39u | 64u)' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:127: error: called object '*39u = *39u & 191u' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:130: error: called object '*39u = (volatile uint8)((unsigned char)*39u | 64u)' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:132: error: label at end of compound statement
+make: *** [MCAL_LAYER/ADC/HAL_ADC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:38:51 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_CHANNEL_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:117: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_PRESCALER_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:120: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_VOLTAGE_REFERENCE_CONFIG':
+../MCAL_LAYER/ADC/HAL_ADC.c:124: error: called object '*39u = (volatile uint8)((unsigned char)*39u | 64u)' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:127: error: called object '*39u = *39u & 191u' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:130: error: called object '*39u = (volatile uint8)((unsigned char)*39u | 64u)' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:132: error: label at end of compound statement
+make: *** [MCAL_LAYER/ADC/HAL_ADC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:39:25 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_CHANNEL_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:117: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_PRESCALER_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:120: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_VOLTAGE_REFERENCE_CONFIG':
+../MCAL_LAYER/ADC/HAL_ADC.c:124: error: called object '*39u = (volatile uint8)((unsigned char)*39u | 64u)' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:124: error: expected expression before ')' token
+../MCAL_LAYER/ADC/HAL_ADC.c:127: error: called object '*39u = *39u & 191u' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:130: error: called object '*39u = (volatile uint8)((unsigned char)*39u | 64u)' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:132: error: label at end of compound statement
+make: *** [MCAL_LAYER/ADC/HAL_ADC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:39:33 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_CHANNEL_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:117: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_PRESCALER_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:120: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_VOLTAGE_REFERENCE_CONFIG':
+../MCAL_LAYER/ADC/HAL_ADC.c:124: error: called object '*39u = (volatile uint8)((unsigned char)*39u | 64u)' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:127: error: called object '*39u = *39u & 191u' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:130: error: called object '*39u = (volatile uint8)((unsigned char)*39u | 64u)' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:132: error: label at end of compound statement
+make: *** [MCAL_LAYER/ADC/HAL_ADC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:41:38 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_CHANNEL_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:117: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_PRESCALER_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:120: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_VOLTAGE_REFERENCE_CONFIG':
+../MCAL_LAYER/ADC/HAL_ADC.c:124: error: called object '*39u = (volatile uint8)((unsigned char)*39u | 64u)' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:127: error: called object '*39u = *39u & 191u' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:130: error: called object '*39u = (volatile uint8)((unsigned char)*39u | 64u)' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:130: error: expected ';' before '}' token
+../MCAL_LAYER/ADC/HAL_ADC.c:132: error: label at end of compound statement
+make: *** [MCAL_LAYER/ADC/HAL_ADC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:43:02 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_CHANNEL_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:117: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_PRESCALER_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:120: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_VOLTAGE_REFERENCE_CONFIG':
+../MCAL_LAYER/ADC/HAL_ADC.c:124: error: called object '*39u = (volatile uint8)((unsigned char)*39u | 64u)' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:127: error: called object '*39u = *39u & 191u' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:130: error: called object '*39u = (volatile uint8)((unsigned char)*39u | 64u)' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:132: error: label at end of compound statement
+make: *** [MCAL_LAYER/ADC/HAL_ADC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:43:24 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_CHANNEL_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:117: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_PRESCALER_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:120: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_VOLTAGE_REFERENCE_CONFIG':
+../MCAL_LAYER/ADC/HAL_ADC.c:124: error: 'ADC_INTERNAL_VOLTAGE_REFERENCE_ON' undeclared (first use in this function)
+../MCAL_LAYER/ADC/HAL_ADC.c:124: error: (Each undeclared identifier is reported only once
+../MCAL_LAYER/ADC/HAL_ADC.c:124: error: for each function it appears in.)
+../MCAL_LAYER/ADC/HAL_ADC.c:127: error: 'ADC_INTERNAL_VOLTAGE_REFERENCE_OFF' undeclared (first use in this function)
+../MCAL_LAYER/ADC/HAL_ADC.c:130: error: 'ADC_AVCC_VOLTAGE_REFERENCE' undeclared (first use in this function)
+../MCAL_LAYER/ADC/HAL_ADC.c:132: error: label at end of compound statement
+make: *** [MCAL_LAYER/ADC/HAL_ADC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:43:52 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_CHANNEL_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:117: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_PRESCALER_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:120: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_VOLTAGE_REFERENCE_CONFIG':
+../MCAL_LAYER/ADC/HAL_ADC.c:124: error: called object '*39u = (volatile uint8)((unsigned char)*39u | 64u)' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:127: error: called object '*39u = *39u & 191u' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:130: error: called object '*39u = (volatile uint8)((unsigned char)*39u | 64u)' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:132: error: label at end of compound statement
+make: *** [MCAL_LAYER/ADC/HAL_ADC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:30:01 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_CHANNEL_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:117: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_PRESCALER_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:120: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_VOLTAGE_REFERENCE_CONFIG':
+../MCAL_LAYER/ADC/HAL_ADC.c:124: error: called object '*39u = (volatile uint8)((unsigned char)*39u | 64u)' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:127: error: called object '*39u = *39u & 191u' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:130: error: called object '*39u = (volatile uint8)((unsigned char)*39u | 64u)' is not a function
+../MCAL_LAYER/ADC/HAL_ADC.c:132: error: label at end of compound statement
+make: *** [MCAL_LAYER/ADC/HAL_ADC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:42:46 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_CHANNEL_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:117: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_PRESCALER_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:120: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_VOLTAGE_REFERENCE_CONFIG':
+../MCAL_LAYER/ADC/HAL_ADC.c:132: error: label at end of compound statement
+make: *** [MCAL_LAYER/ADC/HAL_ADC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:43:11 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_CHANNEL_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:117: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_PRESCALER_SELECT':
+../MCAL_LAYER/ADC/HAL_ADC.c:120: warning: control reaches end of non-void function
+../MCAL_LAYER/ADC/HAL_ADC.c: At top level:
+../MCAL_LAYER/ADC/HAL_ADC.c:115: warning: 'ADC_CHANNEL_SELECT' defined but not used
+../MCAL_LAYER/ADC/HAL_ADC.c:118: warning: 'ADC_PRESCALER_SELECT' defined but not used
+../MCAL_LAYER/ADC/HAL_ADC.c:13: warning: 'ADC_InterruptHandler' defined but not used
+Finished building: ../MCAL_LAYER/ADC/HAL_ADC.c
+ 
+Building file: ../Application.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
+In file included from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/HAL_GPIO.h:15,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/HAL_I2C.h:14,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.h:12,
+                 from ../ECU_LAYER/ECU_INIT.h:13,
+                 from ../Application.h:13,
+                 from ../Application.c:8:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application.c: In function 'application_init':
+../Application.c:43: warning: pointer targets in passing argument 2 of 'EXT_EEPROM_WRITE' differ in signedness
+Finished building: ../Application.c
+ 
+Building target: Electric_Water_Heater.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Electric_Water_Heater.map -mmcu=atmega16 -o "Electric_Water_Heater.elf"  ./MCAL_LAYER/TIMER/HAL_TIMER.o  ./MCAL_LAYER/INTERRUPT/HAL_INTERRUPT.o  ./MCAL_LAYER/I2C/HAL_I2C.o  ./MCAL_LAYER/GPIO/HAL_GPIO.o  ./MCAL_LAYER/ADC/HAL_ADC.o  ./ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o  ./ECU_LAYER/RELAY/ECU_RELAY.o  ./ECU_LAYER/PUSH_BUTTONS/ECU_PUSH_BUTTONS.o  ./ECU_LAYER/LED/ECU_LED.o  ./ECU_LAYER/FAN_CONTROL/ECU_FAN_CONTROL.o  ./ECU_LAYER/COOLER_PELTIER/ECU_COOLER_PELTIER.o  ./ECU_LAYER/CERAMIC_HEATER/ECU_CERAMIC_HEATER.o  ./ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.o  ./ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.o  ./ECU_LAYER/ECU_INIT.o  ./Application.o   
+Finished building target: Electric_Water_Heater.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Electric_Water_Heater.elf  >"Electric_Water_Heater.lss"
+Finished building: Electric_Water_Heater.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Electric_Water_Heater.elf  "Electric_Water_Heater.hex"
+Finished building: Electric_Water_Heater.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Electric_Water_Heater.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9484 bytes (57.9% Full)
+(.text + .data + .bootloader)
+
+Data:         54 bytes (5.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:52:30 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_INIT':
+../MCAL_LAYER/ADC/HAL_ADC.c:33: error: void value not ignored as it ought to be
+../MCAL_LAYER/ADC/HAL_ADC.c:34: error: void value not ignored as it ought to be
+../MCAL_LAYER/ADC/HAL_ADC.c:35: error: void value not ignored as it ought to be
+../MCAL_LAYER/ADC/HAL_ADC.c: At top level:
+../MCAL_LAYER/ADC/HAL_ADC.c:188: error: conflicting types for 'ADC_PRESCALER_SELECT'
+../MCAL_LAYER/ADC/HAL_ADC.c:11: error: previous declaration of 'ADC_PRESCALER_SELECT' was here
+make: *** [MCAL_LAYER/ADC/HAL_ADC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:54:20 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCAL_LAYER/ADC/HAL_ADC.c:14: warning: 'ADC_InterruptHandler' defined but not used
+Finished building: ../MCAL_LAYER/ADC/HAL_ADC.c
+ 
+Building file: ../Application.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
+In file included from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/HAL_GPIO.h:15,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/HAL_I2C.h:14,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.h:12,
+                 from ../ECU_LAYER/ECU_INIT.h:13,
+                 from ../Application.h:13,
+                 from ../Application.c:8:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application.c: In function 'application_init':
+../Application.c:43: warning: pointer targets in passing argument 2 of 'EXT_EEPROM_WRITE' differ in signedness
+Finished building: ../Application.c
+ 
+Building target: Electric_Water_Heater.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Electric_Water_Heater.map -mmcu=atmega16 -o "Electric_Water_Heater.elf"  ./MCAL_LAYER/TIMER/HAL_TIMER.o  ./MCAL_LAYER/INTERRUPT/HAL_INTERRUPT.o  ./MCAL_LAYER/I2C/HAL_I2C.o  ./MCAL_LAYER/GPIO/HAL_GPIO.o  ./MCAL_LAYER/ADC/HAL_ADC.o  ./ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o  ./ECU_LAYER/RELAY/ECU_RELAY.o  ./ECU_LAYER/PUSH_BUTTONS/ECU_PUSH_BUTTONS.o  ./ECU_LAYER/LED/ECU_LED.o  ./ECU_LAYER/FAN_CONTROL/ECU_FAN_CONTROL.o  ./ECU_LAYER/COOLER_PELTIER/ECU_COOLER_PELTIER.o  ./ECU_LAYER/CERAMIC_HEATER/ECU_CERAMIC_HEATER.o  ./ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.o  ./ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.o  ./ECU_LAYER/ECU_INIT.o  ./Application.o   
+Finished building target: Electric_Water_Heater.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Electric_Water_Heater.elf  >"Electric_Water_Heater.lss"
+Finished building: Electric_Water_Heater.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Electric_Water_Heater.elf  "Electric_Water_Heater.hex"
+Finished building: Electric_Water_Heater.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Electric_Water_Heater.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10712 bytes (65.4% Full)
+(.text + .data + .bootloader)
+
+Data:         54 bytes (5.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:21:57 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCAL_LAYER/ADC/HAL_ADC.c: In function 'ADC_StartConversion':
+../MCAL_LAYER/ADC/HAL_ADC.c:79: warning: implicit declaration of function 'ADC_SOURCE_ADJUST'
+../MCAL_LAYER/ADC/HAL_ADC.c: At top level:
+../MCAL_LAYER/ADC/HAL_ADC.c:259: warning: conflicting types for 'ADC_SOURCE_ADJUST'
+../MCAL_LAYER/ADC/HAL_ADC.c:259: error: static declaration of 'ADC_SOURCE_ADJUST' follows non-static declaration
+../MCAL_LAYER/ADC/HAL_ADC.c:79: error: previous implicit declaration of 'ADC_SOURCE_ADJUST' was here
+make: *** [MCAL_LAYER/ADC/HAL_ADC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:22:29 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MCAL_LAYER/ADC/HAL_ADC.c
+ 
+Building file: ../Application.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
+In file included from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/HAL_GPIO.h:15,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/HAL_I2C.h:14,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.h:12,
+                 from ../ECU_LAYER/ECU_INIT.h:13,
+                 from ../Application.h:13,
+                 from ../Application.c:8:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application.c: In function 'application_init':
+../Application.c:43: warning: pointer targets in passing argument 2 of 'EXT_EEPROM_WRITE' differ in signedness
+Finished building: ../Application.c
+ 
+Building target: Electric_Water_Heater.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Electric_Water_Heater.map -mmcu=atmega16 -o "Electric_Water_Heater.elf"  ./MCAL_LAYER/TIMER/HAL_TIMER.o  ./MCAL_LAYER/INTERRUPT/HAL_INTERRUPT.o  ./MCAL_LAYER/I2C/HAL_I2C.o  ./MCAL_LAYER/GPIO/HAL_GPIO.o  ./MCAL_LAYER/ADC/HAL_ADC.o  ./ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o  ./ECU_LAYER/RELAY/ECU_RELAY.o  ./ECU_LAYER/PUSH_BUTTONS/ECU_PUSH_BUTTONS.o  ./ECU_LAYER/LED/ECU_LED.o  ./ECU_LAYER/FAN_CONTROL/ECU_FAN_CONTROL.o  ./ECU_LAYER/COOLER_PELTIER/ECU_COOLER_PELTIER.o  ./ECU_LAYER/CERAMIC_HEATER/ECU_CERAMIC_HEATER.o  ./ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.o  ./ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.o  ./ECU_LAYER/ECU_INIT.o  ./Application.o   
+Finished building target: Electric_Water_Heater.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Electric_Water_Heater.elf  >"Electric_Water_Heater.lss"
+Finished building: Electric_Water_Heater.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Electric_Water_Heater.elf  "Electric_Water_Heater.hex"
+Finished building: Electric_Water_Heater.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Electric_Water_Heater.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   11036 bytes (67.4% Full)
+(.text + .data + .bootloader)
+
+Data:         54 bytes (5.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
