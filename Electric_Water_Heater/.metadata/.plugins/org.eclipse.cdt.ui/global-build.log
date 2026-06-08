@@ -758,3 +758,631 @@ Data:         54 bytes (5.3% Full)
 
 Finished building: sizedummy
  
+14:42:01 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MCAL_LAYER/ADC/HAL_ADC.c
+ 
+Building file: ../Application.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
+In file included from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/HAL_GPIO.h:15,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/HAL_I2C.h:14,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.h:12,
+                 from ../ECU_LAYER/ECU_INIT.h:13,
+                 from ../Application.h:13,
+                 from ../Application.c:8:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application.c: In function 'application_init':
+../Application.c:43: warning: pointer targets in passing argument 2 of 'EXT_EEPROM_WRITE' differ in signedness
+Finished building: ../Application.c
+ 
+Building target: Electric_Water_Heater.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Electric_Water_Heater.map -mmcu=atmega16 -o "Electric_Water_Heater.elf"  ./MCAL_LAYER/TIMER/HAL_TIMER.o  ./MCAL_LAYER/INTERRUPT/HAL_INTERRUPT.o  ./MCAL_LAYER/I2C/HAL_I2C.o  ./MCAL_LAYER/GPIO/HAL_GPIO.o  ./MCAL_LAYER/ADC/HAL_ADC.o  ./ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o  ./ECU_LAYER/RELAY/ECU_RELAY.o  ./ECU_LAYER/PUSH_BUTTONS/ECU_PUSH_BUTTONS.o  ./ECU_LAYER/LED/ECU_LED.o  ./ECU_LAYER/FAN_CONTROL/ECU_FAN_CONTROL.o  ./ECU_LAYER/COOLER_PELTIER/ECU_COOLER_PELTIER.o  ./ECU_LAYER/CERAMIC_HEATER/ECU_CERAMIC_HEATER.o  ./ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.o  ./ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.o  ./ECU_LAYER/ECU_INIT.o  ./Application.o   
+Finished building target: Electric_Water_Heater.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Electric_Water_Heater.elf  >"Electric_Water_Heater.lss"
+Finished building: Electric_Water_Heater.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Electric_Water_Heater.elf  "Electric_Water_Heater.hex"
+Finished building: Electric_Water_Heater.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Electric_Water_Heater.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   11082 bytes (67.6% Full)
+(.text + .data + .bootloader)
+
+Data:         54 bytes (5.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:46:31 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MCAL_LAYER/ADC/HAL_ADC.c
+ 
+Building target: Electric_Water_Heater.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Electric_Water_Heater.map -mmcu=atmega16 -o "Electric_Water_Heater.elf"  ./MCAL_LAYER/TIMER/HAL_TIMER.o  ./MCAL_LAYER/INTERRUPT/HAL_INTERRUPT.o  ./MCAL_LAYER/I2C/HAL_I2C.o  ./MCAL_LAYER/GPIO/HAL_GPIO.o  ./MCAL_LAYER/ADC/HAL_ADC.o  ./ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o  ./ECU_LAYER/RELAY/ECU_RELAY.o  ./ECU_LAYER/PUSH_BUTTONS/ECU_PUSH_BUTTONS.o  ./ECU_LAYER/LED/ECU_LED.o  ./ECU_LAYER/FAN_CONTROL/ECU_FAN_CONTROL.o  ./ECU_LAYER/COOLER_PELTIER/ECU_COOLER_PELTIER.o  ./ECU_LAYER/CERAMIC_HEATER/ECU_CERAMIC_HEATER.o  ./ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.o  ./ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.o  ./ECU_LAYER/ECU_INIT.o  ./Application.o   
+Finished building target: Electric_Water_Heater.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Electric_Water_Heater.elf  >"Electric_Water_Heater.lss"
+Finished building: Electric_Water_Heater.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Electric_Water_Heater.elf  "Electric_Water_Heater.hex"
+Finished building: Electric_Water_Heater.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Electric_Water_Heater.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   11152 bytes (68.1% Full)
+(.text + .data + .bootloader)
+
+Data:         54 bytes (5.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:47:17 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MCAL_LAYER/ADC/HAL_ADC.c
+ 
+Building target: Electric_Water_Heater.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Electric_Water_Heater.map -mmcu=atmega16 -o "Electric_Water_Heater.elf"  ./MCAL_LAYER/TIMER/HAL_TIMER.o  ./MCAL_LAYER/INTERRUPT/HAL_INTERRUPT.o  ./MCAL_LAYER/I2C/HAL_I2C.o  ./MCAL_LAYER/GPIO/HAL_GPIO.o  ./MCAL_LAYER/ADC/HAL_ADC.o  ./ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o  ./ECU_LAYER/RELAY/ECU_RELAY.o  ./ECU_LAYER/PUSH_BUTTONS/ECU_PUSH_BUTTONS.o  ./ECU_LAYER/LED/ECU_LED.o  ./ECU_LAYER/FAN_CONTROL/ECU_FAN_CONTROL.o  ./ECU_LAYER/COOLER_PELTIER/ECU_COOLER_PELTIER.o  ./ECU_LAYER/CERAMIC_HEATER/ECU_CERAMIC_HEATER.o  ./ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.o  ./ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.o  ./ECU_LAYER/ECU_INIT.o  ./Application.o   
+Finished building target: Electric_Water_Heater.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Electric_Water_Heater.elf  >"Electric_Water_Heater.lss"
+Finished building: Electric_Water_Heater.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Electric_Water_Heater.elf  "Electric_Water_Heater.hex"
+Finished building: Electric_Water_Heater.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Electric_Water_Heater.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   11152 bytes (68.1% Full)
+(.text + .data + .bootloader)
+
+Data:         54 bytes (5.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:21:48 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../Application.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
+In file included from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/HAL_GPIO.h:15,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/HAL_I2C.h:14,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.h:12,
+                 from ../ECU_LAYER/ECU_INIT.h:13,
+                 from ../Application.h:13,
+                 from ../Application.c:8:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application.c: In function 'application_init':
+../Application.c:50: warning: pointer targets in passing argument 2 of 'EXT_EEPROM_WRITE' differ in signedness
+Finished building: ../Application.c
+ 
+Building target: Electric_Water_Heater.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Electric_Water_Heater.map -mmcu=atmega16 -o "Electric_Water_Heater.elf"  ./MCAL_LAYER/TIMER/HAL_TIMER.o  ./MCAL_LAYER/INTERRUPT/HAL_INTERRUPT.o  ./MCAL_LAYER/I2C/HAL_I2C.o  ./MCAL_LAYER/GPIO/HAL_GPIO.o  ./MCAL_LAYER/ADC/HAL_ADC.o  ./ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o  ./ECU_LAYER/RELAY/ECU_RELAY.o  ./ECU_LAYER/PUSH_BUTTONS/ECU_PUSH_BUTTONS.o  ./ECU_LAYER/LED/ECU_LED.o  ./ECU_LAYER/FAN_CONTROL/ECU_FAN_CONTROL.o  ./ECU_LAYER/COOLER_PELTIER/ECU_COOLER_PELTIER.o  ./ECU_LAYER/CERAMIC_HEATER/ECU_CERAMIC_HEATER.o  ./ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.o  ./ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.o  ./ECU_LAYER/ECU_INIT.o  ./Application.o   
+Finished building target: Electric_Water_Heater.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Electric_Water_Heater.elf  >"Electric_Water_Heater.lss"
+Finished building: Electric_Water_Heater.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Electric_Water_Heater.elf  "Electric_Water_Heater.hex"
+Finished building: Electric_Water_Heater.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Electric_Water_Heater.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   11158 bytes (68.1% Full)
+(.text + .data + .bootloader)
+
+Data:         60 bytes (5.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:37:58 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
+In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
+                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MCAL_LAYER/ADC/HAL_ADC.c
+ 
+Building file: ../Application.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
+In file included from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/HAL_GPIO.h:15,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/HAL_I2C.h:14,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.h:12,
+                 from ../ECU_LAYER/ECU_INIT.h:13,
+                 from ../Application.h:13,
+                 from ../Application.c:8:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application.c: In function 'application_init':
+../Application.c:51: warning: pointer targets in passing argument 2 of 'EXT_EEPROM_WRITE' differ in signedness
+Finished building: ../Application.c
+ 
+Building target: Electric_Water_Heater.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Electric_Water_Heater.map -mmcu=atmega16 -o "Electric_Water_Heater.elf"  ./MCAL_LAYER/TIMER/HAL_TIMER.o  ./MCAL_LAYER/INTERRUPT/HAL_INTERRUPT.o  ./MCAL_LAYER/I2C/HAL_I2C.o  ./MCAL_LAYER/GPIO/HAL_GPIO.o  ./MCAL_LAYER/ADC/HAL_ADC.o  ./ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o  ./ECU_LAYER/RELAY/ECU_RELAY.o  ./ECU_LAYER/PUSH_BUTTONS/ECU_PUSH_BUTTONS.o  ./ECU_LAYER/LED/ECU_LED.o  ./ECU_LAYER/FAN_CONTROL/ECU_FAN_CONTROL.o  ./ECU_LAYER/COOLER_PELTIER/ECU_COOLER_PELTIER.o  ./ECU_LAYER/CERAMIC_HEATER/ECU_CERAMIC_HEATER.o  ./ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.o  ./ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.o  ./ECU_LAYER/ECU_INIT.o  ./Application.o   
+Finished building target: Electric_Water_Heater.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Electric_Water_Heater.elf  >"Electric_Water_Heater.lss"
+Finished building: Electric_Water_Heater.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Electric_Water_Heater.elf  "Electric_Water_Heater.hex"
+Finished building: Electric_Water_Heater.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Electric_Water_Heater.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   11192 bytes (68.3% Full)
+(.text + .data + .bootloader)
+
+Data:         62 bytes (6.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:59:03 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.d" -MT"ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.o" -c -o "ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.o" "../ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.c"
+In file included from ../ECU_LAYER/7_SEGMENT/../../MCAL_LAYER/GPIO/../MCAL_STD_LIB.h:16,
+                 from ../ECU_LAYER/7_SEGMENT/../../MCAL_LAYER/GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../ECU_LAYER/7_SEGMENT/../../MCAL_LAYER/GPIO/HAL_GPIO.h:15,
+                 from ../ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.h:12,
+                 from ../ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.c
+ 
+Building file: ../ECU_LAYER/ECU_INIT.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ECU_LAYER/ECU_INIT.d" -MT"ECU_LAYER/ECU_INIT.o" -c -o "ECU_LAYER/ECU_INIT.o" "../ECU_LAYER/ECU_INIT.c"
+In file included from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/HAL_GPIO.h:15,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/HAL_I2C.h:14,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.h:12,
+                 from ../ECU_LAYER/ECU_INIT.h:13,
+                 from ../ECU_LAYER/ECU_INIT.c:8:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ECU_LAYER/ECU_INIT.c
+ 
+Building file: ../Application.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
+In file included from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/HAL_GPIO.h:15,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/HAL_I2C.h:14,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.h:12,
+                 from ../ECU_LAYER/ECU_INIT.h:13,
+                 from ../Application.h:13,
+                 from ../Application.c:8:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application.c: In function 'application_init':
+../Application.c:51: warning: pointer targets in passing argument 2 of 'EXT_EEPROM_WRITE' differ in signedness
+Finished building: ../Application.c
+ 
+Building target: Electric_Water_Heater.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Electric_Water_Heater.map -mmcu=atmega16 -o "Electric_Water_Heater.elf"  ./MCAL_LAYER/TIMER/HAL_TIMER.o  ./MCAL_LAYER/INTERRUPT/HAL_INTERRUPT.o  ./MCAL_LAYER/I2C/HAL_I2C.o  ./MCAL_LAYER/GPIO/HAL_GPIO.o  ./MCAL_LAYER/ADC/HAL_ADC.o  ./ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o  ./ECU_LAYER/RELAY/ECU_RELAY.o  ./ECU_LAYER/PUSH_BUTTONS/ECU_PUSH_BUTTONS.o  ./ECU_LAYER/LED/ECU_LED.o  ./ECU_LAYER/FAN_CONTROL/ECU_FAN_CONTROL.o  ./ECU_LAYER/COOLER_PELTIER/ECU_COOLER_PELTIER.o  ./ECU_LAYER/CERAMIC_HEATER/ECU_CERAMIC_HEATER.o  ./ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.o  ./ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.o  ./ECU_LAYER/ECU_INIT.o  ./Application.o   
+Finished building target: Electric_Water_Heater.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Electric_Water_Heater.elf  >"Electric_Water_Heater.lss"
+Finished building: Electric_Water_Heater.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Electric_Water_Heater.elf  "Electric_Water_Heater.hex"
+Finished building: Electric_Water_Heater.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Electric_Water_Heater.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   11222 bytes (68.5% Full)
+(.text + .data + .bootloader)
+
+Data:         62 bytes (6.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:00:50 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../Application.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
+In file included from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/HAL_GPIO.h:15,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/HAL_I2C.h:14,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.h:12,
+                 from ../ECU_LAYER/ECU_INIT.h:13,
+                 from ../Application.h:13,
+                 from ../Application.c:8:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application.c: In function 'application_init':
+../Application.c:51: warning: pointer targets in passing argument 2 of 'EXT_EEPROM_WRITE' differ in signedness
+Finished building: ../Application.c
+ 
+Building target: Electric_Water_Heater.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Electric_Water_Heater.map -mmcu=atmega16 -o "Electric_Water_Heater.elf"  ./MCAL_LAYER/TIMER/HAL_TIMER.o  ./MCAL_LAYER/INTERRUPT/HAL_INTERRUPT.o  ./MCAL_LAYER/I2C/HAL_I2C.o  ./MCAL_LAYER/GPIO/HAL_GPIO.o  ./MCAL_LAYER/ADC/HAL_ADC.o  ./ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o  ./ECU_LAYER/RELAY/ECU_RELAY.o  ./ECU_LAYER/PUSH_BUTTONS/ECU_PUSH_BUTTONS.o  ./ECU_LAYER/LED/ECU_LED.o  ./ECU_LAYER/FAN_CONTROL/ECU_FAN_CONTROL.o  ./ECU_LAYER/COOLER_PELTIER/ECU_COOLER_PELTIER.o  ./ECU_LAYER/CERAMIC_HEATER/ECU_CERAMIC_HEATER.o  ./ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.o  ./ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.o  ./ECU_LAYER/ECU_INIT.o  ./Application.o   
+Finished building target: Electric_Water_Heater.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Electric_Water_Heater.elf  >"Electric_Water_Heater.lss"
+Finished building: Electric_Water_Heater.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Electric_Water_Heater.elf  "Electric_Water_Heater.hex"
+Finished building: Electric_Water_Heater.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Electric_Water_Heater.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   11224 bytes (68.5% Full)
+(.text + .data + .bootloader)
+
+Data:         62 bytes (6.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:40:10 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.d" -MT"ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o" -c -o "ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o" "../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.c"
+In file included from ../ECU_LAYER/TEMP_SENSOR/../../MCAL_LAYER/GPIO/../MCAL_STD_LIB.h:16,
+                 from ../ECU_LAYER/TEMP_SENSOR/../../MCAL_LAYER/GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../ECU_LAYER/TEMP_SENSOR/../../MCAL_LAYER/GPIO/HAL_GPIO.h:15,
+                 from ../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.h:15,
+                 from ../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.c:11: error: conflicting types for 'LM35_Conversion'
+../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.h:29: error: previous declaration of 'LM35_Conversion' was here
+../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.c: In function 'LM35_Conversion':
+../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.c:13: warning: unused variable 'Temperature'
+make: *** [ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:40:35 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.d" -MT"ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o" -c -o "ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o" "../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.c"
+In file included from ../ECU_LAYER/TEMP_SENSOR/../../MCAL_LAYER/GPIO/../MCAL_STD_LIB.h:16,
+                 from ../ECU_LAYER/TEMP_SENSOR/../../MCAL_LAYER/GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../ECU_LAYER/TEMP_SENSOR/../../MCAL_LAYER/GPIO/HAL_GPIO.h:15,
+                 from ../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.h:15,
+                 from ../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.c: In function 'LM35_Conversion':
+../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.c:13: warning: unused variable 'Temperature'
+Finished building: ../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.c
+ 
+Building file: ../ECU_LAYER/ECU_INIT.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ECU_LAYER/ECU_INIT.d" -MT"ECU_LAYER/ECU_INIT.o" -c -o "ECU_LAYER/ECU_INIT.o" "../ECU_LAYER/ECU_INIT.c"
+In file included from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/HAL_GPIO.h:15,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/HAL_I2C.h:14,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.h:12,
+                 from ../ECU_LAYER/ECU_INIT.h:13,
+                 from ../ECU_LAYER/ECU_INIT.c:8:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ECU_LAYER/ECU_INIT.c
+ 
+Building file: ../Application.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
+In file included from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/HAL_GPIO.h:15,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/HAL_I2C.h:14,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.h:12,
+                 from ../ECU_LAYER/ECU_INIT.h:13,
+                 from ../Application.h:13,
+                 from ../Application.c:8:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application.c: In function 'application_init':
+../Application.c:52: warning: pointer targets in passing argument 2 of 'EXT_EEPROM_WRITE' differ in signedness
+Finished building: ../Application.c
+ 
+Building target: Electric_Water_Heater.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Electric_Water_Heater.map -mmcu=atmega16 -o "Electric_Water_Heater.elf"  ./MCAL_LAYER/TIMER/HAL_TIMER.o  ./MCAL_LAYER/INTERRUPT/HAL_INTERRUPT.o  ./MCAL_LAYER/I2C/HAL_I2C.o  ./MCAL_LAYER/GPIO/HAL_GPIO.o  ./MCAL_LAYER/ADC/HAL_ADC.o  ./ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o  ./ECU_LAYER/RELAY/ECU_RELAY.o  ./ECU_LAYER/PUSH_BUTTONS/ECU_PUSH_BUTTONS.o  ./ECU_LAYER/LED/ECU_LED.o  ./ECU_LAYER/FAN_CONTROL/ECU_FAN_CONTROL.o  ./ECU_LAYER/COOLER_PELTIER/ECU_COOLER_PELTIER.o  ./ECU_LAYER/CERAMIC_HEATER/ECU_CERAMIC_HEATER.o  ./ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.o  ./ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.o  ./ECU_LAYER/ECU_INIT.o  ./Application.o   
+Finished building target: Electric_Water_Heater.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Electric_Water_Heater.elf  >"Electric_Water_Heater.lss"
+Finished building: Electric_Water_Heater.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Electric_Water_Heater.elf  "Electric_Water_Heater.hex"
+Finished building: Electric_Water_Heater.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Electric_Water_Heater.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12078 bytes (73.7% Full)
+(.text + .data + .bootloader)
+
+Data:        320 bytes (31.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:42:00 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../Application.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
+In file included from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/HAL_GPIO.h:15,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/HAL_I2C.h:14,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.h:12,
+                 from ../ECU_LAYER/ECU_INIT.h:13,
+                 from ../Application.h:13,
+                 from ../Application.c:8:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application.c: In function 'application_init':
+../Application.c:52: warning: pointer targets in passing argument 2 of 'EXT_EEPROM_WRITE' differ in signedness
+Finished building: ../Application.c
+ 
+Building target: Electric_Water_Heater.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Electric_Water_Heater.map -mmcu=atmega16 -o "Electric_Water_Heater.elf"  ./MCAL_LAYER/TIMER/HAL_TIMER.o  ./MCAL_LAYER/INTERRUPT/HAL_INTERRUPT.o  ./MCAL_LAYER/I2C/HAL_I2C.o  ./MCAL_LAYER/GPIO/HAL_GPIO.o  ./MCAL_LAYER/ADC/HAL_ADC.o  ./ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o  ./ECU_LAYER/RELAY/ECU_RELAY.o  ./ECU_LAYER/PUSH_BUTTONS/ECU_PUSH_BUTTONS.o  ./ECU_LAYER/LED/ECU_LED.o  ./ECU_LAYER/FAN_CONTROL/ECU_FAN_CONTROL.o  ./ECU_LAYER/COOLER_PELTIER/ECU_COOLER_PELTIER.o  ./ECU_LAYER/CERAMIC_HEATER/ECU_CERAMIC_HEATER.o  ./ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.o  ./ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.o  ./ECU_LAYER/ECU_INIT.o  ./Application.o   
+Finished building target: Electric_Water_Heater.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Electric_Water_Heater.elf  >"Electric_Water_Heater.lss"
+Finished building: Electric_Water_Heater.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Electric_Water_Heater.elf  "Electric_Water_Heater.hex"
+Finished building: Electric_Water_Heater.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Electric_Water_Heater.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12074 bytes (73.7% Full)
+(.text + .data + .bootloader)
+
+Data:        320 bytes (31.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:42:06 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../Application.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
+In file included from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/HAL_GPIO.h:15,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/HAL_I2C.h:14,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.h:12,
+                 from ../ECU_LAYER/ECU_INIT.h:13,
+                 from ../Application.h:13,
+                 from ../Application.c:8:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application.c: In function 'application_init':
+../Application.c:52: warning: pointer targets in passing argument 2 of 'EXT_EEPROM_WRITE' differ in signedness
+Finished building: ../Application.c
+ 
+Building target: Electric_Water_Heater.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Electric_Water_Heater.map -mmcu=atmega16 -o "Electric_Water_Heater.elf"  ./MCAL_LAYER/TIMER/HAL_TIMER.o  ./MCAL_LAYER/INTERRUPT/HAL_INTERRUPT.o  ./MCAL_LAYER/I2C/HAL_I2C.o  ./MCAL_LAYER/GPIO/HAL_GPIO.o  ./MCAL_LAYER/ADC/HAL_ADC.o  ./ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o  ./ECU_LAYER/RELAY/ECU_RELAY.o  ./ECU_LAYER/PUSH_BUTTONS/ECU_PUSH_BUTTONS.o  ./ECU_LAYER/LED/ECU_LED.o  ./ECU_LAYER/FAN_CONTROL/ECU_FAN_CONTROL.o  ./ECU_LAYER/COOLER_PELTIER/ECU_COOLER_PELTIER.o  ./ECU_LAYER/CERAMIC_HEATER/ECU_CERAMIC_HEATER.o  ./ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.o  ./ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.o  ./ECU_LAYER/ECU_INIT.o  ./Application.o   
+Finished building target: Electric_Water_Heater.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Electric_Water_Heater.elf  >"Electric_Water_Heater.lss"
+Finished building: Electric_Water_Heater.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Electric_Water_Heater.elf  "Electric_Water_Heater.hex"
+Finished building: Electric_Water_Heater.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Electric_Water_Heater.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12074 bytes (73.7% Full)
+(.text + .data + .bootloader)
+
+Data:        320 bytes (31.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:49:04 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.d" -MT"ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o" -c -o "ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o" "../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.c"
+In file included from ../ECU_LAYER/TEMP_SENSOR/../../MCAL_LAYER/GPIO/../MCAL_STD_LIB.h:16,
+                 from ../ECU_LAYER/TEMP_SENSOR/../../MCAL_LAYER/GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../ECU_LAYER/TEMP_SENSOR/../../MCAL_LAYER/GPIO/HAL_GPIO.h:15,
+                 from ../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.h:15,
+                 from ../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.c:7:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.c: In function 'LM35_Conversion':
+../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.c:13: warning: unused variable 'Temperature'
+Finished building: ../ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.c
+ 
+Building target: Electric_Water_Heater.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Electric_Water_Heater.map -mmcu=atmega16 -o "Electric_Water_Heater.elf"  ./MCAL_LAYER/TIMER/HAL_TIMER.o  ./MCAL_LAYER/INTERRUPT/HAL_INTERRUPT.o  ./MCAL_LAYER/I2C/HAL_I2C.o  ./MCAL_LAYER/GPIO/HAL_GPIO.o  ./MCAL_LAYER/ADC/HAL_ADC.o  ./ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o  ./ECU_LAYER/RELAY/ECU_RELAY.o  ./ECU_LAYER/PUSH_BUTTONS/ECU_PUSH_BUTTONS.o  ./ECU_LAYER/LED/ECU_LED.o  ./ECU_LAYER/FAN_CONTROL/ECU_FAN_CONTROL.o  ./ECU_LAYER/COOLER_PELTIER/ECU_COOLER_PELTIER.o  ./ECU_LAYER/CERAMIC_HEATER/ECU_CERAMIC_HEATER.o  ./ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.o  ./ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.o  ./ECU_LAYER/ECU_INIT.o  ./Application.o   
+Finished building target: Electric_Water_Heater.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Electric_Water_Heater.elf  >"Electric_Water_Heater.lss"
+Finished building: Electric_Water_Heater.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Electric_Water_Heater.elf  "Electric_Water_Heater.hex"
+Finished building: Electric_Water_Heater.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Electric_Water_Heater.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12074 bytes (73.7% Full)
+(.text + .data + .bootloader)
+
+Data:        320 bytes (31.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:50:44 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+make all 
+Building file: ../Application.c
+Invoking: AVR Compiler
+avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
+In file included from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_LIB.h:16,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/../MCAL_STD_TYPES.h:13,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO/HAL_GPIO.h:15,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/HAL_I2C.h:14,
+                 from ../ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.h:12,
+                 from ../ECU_LAYER/ECU_INIT.h:13,
+                 from ../Application.h:13,
+                 from ../Application.c:8:
+d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application.c: In function 'application_init':
+../Application.c:52: warning: pointer targets in passing argument 2 of 'EXT_EEPROM_WRITE' differ in signedness
+Finished building: ../Application.c
+ 
+Building target: Electric_Water_Heater.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Electric_Water_Heater.map -mmcu=atmega16 -o "Electric_Water_Heater.elf"  ./MCAL_LAYER/TIMER/HAL_TIMER.o  ./MCAL_LAYER/INTERRUPT/HAL_INTERRUPT.o  ./MCAL_LAYER/I2C/HAL_I2C.o  ./MCAL_LAYER/GPIO/HAL_GPIO.o  ./MCAL_LAYER/ADC/HAL_ADC.o  ./ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o  ./ECU_LAYER/RELAY/ECU_RELAY.o  ./ECU_LAYER/PUSH_BUTTONS/ECU_PUSH_BUTTONS.o  ./ECU_LAYER/LED/ECU_LED.o  ./ECU_LAYER/FAN_CONTROL/ECU_FAN_CONTROL.o  ./ECU_LAYER/COOLER_PELTIER/ECU_COOLER_PELTIER.o  ./ECU_LAYER/CERAMIC_HEATER/ECU_CERAMIC_HEATER.o  ./ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.o  ./ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.o  ./ECU_LAYER/ECU_INIT.o  ./Application.o   
+Finished building target: Electric_Water_Heater.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Electric_Water_Heater.elf  >"Electric_Water_Heater.lss"
+Finished building: Electric_Water_Heater.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Electric_Water_Heater.elf  "Electric_Water_Heater.hex"
+Finished building: Electric_Water_Heater.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Electric_Water_Heater.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12094 bytes (73.8% Full)
+(.text + .data + .bootloader)
+
+Data:        320 bytes (31.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

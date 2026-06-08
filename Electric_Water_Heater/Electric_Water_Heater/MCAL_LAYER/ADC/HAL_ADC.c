@@ -266,3 +266,12 @@ static void ADC_SOURCE_ADJUST(ADC_SOURCE_ADJUST_T adc_Source){
 			break;
 	}
 }
+#if ADC_INTERRUPT_FEATURE_ENABLE==INTERRUPT_FEATURE_ENABLE
+	void __vector_16 (void)__attribute__((signal)) ;
+	void __vector_16 (void)
+	{
+		if(NULL != ADC_InterruptHandler){
+			ADC_InterruptHandler();
+		}
+	}
+#endif

@@ -1,16 +1,5 @@
-00:22:29 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+16:50:44 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
 make all 
-Building file: ../MCAL_LAYER/ADC/HAL_ADC.c
-Invoking: AVR Compiler
-avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL_LAYER/ADC/HAL_ADC.d" -MT"MCAL_LAYER/ADC/HAL_ADC.o" -c -o "MCAL_LAYER/ADC/HAL_ADC.o" "../MCAL_LAYER/ADC/HAL_ADC.c"
-In file included from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_LIB.h:16,
-                 from ../MCAL_LAYER/ADC/../GPIO/../MCAL_STD_TYPES.h:13,
-                 from ../MCAL_LAYER/ADC/../GPIO/HAL_GPIO.h:15,
-                 from ../MCAL_LAYER/ADC/HAL_ADC.h:15,
-                 from ../MCAL_LAYER/ADC/HAL_ADC.c:7:
-d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../MCAL_LAYER/ADC/HAL_ADC.c
- 
 Building file: ../Application.c
 Invoking: AVR Compiler
 avr-gcc -U__AVR_ATmega16__ -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
@@ -24,7 +13,7 @@ In file included from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO
                  from ../Application.c:8:
 d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
 ../Application.c: In function 'application_init':
-../Application.c:43: warning: pointer targets in passing argument 2 of 'EXT_EEPROM_WRITE' differ in signedness
+../Application.c:52: warning: pointer targets in passing argument 2 of 'EXT_EEPROM_WRITE' differ in signedness
 Finished building: ../Application.c
  
 Building target: Electric_Water_Heater.elf
@@ -46,15 +35,15 @@ AVR Memory Usage
 ----------------
 Device: atmega16
 
-Program:   11036 bytes (67.4% Full)
+Program:   12094 bytes (73.8% Full)
 (.text + .data + .bootloader)
 
-Data:         54 bytes (5.3% Full)
+Data:        320 bytes (31.3% Full)
 (.data + .bss + .noinit)
 
 
 Finished building: sizedummy
  
 
-00:22:31 Build Finished. 0 errors, 3 warnings. (took 1s.633ms)
+16:50:45 Build Finished. 0 errors, 2 warnings. (took 1s.251ms)
 

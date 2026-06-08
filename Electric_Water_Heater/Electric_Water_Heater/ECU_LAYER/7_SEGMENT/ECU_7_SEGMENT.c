@@ -50,7 +50,7 @@ Std_ReturnType SEVEN_SEGMENT_INIT(const seven_segment_pins_t *segment){
 	}
 	return ret;
 }
-Std_ReturnType SEVEN_SEGMENT_WRITE_NUMBER(const seven_segment_pins_t *segment, uint8 Number){
+Std_ReturnType SEVEN_SEGMENT_WRITE_NUMBER(const seven_segment_pins_t *segment, uint16 Number){
 	Std_ReturnType ret = E_OK;
 	if(NULL == segment){
 		ret = E_NOT_OK;
@@ -63,7 +63,7 @@ Std_ReturnType SEVEN_SEGMENT_WRITE_NUMBER(const seven_segment_pins_t *segment, u
 	}
 	return ret;
 }
-Std_ReturnType SEVEN_SEGMENT_2_DIGIT_WRITE(const seven_segment_pins_t *segment, uint8 *Number){
+Std_ReturnType SEVEN_SEGMENT_2_DIGIT_WRITE(const seven_segment_pins_t *segment, uint16 *Number){
 	Std_ReturnType ret = E_OK;
 	if((NULL == segment)){
 		ret = E_NOT_OK;

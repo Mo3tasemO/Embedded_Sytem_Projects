@@ -31,8 +31,8 @@ extern seven_segment_pins_t seg1;
 
 
 Std_ReturnType SEVEN_SEGMENT_INIT(const seven_segment_pins_t *segment);
-Std_ReturnType SEVEN_SEGMENT_WRITE_NUMBER(const seven_segment_pins_t *segment, uint8 Number);
-Std_ReturnType SEVEN_SEGMENT_2_DIGIT_WRITE(const seven_segment_pins_t *segment, uint8 *Number);
+Std_ReturnType SEVEN_SEGMENT_WRITE_NUMBER(const seven_segment_pins_t *segment, uint16 Number);
+Std_ReturnType SEVEN_SEGMENT_2_DIGIT_WRITE(const seven_segment_pins_t *segment, uint16 *Number);
 
 
 #endif /* ECU_LAYER_7_SEGMENT_ECU_7_SEGMENT_H_ */
