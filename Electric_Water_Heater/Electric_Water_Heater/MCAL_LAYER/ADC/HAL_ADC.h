@@ -77,7 +77,7 @@
 
 #if ADC_INTERRUPT_FEATURE_ENABLE
 	#define		ADC_INTERRUPT_ENABLE()				SET_BIT(ADCSRA, ADIE)	// Global Interrupt Must Be Enable ->SREG,I-bit
-	#define		ADC_INTERRUPT_DISABLE()				CLEAR_BIT(ADCSRA, ADIE);
+	#define		ADC_INTERRUPT_DISABLE()				CLEAR_BIT(ADCSRA, ADIE)
 #endif
 
 

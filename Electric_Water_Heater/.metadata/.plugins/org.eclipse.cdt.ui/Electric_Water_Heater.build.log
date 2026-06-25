@@ -1,4 +1,4 @@
-16:50:44 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
+01:40:43 **** Incremental Build of configuration Debug for project Electric_Water_Heater ****
 make all 
 Building file: ../Application.c
 Invoking: AVR Compiler
@@ -12,13 +12,13 @@ In file included from ../ECU_LAYER/24C08_EXT_EEPROM/../../MCAL_LAYER/I2C/../GPIO
                  from ../Application.h:13,
                  from ../Application.c:8:
 d:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../Application.c: In function 'application_init':
-../Application.c:52: warning: pointer targets in passing argument 2 of 'EXT_EEPROM_WRITE' differ in signedness
+../Application.c: In function 'main':
+../Application.c:36: warning: unused variable 'ret'
 Finished building: ../Application.c
  
 Building target: Electric_Water_Heater.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Electric_Water_Heater.map -mmcu=atmega16 -o "Electric_Water_Heater.elf"  ./MCAL_LAYER/TIMER/HAL_TIMER.o  ./MCAL_LAYER/INTERRUPT/HAL_INTERRUPT.o  ./MCAL_LAYER/I2C/HAL_I2C.o  ./MCAL_LAYER/GPIO/HAL_GPIO.o  ./MCAL_LAYER/ADC/HAL_ADC.o  ./ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o  ./ECU_LAYER/RELAY/ECU_RELAY.o  ./ECU_LAYER/PUSH_BUTTONS/ECU_PUSH_BUTTONS.o  ./ECU_LAYER/LED/ECU_LED.o  ./ECU_LAYER/FAN_CONTROL/ECU_FAN_CONTROL.o  ./ECU_LAYER/COOLER_PELTIER/ECU_COOLER_PELTIER.o  ./ECU_LAYER/CERAMIC_HEATER/ECU_CERAMIC_HEATER.o  ./ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.o  ./ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.o  ./ECU_LAYER/ECU_INIT.o  ./Application.o   
+avr-gcc -Wl,-Map,Electric_Water_Heater.map -mmcu=atmega16 -o "Electric_Water_Heater.elf"  ./MCAL_LAYER/TIMERS/HAL_TIMER0.o  ./MCAL_LAYER/INTERRUPT/HAL_INTERRUPT.o  ./MCAL_LAYER/I2C/HAL_I2C.o  ./MCAL_LAYER/GPIO/HAL_GPIO.o  ./MCAL_LAYER/ADC/HAL_ADC.o  ./ECU_LAYER/TEMP_SENSOR/ECU_TEMP_SENSOR.o  ./ECU_LAYER/RELAY/ECU_RELAY.o  ./ECU_LAYER/PUSH_BUTTONS/ECU_PUSH_BUTTONS.o  ./ECU_LAYER/LED/ECU_LED.o  ./ECU_LAYER/FAN_CONTROL/ECU_FAN_CONTROL.o  ./ECU_LAYER/COOLER_PELTIER/ECU_COOLER_PELTIER.o  ./ECU_LAYER/CERAMIC_HEATER/ECU_CERAMIC_HEATER.o  ./ECU_LAYER/7_SEGMENT/ECU_7_SEGMENT.o  ./ECU_LAYER/24C08_EXT_EEPROM/ECU_24C08_EXT_EEPROM.o  ./ECU_LAYER/ECU_INIT.o  ./Application.o   
 Finished building target: Electric_Water_Heater.elf
  
 Invoking: AVR Create Extended Listing
@@ -35,15 +35,15 @@ AVR Memory Usage
 ----------------
 Device: atmega16
 
-Program:   12094 bytes (73.8% Full)
+Program:   13272 bytes (81.0% Full)
 (.text + .data + .bootloader)
 
-Data:        320 bytes (31.3% Full)
+Data:        317 bytes (31.0% Full)
 (.data + .bss + .noinit)
 
 
 Finished building: sizedummy
  
 
-16:50:45 Build Finished. 0 errors, 2 warnings. (took 1s.251ms)
+01:40:45 Build Finished. 0 errors, 2 warnings. (took 2s.736ms)
 

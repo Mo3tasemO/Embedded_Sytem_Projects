@@ -15,6 +15,7 @@
 #include "MCAL_LAYER/INTERRUPT/HAL_INTERRUPT.h"
 #include "MCAL_LAYER/I2C/HAL_I2C.h"
 #include "MCAL_LAYER/ADC/HAL_ADC.h"
+#include "MCAL_LAYER/TIMERS/HAL_TIMER0.h"
 /* Section: Macro Declarations */
 
 /* Section: Macro Functions Declarations */
