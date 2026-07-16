@@ -5,7 +5,7 @@
  *      Author: Moata
  */
 
-#include "HAL_TIMER0.h"
+#include "../TIMER0/HAL_TIMER0.h"
 
 #if TIMER0_INTERRUPT_FEATURE_ENABLE==INTERRUPT_FEATURE_ENABLE
 void (*TIMER0_INTERRUPT_OVF)(void) = NULL;
@@ -90,16 +90,16 @@ static void TIMER0_COMPARE_OUTPUT_MODE_SELECT(TIMER0_COMPARE_OUTPUT_MODE_SELECT_
 		TIMER0_COMPARE_OUTPUT_OPERATION_SELECT_T Com_operation){
 	switch(Com_mode){
 	case TIMER0_NON_PWM_MODE:
-		if(NORMAL_OPERATION == Com_operation){
+		if(TIMER0_NORMAL_OPERATION_SELECTED == Com_operation){
 			TIMER0_NORMAL_OPERATION();
 		}
-		else if(TOGGLE_OC0 == Com_operation){
+		else if(TIMER0_TOGGLE_OC0_SELECTED == Com_operation){
 			TIMER0_NON_PWM_MODE_TOGGLE_OC0_COMPARE_MATCH();
 		}
-		else if(CLEAR_OC0 == Com_operation){
+		else if(TIMER0_CLEAR_OC0_SELECTED == Com_operation){
 			TIMER0_CLEAR_OC0_COMPARE_MATCH();
 		}
-		else if(SET_OC0 == Com_operation){
+		else if(TIMER0_SET_OC0_SELECTED == Com_operation){
 			TIMER0_SET_OC0_COMPARE_MATCH();
 		}
 		else{
@@ -107,13 +107,13 @@ static void TIMER0_COMPARE_OUTPUT_MODE_SELECT(TIMER0_COMPARE_OUTPUT_MODE_SELECT_
 		}
 		break;
 	case TIMER0_FAST_PWM_MODE:
-		if(NORMAL_OPERATION == Com_operation){
+		if(TIMER0_NORMAL_OPERATION_SELECTED == Com_operation){
 			TIMER0_NORMAL_OPERATION();
 		}
-		else if(CLEAR_OC0 == Com_operation){
+		else if(TIMER0_CLEAR_OC0_SELECTED == Com_operation){
 			TIMER0_CLEAR_OC0_COMPARE_MATCH();
 		}
-		else if(SET_OC0 == Com_operation){
+		else if(TIMER0_SET_OC0_SELECTED == Com_operation){
 			TIMER0_SET_OC0_COMPARE_MATCH();
 		}
 		else{
@@ -121,13 +121,13 @@ static void TIMER0_COMPARE_OUTPUT_MODE_SELECT(TIMER0_COMPARE_OUTPUT_MODE_SELECT_
 		}
 		break;
 	case TIMER0_PWM_PHASE_CORRECT_MODE:
-		if(NORMAL_OPERATION == Com_operation){
+		if(TIMER0_NORMAL_OPERATION_SELECTED == Com_operation){
 			TIMER0_NORMAL_OPERATION();
 		}
-		else if(CLEAR_OC0 == Com_operation){
+		else if(TIMER0_CLEAR_OC0_SELECTED == Com_operation){
 			TIMER0_CLEAR_OC0_COMPARE_MATCH();
 		}
-		else if(SET_OC0 == Com_operation){
+		else if(TIMER0_SET_OC0_SELECTED == Com_operation){
 			TIMER0_SET_OC0_COMPARE_MATCH();
 		}
 		else{
