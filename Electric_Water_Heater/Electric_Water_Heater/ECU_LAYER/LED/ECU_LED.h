@@ -21,7 +21,6 @@
 typedef struct {
 	pin_config_t led_pin_t;
 }led_config;
-extern led_config led1;
 
 /* Section: Function Declarations */
 
