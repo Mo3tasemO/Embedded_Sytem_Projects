@@ -1,0 +1,1239 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[v F2895 `(v ~T0 @X0 0 tf ]
+[v F2896 `(v ~T0 @X0 0 tf ]
+"148 mcc_generated_files/nvm/src/../nvm.h
+[; ;mcc_generated_files/nvm/src/../nvm.h: 148: void NVM_StatusClear(void);
+[v _NVM_StatusClear `(v ~T0 @X0 0 ef ]
+"3443 C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3443:     struct {
+[s S130 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S130 . CCP2IF TMR3IF HLVDIF BCLIF EEIF C2IF C1IF OSCFIF ]
+"3453
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3453:     struct {
+[s S131 :2 `uc 1 :1 `uc 1 ]
+[n S131 . . LVDIF ]
+"3457
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3457:     struct {
+[s S132 :6 `uc 1 :1 `uc 1 ]
+[n S132 . . CMIF ]
+"3442
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3442: typedef union {
+[u S129 `S130 1 `S131 1 `S132 1 ]
+[n S129 . . . . ]
+"3462
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3462: extern volatile PIR2bits_t PIR2bits __attribute__((address(0xFA1)));
+[v _PIR2bits `VS129 ~T0 @X0 0 e@4001 ]
+"3363
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3363:     struct {
+[s S126 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S126 . CCP2IE TMR3IE HLVDIE BCLIE EEIE C2IE C1IE OSCFIE ]
+"3373
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3373:     struct {
+[s S127 :2 `uc 1 :1 `uc 1 ]
+[n S127 . . LVDIE ]
+"3377
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3377:     struct {
+[s S128 :6 `uc 1 :1 `uc 1 ]
+[n S128 . . CMIE ]
+"3362
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3362: typedef union {
+[u S125 `S126 1 `S127 1 `S128 1 ]
+[n S125 . . . . ]
+"3382
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3382: extern volatile PIE2bits_t PIE2bits __attribute__((address(0xFA0)));
+[v _PIE2bits `VS125 ~T0 @X0 0 e@4000 ]
+"3603
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3603:     struct {
+[s S138 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S138 . RD WR WREN WRERR FREE . CFGS EEPGD ]
+"3613
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3613:     struct {
+[s S139 :6 `uc 1 :1 `uc 1 ]
+[n S139 . . EEFS ]
+"3602
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3602: typedef union {
+[u S137 `S138 1 `S139 1 ]
+[n S137 . . . ]
+"3618
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3618: extern volatile EECON1bits_t EECON1bits __attribute__((address(0xFA6)));
+[v _EECON1bits `VS137 ~T0 @X0 0 e@4006 ]
+"58 mcc_generated_files/nvm/src/nvm.c
+[; ;mcc_generated_files/nvm/src/nvm.c: 58: nvm_status_t NVM_StatusGet(void)
+[c E2858 0 1 .. ]
+[n E2858 . NVM_OK NVM_ERROR  ]
+"7195 C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7195: extern volatile unsigned char TBLPTRU __attribute__((address(0xFF8)));
+[v _TBLPTRU `Vuc ~T0 @X0 0 e@4088 ]
+"7188
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7188: extern volatile unsigned char TBLPTRH __attribute__((address(0xFF7)));
+[v _TBLPTRH `Vuc ~T0 @X0 0 e@4087 ]
+"7181
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7181: extern volatile unsigned char TBLPTRL __attribute__((address(0xFF6)));
+[v _TBLPTRL `Vuc ~T0 @X0 0 e@4086 ]
+"7165
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7165: extern volatile unsigned char TABLAT __attribute__((address(0xFF5)));
+[v _TABLAT `Vuc ~T0 @X0 0 e@4085 ]
+"7033
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7033:     struct {
+[s S297 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S297 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
+"7043
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7043:     struct {
+[s S298 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S298 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
+"7053
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7053:     struct {
+[s S299 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S299 . . GIEL GIEH ]
+"7032
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7032: typedef union {
+[u S296 `S297 1 `S298 1 `S299 1 ]
+[n S296 . . . . ]
+"7059
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7059: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
+[v _INTCONbits `VS296 ~T0 @X0 0 e@4082 ]
+"3663
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3663: extern volatile unsigned char EECON2 __attribute__((address(0xFA7)));
+[v _EECON2 `Vuc ~T0 @X0 0 e@4007 ]
+"8 C:\Program Files\Microchip\xc8\v3.10\pic\include/builtins.h
+[v ___nop `(v ~T0 @X0 0 ef ]
+[p i ___nop ]
+"3677 C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3677: extern volatile unsigned char EEADR __attribute__((address(0xFA9)));
+[v _EEADR `Vuc ~T0 @X0 0 e@4009 ]
+"3670
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3670: extern volatile unsigned char EEDATA __attribute__((address(0xFA8)));
+[v _EEDATA `Vuc ~T0 @X0 0 e@4008 ]
+[v F2936 `(v ~T0 @X0 0 tf ]
+[v F2938 `(v ~T0 @X0 0 tf ]
+[v F2940 `(v ~T0 @X0 0 tf ]
+"38 C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 38: __asm("SSPMSK equ 0F77h");
+[; <" SSPMSK equ 0F77h ;# ">
+"108
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 108: __asm("SLRCON equ 0F78h");
+[; <" SLRCON equ 0F78h ;# ">
+"152
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 152: __asm("CM2CON1 equ 0F79h");
+[; <" CM2CON1 equ 0F79h ;# ">
+"191
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 191: __asm("CM2CON0 equ 0F7Ah");
+[; <" CM2CON0 equ 0F7Ah ;# ">
+"261
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 261: __asm("CM1CON0 equ 0F7Bh");
+[; <" CM1CON0 equ 0F7Bh ;# ">
+"331
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 331: __asm("WPUB equ 0F7Ch");
+[; <" WPUB equ 0F7Ch ;# ">
+"393
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 393: __asm("IOCB equ 0F7Dh");
+[; <" IOCB equ 0F7Dh ;# ">
+"432
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 432: __asm("ANSEL equ 0F7Eh");
+[; <" ANSEL equ 0F7Eh ;# ">
+"494
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 494: __asm("ANSELH equ 0F7Fh");
+[; <" ANSELH equ 0F7Fh ;# ">
+"538
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 538: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"774
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 774: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"982
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 982: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"1170
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 1170: __asm("PORTD equ 0F83h");
+[; <" PORTD equ 0F83h ;# ">
+"1312
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 1312: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"1518
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 1518: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"1630
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 1630: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"1742
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 1742: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"1854
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 1854: __asm("LATD equ 0F8Ch");
+[; <" LATD equ 0F8Ch ;# ">
+"1966
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 1966: __asm("LATE equ 0F8Dh");
+[; <" LATE equ 0F8Dh ;# ">
+"2018
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 2018: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"2023
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 2023: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"2240
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 2240: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"2245
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 2245: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"2462
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 2462: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"2467
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 2467: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"2684
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 2684: __asm("TRISD equ 0F95h");
+[; <" TRISD equ 0F95h ;# ">
+"2689
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 2689: __asm("DDRD equ 0F95h");
+[; <" DDRD equ 0F95h ;# ">
+"2906
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 2906: __asm("TRISE equ 0F96h");
+[; <" TRISE equ 0F96h ;# ">
+"2911
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 2911: __asm("DDRE equ 0F96h");
+[; <" DDRE equ 0F96h ;# ">
+"3058
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3058: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"3128
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3128: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"3205
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3205: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"3282
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3282: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"3359
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3359: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"3439
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3439: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"3519
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3519: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"3599
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3599: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"3665
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3665: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"3672
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3672: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"3679
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3679: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"3741
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3741: __asm("EEADRH equ 0FAAh");
+[; <" EEADRH equ 0FAAh ;# ">
+"3767
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3767: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"3772
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3772: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"3977
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3977: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"3982
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3982: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"4233
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4233: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"4238
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4238: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"4245
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4245: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"4250
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4250: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"4257
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4257: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"4262
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4262: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"4269
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4269: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"4276
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4276: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"4388
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4388: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"4395
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4395: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"4402
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4402: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"4409
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4409: __asm("CVRCON2 equ 0FB4h");
+[; <" CVRCON2 equ 0FB4h ;# ">
+"4436
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4436: __asm("CVRCON equ 0FB5h");
+[; <" CVRCON equ 0FB5h ;# ">
+"4515
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4515: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"4597
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4597: __asm("PWM1CON equ 0FB7h");
+[; <" PWM1CON equ 0FB7h ;# ">
+"4667
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4667: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"4672
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4672: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"4833
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4833: __asm("PSTRCON equ 0FB9h");
+[; <" PSTRCON equ 0FB9h ;# ">
+"4877
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4877: __asm("CCP2CON equ 0FBAh");
+[; <" CCP2CON equ 0FBAh ;# ">
+"4941
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4941: __asm("CCPR2 equ 0FBBh");
+[; <" CCPR2 equ 0FBBh ;# ">
+"4948
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4948: __asm("CCPR2L equ 0FBBh");
+[; <" CCPR2L equ 0FBBh ;# ">
+"4955
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4955: __asm("CCPR2H equ 0FBCh");
+[; <" CCPR2H equ 0FBCh ;# ">
+"4962
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4962: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"5044
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5044: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"5051
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5051: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"5058
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5058: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"5065
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5065: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"5136
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5136: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"5187
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5187: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"5306
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5306: __asm("ADRES equ 0FC3h");
+[; <" ADRES equ 0FC3h ;# ">
+"5313
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5313: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"5320
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5320: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"5327
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5327: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"5389
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5389: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"5459
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5459: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"5684
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5684: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"5691
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5691: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"5698
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5698: __asm("T2CON equ 0FCAh");
+[; <" T2CON equ 0FCAh ;# ">
+"5769
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5769: __asm("PR2 equ 0FCBh");
+[; <" PR2 equ 0FCBh ;# ">
+"5774
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5774: __asm("MEMCON equ 0FCBh");
+[; <" MEMCON equ 0FCBh ;# ">
+"5879
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5879: __asm("TMR2 equ 0FCCh");
+[; <" TMR2 equ 0FCCh ;# ">
+"5886
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5886: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"5989
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5989: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"5996
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5996: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"6003
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6003: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"6010
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6010: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"6143
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6143: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"6171
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6171: __asm("HLVDCON equ 0FD2h");
+[; <" HLVDCON equ 0FD2h ;# ">
+"6176
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6176: __asm("LVDCON equ 0FD2h");
+[; <" LVDCON equ 0FD2h ;# ">
+"6441
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6441: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"6518
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6518: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"6588
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6588: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"6595
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6595: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"6602
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6602: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"6609
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6609: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"6680
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6680: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"6687
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6687: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"6694
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6694: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"6701
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6701: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"6708
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6708: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"6715
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6715: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"6722
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6722: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"6729
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6729: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"6736
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6736: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"6743
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6743: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"6750
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6750: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"6757
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6757: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"6764
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6764: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"6771
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6771: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"6778
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6778: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"6785
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6785: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"6792
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6792: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"6799
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6799: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"6811
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6811: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"6818
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6818: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"6825
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6825: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"6832
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6832: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"6839
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6839: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"6846
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6846: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"6853
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6853: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"6860
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6860: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"6867
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6867: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"6959
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6959: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"7029
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7029: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"7146
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7146: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"7153
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7153: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"7160
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7160: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"7167
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7167: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"7176
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7176: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"7183
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7183: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"7190
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7190: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"7197
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7197: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"7206
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7206: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"7213
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7213: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"7220
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7220: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"7227
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7227: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"7234
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7234: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"7241
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7241: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"7315
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7315: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"7322
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7322: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"7329
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7329: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"7336
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7336: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"39 mcc_generated_files/nvm/src/nvm.c
+[; ;mcc_generated_files/nvm/src/nvm.c: 39: __near volatile static uint8_t unlockKeyLow;
+[v _unlockKeyLow `VNuc ~T0 @X0 1 s ]
+"40
+[; ;mcc_generated_files/nvm/src/nvm.c: 40: __near volatile static uint8_t unlockKeyHigh;
+[v _unlockKeyHigh `VNuc ~T0 @X0 1 s ]
+"42
+[; ;mcc_generated_files/nvm/src/nvm.c: 42: static void (*NVM_Callback) (void) = ((void*)0);
+[v _NVM_Callback `*F2895 ~T0 @X0 1 s ]
+[i _NVM_Callback
+-> -> -> 0 `i `*v `*F2896
+]
+"44
+[; ;mcc_generated_files/nvm/src/nvm.c: 44: void NVM_Initialize(void)
+[v _NVM_Initialize `(v ~T0 @X0 1 ef ]
+"45
+[; ;mcc_generated_files/nvm/src/nvm.c: 45: {
+{
+[e :U _NVM_Initialize ]
+[f ]
+"46
+[; ;mcc_generated_files/nvm/src/nvm.c: 46:     NVM_StatusClear();
+[e ( _NVM_StatusClear ..  ]
+"48
+[; ;mcc_generated_files/nvm/src/nvm.c: 48:     PIR2bits.EEIF = 0;
+[e = . . _PIR2bits 0 4 -> -> 0 `i `uc ]
+"50
+[; ;mcc_generated_files/nvm/src/nvm.c: 50:     PIE2bits.EEIE = 1;
+[e = . . _PIE2bits 0 4 -> -> 1 `i `uc ]
+"51
+[; ;mcc_generated_files/nvm/src/nvm.c: 51: }
+[e :UE 325 ]
+}
+"53
+[; ;mcc_generated_files/nvm/src/nvm.c: 53: _Bool NVM_IsBusy(void)
+[v _NVM_IsBusy `(a ~T0 @X0 1 ef ]
+"54
+[; ;mcc_generated_files/nvm/src/nvm.c: 54: {
+{
+[e :U _NVM_IsBusy ]
+[f ]
+"55
+[; ;mcc_generated_files/nvm/src/nvm.c: 55:     return (EECON1bits.WR || EECON1bits.RD);
+[e ) -> -> || != -> . . _EECON1bits 0 1 `i -> 0 `i != -> . . _EECON1bits 0 0 `i -> 0 `i `i `a ]
+[e $UE 326  ]
+"56
+[; ;mcc_generated_files/nvm/src/nvm.c: 56: }
+[e :UE 326 ]
+}
+"58
+[; ;mcc_generated_files/nvm/src/nvm.c: 58: nvm_status_t NVM_StatusGet(void)
+[v _NVM_StatusGet `(E2858 ~T0 @X0 1 ef ]
+"59
+[; ;mcc_generated_files/nvm/src/nvm.c: 59: {
+{
+[e :U _NVM_StatusGet ]
+[f ]
+"60
+[; ;mcc_generated_files/nvm/src/nvm.c: 60:     nvm_status_t nvmStatus;
+[v _nvmStatus `E2858 ~T0 @X0 1 a ]
+"61
+[; ;mcc_generated_files/nvm/src/nvm.c: 61:     if (EECON1bits.WRERR == 1)
+[e $ ! == -> . . _EECON1bits 0 3 `i -> 1 `i 328  ]
+"62
+[; ;mcc_generated_files/nvm/src/nvm.c: 62:     {
+{
+"63
+[; ;mcc_generated_files/nvm/src/nvm.c: 63:         nvmStatus = NVM_ERROR;
+[e = _nvmStatus . `E2858 1 ]
+"64
+[; ;mcc_generated_files/nvm/src/nvm.c: 64:     }
+}
+[e $U 329  ]
+"65
+[; ;mcc_generated_files/nvm/src/nvm.c: 65:     else
+[e :U 328 ]
+"66
+[; ;mcc_generated_files/nvm/src/nvm.c: 66:     {
+{
+"67
+[; ;mcc_generated_files/nvm/src/nvm.c: 67:         nvmStatus = NVM_OK;
+[e = _nvmStatus . `E2858 0 ]
+"68
+[; ;mcc_generated_files/nvm/src/nvm.c: 68:     }
+}
+[e :U 329 ]
+"69
+[; ;mcc_generated_files/nvm/src/nvm.c: 69:     return nvmStatus;
+[e ) _nvmStatus ]
+[e $UE 327  ]
+"70
+[; ;mcc_generated_files/nvm/src/nvm.c: 70: }
+[e :UE 327 ]
+}
+"72
+[; ;mcc_generated_files/nvm/src/nvm.c: 72: void NVM_StatusClear(void)
+[v _NVM_StatusClear `(v ~T0 @X0 1 ef ]
+"73
+[; ;mcc_generated_files/nvm/src/nvm.c: 73: {
+{
+[e :U _NVM_StatusClear ]
+[f ]
+"74
+[; ;mcc_generated_files/nvm/src/nvm.c: 74:     EECON1bits.WRERR = 0;
+[e = . . _EECON1bits 0 3 -> -> 0 `i `uc ]
+"75
+[; ;mcc_generated_files/nvm/src/nvm.c: 75: }
+[e :UE 330 ]
+}
+"77
+[; ;mcc_generated_files/nvm/src/nvm.c: 77: void NVM_UnlockKeySet(uint16_t unlockKey)
+[v _NVM_UnlockKeySet `(v ~T0 @X0 1 ef1`us ]
+"78
+[; ;mcc_generated_files/nvm/src/nvm.c: 78: {
+{
+[e :U _NVM_UnlockKeySet ]
+"77
+[; ;mcc_generated_files/nvm/src/nvm.c: 77: void NVM_UnlockKeySet(uint16_t unlockKey)
+[v _unlockKey `us ~T0 @X0 1 r1 ]
+"78
+[; ;mcc_generated_files/nvm/src/nvm.c: 78: {
+[f ]
+"79
+[; ;mcc_generated_files/nvm/src/nvm.c: 79:     unlockKeyHigh = (uint8_t) (unlockKey >> 8);
+[e = _unlockKeyHigh -> >> -> _unlockKey `ui -> 8 `i `uc ]
+"80
+[; ;mcc_generated_files/nvm/src/nvm.c: 80:     unlockKeyLow = (uint8_t) unlockKey;
+[e = _unlockKeyLow -> _unlockKey `uc ]
+"81
+[; ;mcc_generated_files/nvm/src/nvm.c: 81: }
+[e :UE 331 ]
+}
+"83
+[; ;mcc_generated_files/nvm/src/nvm.c: 83: void NVM_UnlockKeyClear(void)
+[v _NVM_UnlockKeyClear `(v ~T0 @X0 1 ef ]
+"84
+[; ;mcc_generated_files/nvm/src/nvm.c: 84: {
+{
+[e :U _NVM_UnlockKeyClear ]
+[f ]
+"85
+[; ;mcc_generated_files/nvm/src/nvm.c: 85:     unlockKeyHigh = 0x00;
+[e = _unlockKeyHigh -> -> 0 `i `uc ]
+"86
+[; ;mcc_generated_files/nvm/src/nvm.c: 86:     unlockKeyLow = 0x00;
+[e = _unlockKeyLow -> -> 0 `i `uc ]
+"87
+[; ;mcc_generated_files/nvm/src/nvm.c: 87: }
+[e :UE 332 ]
+}
+"89
+[; ;mcc_generated_files/nvm/src/nvm.c: 89: flash_data_t FLASH_Read(flash_address_t address)
+[v _FLASH_Read `(uc ~T0 @X0 1 ef1`um ]
+"90
+[; ;mcc_generated_files/nvm/src/nvm.c: 90: {
+{
+[e :U _FLASH_Read ]
+"89
+[; ;mcc_generated_files/nvm/src/nvm.c: 89: flash_data_t FLASH_Read(flash_address_t address)
+[v _address `um ~T0 @X0 1 r1 ]
+"90
+[; ;mcc_generated_files/nvm/src/nvm.c: 90: {
+[f ]
+"92
+[; ;mcc_generated_files/nvm/src/nvm.c: 92:     uint32_t tablePointer = ((uint32_t) TBLPTRU << 16) | ((uint32_t) TBLPTRH << 8) | ((uint32_t) TBLPTRL);
+[v _tablePointer `ul ~T0 @X0 1 a ]
+[e = _tablePointer | | << -> _TBLPTRU `ul -> 16 `i << -> _TBLPTRH `ul -> 8 `i -> _TBLPTRL `ul ]
+"95
+[; ;mcc_generated_files/nvm/src/nvm.c: 95:     TBLPTRU = (uint8_t) (address >> 16);
+[e = _TBLPTRU -> >> _address -> 16 `i `uc ]
+"96
+[; ;mcc_generated_files/nvm/src/nvm.c: 96:     TBLPTRH = (uint8_t) (address >> 8);
+[e = _TBLPTRH -> >> _address -> 8 `i `uc ]
+"97
+[; ;mcc_generated_files/nvm/src/nvm.c: 97:     TBLPTRL = (uint8_t) address;
+[e = _TBLPTRL -> _address `uc ]
+"99
+[; ;mcc_generated_files/nvm/src/nvm.c: 99:     __asm("TBLRD");
+[; <" TBLRD ;# ">
+"102
+[; ;mcc_generated_files/nvm/src/nvm.c: 102:     TBLPTRU = (uint8_t) (tablePointer >> 16);
+[e = _TBLPTRU -> >> _tablePointer -> 16 `i `uc ]
+"103
+[; ;mcc_generated_files/nvm/src/nvm.c: 103:     TBLPTRH = (uint8_t) (tablePointer >> 8);
+[e = _TBLPTRH -> >> _tablePointer -> 8 `i `uc ]
+"104
+[; ;mcc_generated_files/nvm/src/nvm.c: 104:     TBLPTRL = (uint8_t) tablePointer;
+[e = _TBLPTRL -> _tablePointer `uc ]
+"106
+[; ;mcc_generated_files/nvm/src/nvm.c: 106:     return (TABLAT);
+[e ) _TABLAT ]
+[e $UE 333  ]
+"107
+[; ;mcc_generated_files/nvm/src/nvm.c: 107: }
+[e :UE 333 ]
+}
+"109
+[; ;mcc_generated_files/nvm/src/nvm.c: 109: nvm_status_t FLASH_RowWrite(flash_address_t address, flash_data_t *dataBuffer)
+[v _FLASH_RowWrite `(E2858 ~T0 @X0 1 ef2`um`*uc ]
+"110
+[; ;mcc_generated_files/nvm/src/nvm.c: 110: {
+{
+[e :U _FLASH_RowWrite ]
+"109
+[; ;mcc_generated_files/nvm/src/nvm.c: 109: nvm_status_t FLASH_RowWrite(flash_address_t address, flash_data_t *dataBuffer)
+[v _address `um ~T0 @X0 1 r1 ]
+[v _dataBuffer `*uc ~T0 @X0 1 r2 ]
+"110
+[; ;mcc_generated_files/nvm/src/nvm.c: 110: {
+[f ]
+"111
+[; ;mcc_generated_files/nvm/src/nvm.c: 111:     nvm_status_t writeStatus;
+[v _writeStatus `E2858 ~T0 @X0 1 a ]
+"112
+[; ;mcc_generated_files/nvm/src/nvm.c: 112:     uint8_t flashDataCount = (64U);
+[v _flashDataCount `uc ~T0 @X0 1 a ]
+[e = _flashDataCount -> -> 64 `ui `uc ]
+"115
+[; ;mcc_generated_files/nvm/src/nvm.c: 115:     uint32_t tablePointer = ((uint32_t) TBLPTRU << 16) | ((uint32_t) TBLPTRH << 8) | ((uint32_t) TBLPTRL);
+[v _tablePointer `ul ~T0 @X0 1 a ]
+[e = _tablePointer | | << -> _TBLPTRU `ul -> 16 `i << -> _TBLPTRH `ul -> 8 `i -> _TBLPTRL `ul ]
+"118
+[; ;mcc_generated_files/nvm/src/nvm.c: 118:     uint8_t globalInterruptBitValue = INTCONbits.GIE;
+[v _globalInterruptBitValue `uc ~T0 @X0 1 a ]
+[e = _globalInterruptBitValue . . _INTCONbits 1 7 ]
+"121
+[; ;mcc_generated_files/nvm/src/nvm.c: 121:     EECON1bits.CFGS = 0;
+[e = . . _EECON1bits 0 6 -> -> 0 `i `uc ]
+"122
+[; ;mcc_generated_files/nvm/src/nvm.c: 122:     EECON1bits.EEPGD = 1;
+[e = . . _EECON1bits 0 7 -> -> 1 `i `uc ]
+"125
+[; ;mcc_generated_files/nvm/src/nvm.c: 125:     EECON1bits.WREN = 1;
+[e = . . _EECON1bits 0 2 -> -> 1 `i `uc ]
+"128
+[; ;mcc_generated_files/nvm/src/nvm.c: 128:     TBLPTRU = (uint8_t) (address >> 16);
+[e = _TBLPTRU -> >> _address -> 16 `i `uc ]
+"129
+[; ;mcc_generated_files/nvm/src/nvm.c: 129:     TBLPTRH = (uint8_t) (address >> 8);
+[e = _TBLPTRH -> >> _address -> 8 `i `uc ]
+"130
+[; ;mcc_generated_files/nvm/src/nvm.c: 130:     TBLPTRL = (uint8_t) address;
+[e = _TBLPTRL -> _address `uc ]
+"133
+[; ;mcc_generated_files/nvm/src/nvm.c: 133:     flash_data_t *localDataBuffer = dataBuffer;
+[v _localDataBuffer `*uc ~T0 @X0 1 a ]
+[e = _localDataBuffer _dataBuffer ]
+"135
+[; ;mcc_generated_files/nvm/src/nvm.c: 135:     while (flashDataCount-- > 0U)
+[e $U 335  ]
+[e :U 336 ]
+"136
+[; ;mcc_generated_files/nvm/src/nvm.c: 136:     {
+{
+"137
+[; ;mcc_generated_files/nvm/src/nvm.c: 137:          TABLAT = (uint8_t)*localDataBuffer;
+[e = _TABLAT *U _localDataBuffer ]
+"139
+[; ;mcc_generated_files/nvm/src/nvm.c: 139:         localDataBuffer++;
+[e ++ _localDataBuffer * -> -> 1 `i `x -> -> # *U _localDataBuffer `i `x ]
+"142
+[; ;mcc_generated_files/nvm/src/nvm.c: 142:         if (flashDataCount == 0U)
+[e $ ! == -> _flashDataCount `ui -> 0 `ui 338  ]
+"143
+[; ;mcc_generated_files/nvm/src/nvm.c: 143:         {
+{
+"145
+[; ;mcc_generated_files/nvm/src/nvm.c: 145:             __asm("TBLWT");
+[; <" TBLWT ;# ">
+"146
+[; ;mcc_generated_files/nvm/src/nvm.c: 146:         }
+}
+[e $U 339  ]
+"147
+[; ;mcc_generated_files/nvm/src/nvm.c: 147:         else
+[e :U 338 ]
+"148
+[; ;mcc_generated_files/nvm/src/nvm.c: 148:         {
+{
+"149
+[; ;mcc_generated_files/nvm/src/nvm.c: 149:             __asm("TBLWTPOSTINC");
+[; <" TBLWTPOSTINC ;# ">
+"150
+[; ;mcc_generated_files/nvm/src/nvm.c: 150:         }
+}
+[e :U 339 ]
+"152
+[; ;mcc_generated_files/nvm/src/nvm.c: 152:         INTCONbits.GIE = 0;
+[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
+"155
+[; ;mcc_generated_files/nvm/src/nvm.c: 155:         EECON2 = unlockKeyLow;
+[e = _EECON2 _unlockKeyLow ]
+"156
+[; ;mcc_generated_files/nvm/src/nvm.c: 156:         EECON2 = unlockKeyHigh;
+[e = _EECON2 _unlockKeyHigh ]
+"157
+[; ;mcc_generated_files/nvm/src/nvm.c: 157:         EECON1bits.WR = 1;
+[e = . . _EECON1bits 0 1 -> -> 1 `i `uc ]
+"158
+[; ;mcc_generated_files/nvm/src/nvm.c: 158:         __nop();
+[e ( ___nop ..  ]
+"159
+[; ;mcc_generated_files/nvm/src/nvm.c: 159:         __nop();
+[e ( ___nop ..  ]
+"162
+[; ;mcc_generated_files/nvm/src/nvm.c: 162:         INTCONbits.GIE = globalInterruptBitValue;
+[e = . . _INTCONbits 1 7 _globalInterruptBitValue ]
+"163
+[; ;mcc_generated_files/nvm/src/nvm.c: 163:     }
+}
+[e :U 335 ]
+"135
+[; ;mcc_generated_files/nvm/src/nvm.c: 135:     while (flashDataCount-- > 0U)
+[e $ > -> -- _flashDataCount -> -> 1 `i `uc `ui -> 0 `ui 336  ]
+[e :U 337 ]
+"166
+[; ;mcc_generated_files/nvm/src/nvm.c: 166:     EECON1bits.WREN = 0;
+[e = . . _EECON1bits 0 2 -> -> 0 `i `uc ]
+"169
+[; ;mcc_generated_files/nvm/src/nvm.c: 169:     TBLPTRU = (uint8_t) (tablePointer >> 16);
+[e = _TBLPTRU -> >> _tablePointer -> 16 `i `uc ]
+"170
+[; ;mcc_generated_files/nvm/src/nvm.c: 170:     TBLPTRH = (uint8_t) (tablePointer >> 8);
+[e = _TBLPTRH -> >> _tablePointer -> 8 `i `uc ]
+"171
+[; ;mcc_generated_files/nvm/src/nvm.c: 171:     TBLPTRL = (uint8_t) tablePointer;
+[e = _TBLPTRL -> _tablePointer `uc ]
+"173
+[; ;mcc_generated_files/nvm/src/nvm.c: 173:     if (EECON1bits.WRERR == 1)
+[e $ ! == -> . . _EECON1bits 0 3 `i -> 1 `i 340  ]
+"174
+[; ;mcc_generated_files/nvm/src/nvm.c: 174:     {
+{
+"175
+[; ;mcc_generated_files/nvm/src/nvm.c: 175:         writeStatus = NVM_ERROR;
+[e = _writeStatus . `E2858 1 ]
+"176
+[; ;mcc_generated_files/nvm/src/nvm.c: 176:     }
+}
+[e $U 341  ]
+"177
+[; ;mcc_generated_files/nvm/src/nvm.c: 177:     else
+[e :U 340 ]
+"178
+[; ;mcc_generated_files/nvm/src/nvm.c: 178:     {
+{
+"179
+[; ;mcc_generated_files/nvm/src/nvm.c: 179:         writeStatus = NVM_OK;
+[e = _writeStatus . `E2858 0 ]
+"180
+[; ;mcc_generated_files/nvm/src/nvm.c: 180:     }
+}
+[e :U 341 ]
+"181
+[; ;mcc_generated_files/nvm/src/nvm.c: 181:     return writeStatus;
+[e ) _writeStatus ]
+[e $UE 334  ]
+"182
+[; ;mcc_generated_files/nvm/src/nvm.c: 182: }
+[e :UE 334 ]
+}
+"184
+[; ;mcc_generated_files/nvm/src/nvm.c: 184: nvm_status_t FLASH_PageErase(flash_address_t address)
+[v _FLASH_PageErase `(E2858 ~T0 @X0 1 ef1`um ]
+"185
+[; ;mcc_generated_files/nvm/src/nvm.c: 185: {
+{
+[e :U _FLASH_PageErase ]
+"184
+[; ;mcc_generated_files/nvm/src/nvm.c: 184: nvm_status_t FLASH_PageErase(flash_address_t address)
+[v _address `um ~T0 @X0 1 r1 ]
+"185
+[; ;mcc_generated_files/nvm/src/nvm.c: 185: {
+[f ]
+"186
+[; ;mcc_generated_files/nvm/src/nvm.c: 186:     nvm_status_t pageEraseStatus;
+[v _pageEraseStatus `E2858 ~T0 @X0 1 a ]
+"188
+[; ;mcc_generated_files/nvm/src/nvm.c: 188:     uint32_t tablePointer = ((uint32_t) TBLPTRU << 16) | ((uint32_t) TBLPTRH << 8) | ((uint32_t) TBLPTRL);
+[v _tablePointer `ul ~T0 @X0 1 a ]
+[e = _tablePointer | | << -> _TBLPTRU `ul -> 16 `i << -> _TBLPTRH `ul -> 8 `i -> _TBLPTRL `ul ]
+"191
+[; ;mcc_generated_files/nvm/src/nvm.c: 191:     uint8_t globalInterruptBitValue = INTCONbits.GIE;
+[v _globalInterruptBitValue `uc ~T0 @X0 1 a ]
+[e = _globalInterruptBitValue . . _INTCONbits 1 7 ]
+"194
+[; ;mcc_generated_files/nvm/src/nvm.c: 194:     TBLPTRU = (uint8_t) (address >> 16);
+[e = _TBLPTRU -> >> _address -> 16 `i `uc ]
+"195
+[; ;mcc_generated_files/nvm/src/nvm.c: 195:     TBLPTRH = (uint8_t) (address >> 8);
+[e = _TBLPTRH -> >> _address -> 8 `i `uc ]
+"196
+[; ;mcc_generated_files/nvm/src/nvm.c: 196:     TBLPTRL = (uint8_t) address;
+[e = _TBLPTRL -> _address `uc ]
+"199
+[; ;mcc_generated_files/nvm/src/nvm.c: 199:     EECON1bits.EEPGD = 1;
+[e = . . _EECON1bits 0 7 -> -> 1 `i `uc ]
+"202
+[; ;mcc_generated_files/nvm/src/nvm.c: 202:     EECON1bits.CFGS = 0;
+[e = . . _EECON1bits 0 6 -> -> 0 `i `uc ]
+"205
+[; ;mcc_generated_files/nvm/src/nvm.c: 205:     EECON1bits.WREN = 1;
+[e = . . _EECON1bits 0 2 -> -> 1 `i `uc ]
+"208
+[; ;mcc_generated_files/nvm/src/nvm.c: 208:     EECON1bits.FREE = 1;
+[e = . . _EECON1bits 0 4 -> -> 1 `i `uc ]
+"211
+[; ;mcc_generated_files/nvm/src/nvm.c: 211:     INTCONbits.GIE = 0;
+[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
+"214
+[; ;mcc_generated_files/nvm/src/nvm.c: 214:     EECON2 = unlockKeyLow;
+[e = _EECON2 _unlockKeyLow ]
+"215
+[; ;mcc_generated_files/nvm/src/nvm.c: 215:     EECON2 = unlockKeyHigh;
+[e = _EECON2 _unlockKeyHigh ]
+"218
+[; ;mcc_generated_files/nvm/src/nvm.c: 218:     EECON1bits.WR = 1;
+[e = . . _EECON1bits 0 1 -> -> 1 `i `uc ]
+"221
+[; ;mcc_generated_files/nvm/src/nvm.c: 221:     INTCONbits.GIE = globalInterruptBitValue;
+[e = . . _INTCONbits 1 7 _globalInterruptBitValue ]
+"224
+[; ;mcc_generated_files/nvm/src/nvm.c: 224:     EECON1bits.WREN = 0;
+[e = . . _EECON1bits 0 2 -> -> 0 `i `uc ]
+"227
+[; ;mcc_generated_files/nvm/src/nvm.c: 227:     TBLPTRU = (uint8_t) (tablePointer >> 16);
+[e = _TBLPTRU -> >> _tablePointer -> 16 `i `uc ]
+"228
+[; ;mcc_generated_files/nvm/src/nvm.c: 228:     TBLPTRH = (uint8_t) (tablePointer >> 8);
+[e = _TBLPTRH -> >> _tablePointer -> 8 `i `uc ]
+"229
+[; ;mcc_generated_files/nvm/src/nvm.c: 229:     TBLPTRL = (uint8_t) tablePointer;
+[e = _TBLPTRL -> _tablePointer `uc ]
+"231
+[; ;mcc_generated_files/nvm/src/nvm.c: 231:     if (EECON1bits.WRERR == 1)
+[e $ ! == -> . . _EECON1bits 0 3 `i -> 1 `i 343  ]
+"232
+[; ;mcc_generated_files/nvm/src/nvm.c: 232:     {
+{
+"233
+[; ;mcc_generated_files/nvm/src/nvm.c: 233:        pageEraseStatus = NVM_ERROR;
+[e = _pageEraseStatus . `E2858 1 ]
+"234
+[; ;mcc_generated_files/nvm/src/nvm.c: 234:     }
+}
+[e $U 344  ]
+"235
+[; ;mcc_generated_files/nvm/src/nvm.c: 235:     else
+[e :U 343 ]
+"236
+[; ;mcc_generated_files/nvm/src/nvm.c: 236:     {
+{
+"237
+[; ;mcc_generated_files/nvm/src/nvm.c: 237:         pageEraseStatus = NVM_OK;
+[e = _pageEraseStatus . `E2858 0 ]
+"238
+[; ;mcc_generated_files/nvm/src/nvm.c: 238:     }
+}
+[e :U 344 ]
+"239
+[; ;mcc_generated_files/nvm/src/nvm.c: 239:     return pageEraseStatus;
+[e ) _pageEraseStatus ]
+[e $UE 342  ]
+"240
+[; ;mcc_generated_files/nvm/src/nvm.c: 240: }
+[e :UE 342 ]
+}
+"242
+[; ;mcc_generated_files/nvm/src/nvm.c: 242: flash_address_t FLASH_PageAddressGet(flash_address_t address)
+[v _FLASH_PageAddressGet `(um ~T0 @X0 1 ef1`um ]
+"243
+[; ;mcc_generated_files/nvm/src/nvm.c: 243: {
+{
+[e :U _FLASH_PageAddressGet ]
+"242
+[; ;mcc_generated_files/nvm/src/nvm.c: 242: flash_address_t FLASH_PageAddressGet(flash_address_t address)
+[v _address `um ~T0 @X0 1 r1 ]
+"243
+[; ;mcc_generated_files/nvm/src/nvm.c: 243: {
+[f ]
+"244
+[; ;mcc_generated_files/nvm/src/nvm.c: 244:     return (flash_address_t) (address & (((0x10000U) - 1U) ^ ((64U) - 1U)));
+[e ) -> & -> _address `ul ^ - -> 65536 `ul -> -> 1 `ui `ul -> - -> 64 `ui -> 1 `ui `ul `um ]
+[e $UE 345  ]
+"245
+[; ;mcc_generated_files/nvm/src/nvm.c: 245: }
+[e :UE 345 ]
+}
+"247
+[; ;mcc_generated_files/nvm/src/nvm.c: 247: uint16_t FLASH_PageOffsetGet(flash_address_t address)
+[v _FLASH_PageOffsetGet `(us ~T0 @X0 1 ef1`um ]
+"248
+[; ;mcc_generated_files/nvm/src/nvm.c: 248: {
+{
+[e :U _FLASH_PageOffsetGet ]
+"247
+[; ;mcc_generated_files/nvm/src/nvm.c: 247: uint16_t FLASH_PageOffsetGet(flash_address_t address)
+[v _address `um ~T0 @X0 1 r1 ]
+"248
+[; ;mcc_generated_files/nvm/src/nvm.c: 248: {
+[f ]
+"249
+[; ;mcc_generated_files/nvm/src/nvm.c: 249:     return (uint16_t) (address & ((64U) - 1U));
+[e ) -> & _address -> - -> 64 `ui -> 1 `ui `um `us ]
+[e $UE 346  ]
+"250
+[; ;mcc_generated_files/nvm/src/nvm.c: 250: }
+[e :UE 346 ]
+}
+"252
+[; ;mcc_generated_files/nvm/src/nvm.c: 252: eeprom_data_t EEPROM_Read(eeprom_address_t address)
+[v _EEPROM_Read `(uc ~T0 @X0 1 ef1`um ]
+"253
+[; ;mcc_generated_files/nvm/src/nvm.c: 253: {
+{
+[e :U _EEPROM_Read ]
+"252
+[; ;mcc_generated_files/nvm/src/nvm.c: 252: eeprom_data_t EEPROM_Read(eeprom_address_t address)
+[v _address `um ~T0 @X0 1 r1 ]
+"253
+[; ;mcc_generated_files/nvm/src/nvm.c: 253: {
+[f ]
+"255
+[; ;mcc_generated_files/nvm/src/nvm.c: 255:     EECON1bits.CFGS = 0;
+[e = . . _EECON1bits 0 6 -> -> 0 `i `uc ]
+"256
+[; ;mcc_generated_files/nvm/src/nvm.c: 256:     EECON1bits.EEPGD = 0;
+[e = . . _EECON1bits 0 7 -> -> 0 `i `uc ]
+"259
+[; ;mcc_generated_files/nvm/src/nvm.c: 259:     EEADR = (uint8_t) address;
+[e = _EEADR -> _address `uc ]
+"262
+[; ;mcc_generated_files/nvm/src/nvm.c: 262:     EECON1bits.RD = 1;
+[e = . . _EECON1bits 0 0 -> -> 1 `i `uc ]
+"263
+[; ;mcc_generated_files/nvm/src/nvm.c: 263:     __nop();
+[e ( ___nop ..  ]
+"264
+[; ;mcc_generated_files/nvm/src/nvm.c: 264:     __nop();
+[e ( ___nop ..  ]
+"266
+[; ;mcc_generated_files/nvm/src/nvm.c: 266:     return EEDATA;
+[e ) _EEDATA ]
+[e $UE 347  ]
+"267
+[; ;mcc_generated_files/nvm/src/nvm.c: 267: }
+[e :UE 347 ]
+}
+"269
+[; ;mcc_generated_files/nvm/src/nvm.c: 269: void EEPROM_Write(eeprom_address_t address, eeprom_data_t data)
+[v _EEPROM_Write `(v ~T0 @X0 1 ef2`um`uc ]
+"270
+[; ;mcc_generated_files/nvm/src/nvm.c: 270: {
+{
+[e :U _EEPROM_Write ]
+"269
+[; ;mcc_generated_files/nvm/src/nvm.c: 269: void EEPROM_Write(eeprom_address_t address, eeprom_data_t data)
+[v _address `um ~T0 @X0 1 r1 ]
+[v _data `uc ~T0 @X0 1 r2 ]
+"270
+[; ;mcc_generated_files/nvm/src/nvm.c: 270: {
+[f ]
+"272
+[; ;mcc_generated_files/nvm/src/nvm.c: 272:     uint8_t globalInterruptBitValue = INTCONbits.GIE;
+[v _globalInterruptBitValue `uc ~T0 @X0 1 a ]
+[e = _globalInterruptBitValue . . _INTCONbits 1 7 ]
+"275
+[; ;mcc_generated_files/nvm/src/nvm.c: 275:     EECON1bits.CFGS = 0;
+[e = . . _EECON1bits 0 6 -> -> 0 `i `uc ]
+"276
+[; ;mcc_generated_files/nvm/src/nvm.c: 276:     EECON1bits.EEPGD = 0;
+[e = . . _EECON1bits 0 7 -> -> 0 `i `uc ]
+"279
+[; ;mcc_generated_files/nvm/src/nvm.c: 279:     EECON1bits.WREN = 1;
+[e = . . _EECON1bits 0 2 -> -> 1 `i `uc ]
+"282
+[; ;mcc_generated_files/nvm/src/nvm.c: 282:     EEADR = (uint8_t) address;
+[e = _EEADR -> _address `uc ]
+"285
+[; ;mcc_generated_files/nvm/src/nvm.c: 285:     EEDATA = data;
+[e = _EEDATA _data ]
+"288
+[; ;mcc_generated_files/nvm/src/nvm.c: 288:     INTCONbits.GIE = 0;
+[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
+"291
+[; ;mcc_generated_files/nvm/src/nvm.c: 291:     EECON2 = unlockKeyLow;
+[e = _EECON2 _unlockKeyLow ]
+"292
+[; ;mcc_generated_files/nvm/src/nvm.c: 292:     EECON2 = unlockKeyHigh;
+[e = _EECON2 _unlockKeyHigh ]
+"293
+[; ;mcc_generated_files/nvm/src/nvm.c: 293:     EECON1bits.WR = 1;
+[e = . . _EECON1bits 0 1 -> -> 1 `i `uc ]
+"294
+[; ;mcc_generated_files/nvm/src/nvm.c: 294:     __nop();
+[e ( ___nop ..  ]
+"295
+[; ;mcc_generated_files/nvm/src/nvm.c: 295:     __nop();
+[e ( ___nop ..  ]
+"298
+[; ;mcc_generated_files/nvm/src/nvm.c: 298:     INTCONbits.GIE = globalInterruptBitValue;
+[e = . . _INTCONbits 1 7 _globalInterruptBitValue ]
+"301
+[; ;mcc_generated_files/nvm/src/nvm.c: 301:     EECON1bits.WREN = 0;
+[e = . . _EECON1bits 0 2 -> -> 0 `i `uc ]
+"302
+[; ;mcc_generated_files/nvm/src/nvm.c: 302: }
+[e :UE 348 ]
+}
+[v F2932 `(v ~T0 @X0 1 tf ]
+"304
+[; ;mcc_generated_files/nvm/src/nvm.c: 304: __attribute__((inline)) void NVM_InterruptEnable(void)
+[v _NVM_InterruptEnable `TF2932 ~T0 @X0 1 e ]
+"305
+[; ;mcc_generated_files/nvm/src/nvm.c: 305: {
+{
+[e :U _NVM_InterruptEnable ]
+[f ]
+"306
+[; ;mcc_generated_files/nvm/src/nvm.c: 306:     PIE2bits.EEIE = 1;
+[e = . . _PIE2bits 0 4 -> -> 1 `i `uc ]
+"307
+[; ;mcc_generated_files/nvm/src/nvm.c: 307: }
+[e :UE 349 ]
+}
+[v F2934 `(v ~T0 @X0 1 tf ]
+"309
+[; ;mcc_generated_files/nvm/src/nvm.c: 309: __attribute__((inline)) void NVM_InterruptDisable(void)
+[v _NVM_InterruptDisable `TF2934 ~T0 @X0 1 e ]
+"310
+[; ;mcc_generated_files/nvm/src/nvm.c: 310: {
+{
+[e :U _NVM_InterruptDisable ]
+[f ]
+"311
+[; ;mcc_generated_files/nvm/src/nvm.c: 311:     PIE2bits.EEIE = 0;
+[e = . . _PIE2bits 0 4 -> -> 0 `i `uc ]
+"312
+[; ;mcc_generated_files/nvm/src/nvm.c: 312: }
+[e :UE 350 ]
+}
+"314
+[; ;mcc_generated_files/nvm/src/nvm.c: 314: void NVM_ISR(void)
+[v _NVM_ISR `(v ~T0 @X0 1 ef ]
+"315
+[; ;mcc_generated_files/nvm/src/nvm.c: 315: {
+{
+[e :U _NVM_ISR ]
+[f ]
+"317
+[; ;mcc_generated_files/nvm/src/nvm.c: 317:     PIR2bits.EEIF = 0;
+[e = . . _PIR2bits 0 4 -> -> 0 `i `uc ]
+"319
+[; ;mcc_generated_files/nvm/src/nvm.c: 319:     if (NVM_Callback != ((void*)0))
+[e $ ! != _NVM_Callback -> -> -> 0 `i `*v `*F2936 352  ]
+"320
+[; ;mcc_generated_files/nvm/src/nvm.c: 320:     {
+{
+"321
+[; ;mcc_generated_files/nvm/src/nvm.c: 321:         NVM_Callback();
+[e ( *U _NVM_Callback ..  ]
+"322
+[; ;mcc_generated_files/nvm/src/nvm.c: 322:     }
+}
+[e :U 352 ]
+"323
+[; ;mcc_generated_files/nvm/src/nvm.c: 323: }
+[e :UE 351 ]
+}
+"325
+[; ;mcc_generated_files/nvm/src/nvm.c: 325: void NVM_CallbackRegister(void (*CallbackHandler)(void))
+[v _NVM_CallbackRegister `(v ~T0 @X0 1 ef1`*F2938 ]
+"326
+[; ;mcc_generated_files/nvm/src/nvm.c: 326: {
+{
+[e :U _NVM_CallbackRegister ]
+"325
+[; ;mcc_generated_files/nvm/src/nvm.c: 325: void NVM_CallbackRegister(void (*CallbackHandler)(void))
+[v _CallbackHandler `*F2940 ~T0 @X0 1 r1 ]
+"326
+[; ;mcc_generated_files/nvm/src/nvm.c: 326: {
+[f ]
+"327
+[; ;mcc_generated_files/nvm/src/nvm.c: 327:     NVM_Callback = CallbackHandler;
+[e = _NVM_Callback _CallbackHandler ]
+"328
+[; ;mcc_generated_files/nvm/src/nvm.c: 328: }
+[e :UE 353 ]
+}
