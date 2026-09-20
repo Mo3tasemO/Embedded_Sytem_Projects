@@ -89,7 +89,7 @@
                 <tags>categoryTag:General</tags>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_MMQ6eg3JEfG4DY7y0aXETw" containerData="8010" selectedElement="_MMQ6gw3JEfG4DY7y0aXETw">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_MMQ6eg3JEfG4DY7y0aXETw" containerData="8010" selectedElement="_MMQ6ew3JEfG4DY7y0aXETw">
               <children xsi:type="basic:PartSashContainer" xmi:id="_MMQ6ew3JEfG4DY7y0aXETw" containerData="7500" selectedElement="_MMQ6fA3JEfG4DY7y0aXETw" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_MMQ6fA3JEfG4DY7y0aXETw" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_MMQ8lA3JEfG4DY7y0aXETw">
                   <tags>Maximized</tags>
@@ -204,7 +204,7 @@
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_MMQ8lg3JEfG4DY7y0aXETw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Application.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;Application.c&quot; partName=&quot;Application.c&quot; title=&quot;Application.c&quot; tooltip=&quot;Electric_Water_Heater/Application.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Electric_Water_Heater/Application.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1966&quot; selectionTopPixel=&quot;730&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;Application.c&quot; partName=&quot;Application.c&quot; title=&quot;Application.c&quot; tooltip=&quot;Electric_Water_Heater/Application.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Electric_Water_Heater/Application.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;459&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
@@ -212,13 +212,13 @@
           <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_wr6RoIEoEfGH8-0P3xwunw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="HAL_TIMER2.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;HAL_TIMER2.c&quot; partName=&quot;HAL_TIMER2.c&quot; title=&quot;HAL_TIMER2.c&quot; tooltip=&quot;Electric_Water_Heater/MCAL_LAYER/TIMER2/HAL_TIMER2.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Electric_Water_Heater/MCAL_LAYER/TIMER2/HAL_TIMER2.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1175&quot; selectionTopPixel=&quot;259&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;HAL_TIMER2.c&quot; partName=&quot;HAL_TIMER2.c&quot; title=&quot;HAL_TIMER2.c&quot; tooltip=&quot;Electric_Water_Heater/MCAL_LAYER/TIMER2/HAL_TIMER2.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Electric_Water_Heater/MCAL_LAYER/TIMER2/HAL_TIMER2.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;655&quot; selectionTopPixel=&quot;810&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_vQ5FIIEoEfGH8-0P3xwunw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="HAL_TIMER2.h" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;HAL_TIMER2.h&quot; partName=&quot;HAL_TIMER2.h&quot; title=&quot;HAL_TIMER2.h&quot; tooltip=&quot;Electric_Water_Heater/MCAL_LAYER/TIMER2/HAL_TIMER2.h&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Electric_Water_Heater/MCAL_LAYER/TIMER2/HAL_TIMER2.h&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;51&quot; selectionOffset=&quot;1134&quot; selectionTopPixel=&quot;703&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;HAL_TIMER2.h&quot; partName=&quot;HAL_TIMER2.h&quot; title=&quot;HAL_TIMER2.h&quot; tooltip=&quot;Electric_Water_Heater/MCAL_LAYER/TIMER2/HAL_TIMER2.h&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Electric_Water_Heater/MCAL_LAYER/TIMER2/HAL_TIMER2.h&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;6491&quot; selectionTopPixel=&quot;3900&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
@@ -430,7 +430,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_MMQ9ew3JEfG4DY7y0aXETw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_JFXlQIEoEfGH8-0P3xwunw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.svg" tooltip="Print" command="_MMaw5Q3JEfG4DY7y0aXETw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_sVfaoJKlEfGXzco6MPOLzQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.svg" tooltip="Print" command="_MMaw5Q3JEfG4DY7y0aXETw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_MMQ9iw3JEfG4DY7y0aXETw" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -438,8 +438,8 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_MMQ9jQ3JEfG4DY7y0aXETw" elementId="org.eclipse.ui.workbench.edit">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_JFaBgIEoEfGH8-0P3xwunw" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.svg" tooltip="Undo" enabled="false" command="_MMavHg3JEfG4DY7y0aXETw"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_JFaBgYEoEfGH8-0P3xwunw" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.svg" tooltip="Redo" enabled="false" command="_MMavnA3JEfG4DY7y0aXETw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_sVh24JKlEfGXzco6MPOLzQ" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.svg" tooltip="Undo" enabled="false" command="_MMavHg3JEfG4DY7y0aXETw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_sVjFAJKlEfGXzco6MPOLzQ" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.svg" tooltip="Redo" enabled="false" command="_MMavnA3JEfG4DY7y0aXETw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_MMQ9kQ3JEfG4DY7y0aXETw" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -466,7 +466,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_MMQ98A3JEfG4DY7y0aXETw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_JFcdwIEoEfGH8-0P3xwunw" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.svg" tooltip="Pin Editor" enabled="false" type="Check" command="_MMawkw3JEfG4DY7y0aXETw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_sVmIUJKlEfGXzco6MPOLzQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.svg" tooltip="Pin Editor" type="Check" command="_MMawkw3JEfG4DY7y0aXETw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_MMQ9_A3JEfG4DY7y0aXETw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

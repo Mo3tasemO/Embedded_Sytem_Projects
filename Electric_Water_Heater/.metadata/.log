@@ -5457,3 +5457,49 @@ java.lang.NullPointerException: Cannot invoke "org.eclipse.core.resources.IResou
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:615)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:563)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1415)
+!SESSION 2026-08-08 00:17:51.756 -----------------------------------------------
+eclipse.buildId=4.39.0.20260305-0817
+java.version=21.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.embedcpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.embedcpp.product
+
+!ENTRY org.eclipse.jface 2 0 2026-08-08 00:19:35.715
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2026-08-08 00:19:35.715
+!MESSAGE A conflict occurred for ALT+CTRL+SHIFT+T:
+Binding(ALT+CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.terminal.view.ui.command.launchToolbar,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.terminal.view.ui.command.launchToolbar"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.view.ui.command.launchToolbar,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm.terminal.view.ui.command.launchToolbar"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2026-08-08 00:19:35.715
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.terminal.connector.local.command.launch"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm.terminal.connector.local.command.launch"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
