@@ -1,0 +1,903 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[v F2925 `(v ~T0 @X0 0 tf ]
+[v F2927 `(v ~T0 @X0 0 tf ]
+[v F2929 `(v ~T0 @X0 0 tf ]
+"6014 C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6014:     struct {
+[s S260 :1 `uc 1 ]
+[n S260 . NOT_BOR ]
+"6017
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6017:     struct {
+[s S261 :1 `uc 1 :1 `uc 1 ]
+[n S261 . . NOT_POR ]
+"6021
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6021:     struct {
+[s S262 :2 `uc 1 :1 `uc 1 ]
+[n S262 . . NOT_PD ]
+"6025
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6025:     struct {
+[s S263 :3 `uc 1 :1 `uc 1 ]
+[n S263 . . NOT_TO ]
+"6029
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6029:     struct {
+[s S264 :4 `uc 1 :1 `uc 1 ]
+[n S264 . . NOT_RI ]
+"6033
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6033:     struct {
+[s S265 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S265 . nBOR nPOR nPD nTO nRI . SBOREN IPEN ]
+"6043
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6043:     struct {
+[s S266 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S266 . BOR POR PD TO RI ]
+"6013
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6013: typedef union {
+[u S259 `S260 1 `S261 1 `S262 1 `S263 1 `S264 1 `S265 1 `S266 1 ]
+[n S259 . . . . . . . . ]
+"6051
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6051: extern volatile RCONbits_t RCONbits __attribute__((address(0xFD0)));
+[v _RCONbits `VS259 ~T0 @X0 0 e@4048 ]
+"7033
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7033:     struct {
+[s S297 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S297 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
+"7043
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7043:     struct {
+[s S298 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S298 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
+"7053
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7053:     struct {
+[s S299 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S299 . . GIEL GIEH ]
+"7032
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7032: typedef union {
+[u S296 `S297 1 `S298 1 `S299 1 ]
+[n S296 . . . . ]
+"7059
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7059: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
+[v _INTCONbits `VS296 ~T0 @X0 0 e@4082 ]
+"6963
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6963:     struct {
+[s S293 :7 `uc 1 :1 `uc 1 ]
+[n S293 . . NOT_RBPU ]
+"6967
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6967:     struct {
+[s S294 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S294 . RBIP . TMR0IP . INTEDG2 INTEDG1 INTEDG0 nRBPU ]
+"6977
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6977:     struct {
+[s S295 :7 `uc 1 :1 `uc 1 ]
+[n S295 . . RBPU ]
+"6962
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6962: typedef union {
+[u S292 `S293 1 `S294 1 `S295 1 ]
+[n S292 . . . . ]
+"6982
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6982: extern volatile INTCON2bits_t INTCON2bits __attribute__((address(0xFF1)));
+[v _INTCON2bits `VS292 ~T0 @X0 0 e@4081 ]
+[v F6 `(v ~T0 @X0 0 tf ]
+"237 mcc_generated_files/system/src/../../system/interrupt.h
+[; ;mcc_generated_files/system/src/../../system/interrupt.h: 237: void INT0_SetInterruptHandler(void (* InterruptHandler)(void));
+[v _INT0_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F6 ]
+"255
+[; ;mcc_generated_files/system/src/../../system/interrupt.h: 255: void INT0_DefaultInterruptHandler(void);
+[v _INT0_DefaultInterruptHandler `(v ~T0 @X0 0 ef ]
+"6871 C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6871:     struct {
+[s S290 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S290 . INT1IF INT2IF . INT1IE INT2IE . INT1IP INT2IP ]
+"6881
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6881:     struct {
+[s S291 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S291 . INT1F INT2F . INT1E INT2E . INT1P INT2P ]
+"6870
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6870: typedef union {
+[u S289 `S290 1 `S291 1 ]
+[n S289 . . . ]
+"6892
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6892: extern volatile INTCON3bits_t INTCON3bits __attribute__((address(0xFF0)));
+[v _INTCON3bits `VS289 ~T0 @X0 0 e@4080 ]
+[v F15 `(v ~T0 @X0 0 tf ]
+"282 mcc_generated_files/system/src/../../system/interrupt.h
+[; ;mcc_generated_files/system/src/../../system/interrupt.h: 282: void INT1_SetInterruptHandler(void (* InterruptHandler)(void));
+[v _INT1_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F15 ]
+"300
+[; ;mcc_generated_files/system/src/../../system/interrupt.h: 300: void INT1_DefaultInterruptHandler(void);
+[v _INT1_DefaultInterruptHandler `(v ~T0 @X0 0 ef ]
+[v F24 `(v ~T0 @X0 0 tf ]
+"327
+[; ;mcc_generated_files/system/src/../../system/interrupt.h: 327: void INT2_SetInterruptHandler(void (* InterruptHandler)(void));
+[v _INT2_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F24 ]
+"345
+[; ;mcc_generated_files/system/src/../../system/interrupt.h: 345: void INT2_DefaultInterruptHandler(void);
+[v _INT2_DefaultInterruptHandler `(v ~T0 @X0 0 ef ]
+[t ~ __interrupt . k ]
+[t T40 __interrupt ]
+"3363 C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3363:     struct {
+[s S126 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S126 . CCP2IE TMR3IE HLVDIE BCLIE EEIE C2IE C1IE OSCFIE ]
+"3373
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3373:     struct {
+[s S127 :2 `uc 1 :1 `uc 1 ]
+[n S127 . . LVDIE ]
+"3377
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3377:     struct {
+[s S128 :6 `uc 1 :1 `uc 1 ]
+[n S128 . . CMIE ]
+"3362
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3362: typedef union {
+[u S125 `S126 1 `S127 1 `S128 1 ]
+[n S125 . . . . ]
+"3382
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3382: extern volatile PIE2bits_t PIE2bits __attribute__((address(0xFA0)));
+[v _PIE2bits `VS125 ~T0 @X0 0 e@4000 ]
+"3443
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3443:     struct {
+[s S130 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S130 . CCP2IF TMR3IF HLVDIF BCLIF EEIF C2IF C1IF OSCFIF ]
+"3453
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3453:     struct {
+[s S131 :2 `uc 1 :1 `uc 1 ]
+[n S131 . . LVDIF ]
+"3457
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3457:     struct {
+[s S132 :6 `uc 1 :1 `uc 1 ]
+[n S132 . . CMIF ]
+"3442
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3442: typedef union {
+[u S129 `S130 1 `S131 1 `S132 1 ]
+[n S129 . . . . ]
+"3462
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3462: extern volatile PIR2bits_t PIR2bits __attribute__((address(0xFA1)));
+[v _PIR2bits `VS129 ~T0 @X0 0 e@4001 ]
+"262 mcc_generated_files/system/src/../../system/../nvm/nvm.h
+[; ;mcc_generated_files/system/src/../../system/../nvm/nvm.h: 262: void NVM_ISR(void);
+[v _NVM_ISR `(v ~T0 @X0 0 ef ]
+"228 mcc_generated_files/system/src/../../system/interrupt.h
+[; ;mcc_generated_files/system/src/../../system/interrupt.h: 228: void INT0_CallBack(void);
+[v _INT0_CallBack `(v ~T0 @X0 0 ef ]
+[v F2937 `(v ~T0 @X0 0 tf ]
+[v F2939 `(v ~T0 @X0 0 tf ]
+[v F2941 `(v ~T0 @X0 0 tf ]
+"273
+[; ;mcc_generated_files/system/src/../../system/interrupt.h: 273: void INT1_CallBack(void);
+[v _INT1_CallBack `(v ~T0 @X0 0 ef ]
+[v F2946 `(v ~T0 @X0 0 tf ]
+[v F2948 `(v ~T0 @X0 0 tf ]
+[v F2950 `(v ~T0 @X0 0 tf ]
+"318
+[; ;mcc_generated_files/system/src/../../system/interrupt.h: 318: void INT2_CallBack(void);
+[v _INT2_CallBack `(v ~T0 @X0 0 ef ]
+[v F2955 `(v ~T0 @X0 0 tf ]
+[v F2957 `(v ~T0 @X0 0 tf ]
+[v F2959 `(v ~T0 @X0 0 tf ]
+"38 C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 38: __asm("SSPMSK equ 0F77h");
+[; <" SSPMSK equ 0F77h ;# ">
+"108
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 108: __asm("SLRCON equ 0F78h");
+[; <" SLRCON equ 0F78h ;# ">
+"152
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 152: __asm("CM2CON1 equ 0F79h");
+[; <" CM2CON1 equ 0F79h ;# ">
+"191
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 191: __asm("CM2CON0 equ 0F7Ah");
+[; <" CM2CON0 equ 0F7Ah ;# ">
+"261
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 261: __asm("CM1CON0 equ 0F7Bh");
+[; <" CM1CON0 equ 0F7Bh ;# ">
+"331
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 331: __asm("WPUB equ 0F7Ch");
+[; <" WPUB equ 0F7Ch ;# ">
+"393
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 393: __asm("IOCB equ 0F7Dh");
+[; <" IOCB equ 0F7Dh ;# ">
+"432
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 432: __asm("ANSEL equ 0F7Eh");
+[; <" ANSEL equ 0F7Eh ;# ">
+"494
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 494: __asm("ANSELH equ 0F7Fh");
+[; <" ANSELH equ 0F7Fh ;# ">
+"538
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 538: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"774
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 774: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"982
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 982: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"1170
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 1170: __asm("PORTD equ 0F83h");
+[; <" PORTD equ 0F83h ;# ">
+"1312
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 1312: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"1518
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 1518: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"1630
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 1630: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"1742
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 1742: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"1854
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 1854: __asm("LATD equ 0F8Ch");
+[; <" LATD equ 0F8Ch ;# ">
+"1966
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 1966: __asm("LATE equ 0F8Dh");
+[; <" LATE equ 0F8Dh ;# ">
+"2018
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 2018: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"2023
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 2023: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"2240
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 2240: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"2245
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 2245: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"2462
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 2462: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"2467
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 2467: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"2684
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 2684: __asm("TRISD equ 0F95h");
+[; <" TRISD equ 0F95h ;# ">
+"2689
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 2689: __asm("DDRD equ 0F95h");
+[; <" DDRD equ 0F95h ;# ">
+"2906
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 2906: __asm("TRISE equ 0F96h");
+[; <" TRISE equ 0F96h ;# ">
+"2911
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 2911: __asm("DDRE equ 0F96h");
+[; <" DDRE equ 0F96h ;# ">
+"3058
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3058: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"3128
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3128: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"3205
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3205: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"3282
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3282: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"3359
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3359: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"3439
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3439: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"3519
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3519: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"3599
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3599: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"3665
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3665: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"3672
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3672: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"3679
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3679: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"3741
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3741: __asm("EEADRH equ 0FAAh");
+[; <" EEADRH equ 0FAAh ;# ">
+"3767
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3767: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"3772
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3772: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"3977
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3977: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"3982
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 3982: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"4233
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4233: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"4238
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4238: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"4245
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4245: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"4250
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4250: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"4257
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4257: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"4262
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4262: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"4269
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4269: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"4276
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4276: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"4388
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4388: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"4395
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4395: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"4402
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4402: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"4409
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4409: __asm("CVRCON2 equ 0FB4h");
+[; <" CVRCON2 equ 0FB4h ;# ">
+"4436
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4436: __asm("CVRCON equ 0FB5h");
+[; <" CVRCON equ 0FB5h ;# ">
+"4515
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4515: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"4597
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4597: __asm("PWM1CON equ 0FB7h");
+[; <" PWM1CON equ 0FB7h ;# ">
+"4667
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4667: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"4672
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4672: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"4833
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4833: __asm("PSTRCON equ 0FB9h");
+[; <" PSTRCON equ 0FB9h ;# ">
+"4877
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4877: __asm("CCP2CON equ 0FBAh");
+[; <" CCP2CON equ 0FBAh ;# ">
+"4941
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4941: __asm("CCPR2 equ 0FBBh");
+[; <" CCPR2 equ 0FBBh ;# ">
+"4948
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4948: __asm("CCPR2L equ 0FBBh");
+[; <" CCPR2L equ 0FBBh ;# ">
+"4955
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4955: __asm("CCPR2H equ 0FBCh");
+[; <" CCPR2H equ 0FBCh ;# ">
+"4962
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 4962: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"5044
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5044: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"5051
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5051: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"5058
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5058: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"5065
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5065: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"5136
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5136: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"5187
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5187: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"5306
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5306: __asm("ADRES equ 0FC3h");
+[; <" ADRES equ 0FC3h ;# ">
+"5313
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5313: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"5320
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5320: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"5327
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5327: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"5389
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5389: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"5459
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5459: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"5684
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5684: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"5691
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5691: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"5698
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5698: __asm("T2CON equ 0FCAh");
+[; <" T2CON equ 0FCAh ;# ">
+"5769
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5769: __asm("PR2 equ 0FCBh");
+[; <" PR2 equ 0FCBh ;# ">
+"5774
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5774: __asm("MEMCON equ 0FCBh");
+[; <" MEMCON equ 0FCBh ;# ">
+"5879
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5879: __asm("TMR2 equ 0FCCh");
+[; <" TMR2 equ 0FCCh ;# ">
+"5886
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5886: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"5989
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5989: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"5996
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 5996: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"6003
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6003: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"6010
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6010: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"6143
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6143: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"6171
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6171: __asm("HLVDCON equ 0FD2h");
+[; <" HLVDCON equ 0FD2h ;# ">
+"6176
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6176: __asm("LVDCON equ 0FD2h");
+[; <" LVDCON equ 0FD2h ;# ">
+"6441
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6441: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"6518
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6518: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"6588
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6588: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"6595
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6595: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"6602
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6602: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"6609
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6609: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"6680
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6680: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"6687
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6687: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"6694
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6694: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"6701
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6701: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"6708
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6708: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"6715
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6715: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"6722
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6722: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"6729
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6729: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"6736
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6736: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"6743
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6743: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"6750
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6750: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"6757
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6757: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"6764
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6764: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"6771
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6771: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"6778
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6778: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"6785
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6785: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"6792
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6792: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"6799
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6799: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"6811
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6811: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"6818
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6818: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"6825
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6825: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"6832
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6832: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"6839
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6839: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"6846
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6846: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"6853
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6853: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"6860
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6860: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"6867
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6867: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"6959
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 6959: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"7029
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7029: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"7146
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7146: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"7153
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7153: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"7160
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7160: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"7167
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7167: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"7176
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7176: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"7183
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7183: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"7190
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7190: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"7197
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7197: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"7206
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7206: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"7213
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7213: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"7220
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7220: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"7227
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7227: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"7234
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7234: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"7241
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7241: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"7315
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7315: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"7322
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7322: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"7329
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7329: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"7336
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7336: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"38 mcc_generated_files/system/src/interrupt.c
+[; ;mcc_generated_files/system/src/interrupt.c: 38: void (*INT0_InterruptHandler)(void);
+[v _INT0_InterruptHandler `*F2925 ~T0 @X0 1 e ]
+"39
+[; ;mcc_generated_files/system/src/interrupt.c: 39: void (*INT1_InterruptHandler)(void);
+[v _INT1_InterruptHandler `*F2927 ~T0 @X0 1 e ]
+"40
+[; ;mcc_generated_files/system/src/interrupt.c: 40: void (*INT2_InterruptHandler)(void);
+[v _INT2_InterruptHandler `*F2929 ~T0 @X0 1 e ]
+"42
+[; ;mcc_generated_files/system/src/interrupt.c: 42: void INTERRUPT_Initialize (void)
+[v _INTERRUPT_Initialize `(v ~T0 @X0 1 ef ]
+"43
+[; ;mcc_generated_files/system/src/interrupt.c: 43: {
+{
+[e :U _INTERRUPT_Initialize ]
+[f ]
+"45
+[; ;mcc_generated_files/system/src/interrupt.c: 45:     RCONbits.IPEN = 0;
+[e = . . _RCONbits 5 7 -> -> 0 `i `uc ]
+"49
+[; ;mcc_generated_files/system/src/interrupt.c: 49:     (INTCONbits.INT0IF = 0);
+[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
+"50
+[; ;mcc_generated_files/system/src/interrupt.c: 50:     (INTCON2bits.INTEDG0 = 1);
+[e = . . _INTCON2bits 1 6 -> -> 1 `i `uc ]
+"52
+[; ;mcc_generated_files/system/src/interrupt.c: 52:     INT0_SetInterruptHandler(INT0_DefaultInterruptHandler);
+[e ( _INT0_SetInterruptHandler (1 &U _INT0_DefaultInterruptHandler ]
+"57
+[; ;mcc_generated_files/system/src/interrupt.c: 57:     (INTCON3bits.INT1IF = 0);
+[e = . . _INTCON3bits 0 0 -> -> 0 `i `uc ]
+"58
+[; ;mcc_generated_files/system/src/interrupt.c: 58:     (INTCON2bits.INTEDG1 = 1);
+[e = . . _INTCON2bits 1 5 -> -> 1 `i `uc ]
+"60
+[; ;mcc_generated_files/system/src/interrupt.c: 60:     INT1_SetInterruptHandler(INT1_DefaultInterruptHandler);
+[e ( _INT1_SetInterruptHandler (1 &U _INT1_DefaultInterruptHandler ]
+"65
+[; ;mcc_generated_files/system/src/interrupt.c: 65:     (INTCON3bits.INT2IF = 0);
+[e = . . _INTCON3bits 0 1 -> -> 0 `i `uc ]
+"66
+[; ;mcc_generated_files/system/src/interrupt.c: 66:     (INTCON2bits.INTEDG2 = 1);
+[e = . . _INTCON2bits 1 4 -> -> 1 `i `uc ]
+"68
+[; ;mcc_generated_files/system/src/interrupt.c: 68:     INT2_SetInterruptHandler(INT2_DefaultInterruptHandler);
+[e ( _INT2_SetInterruptHandler (1 &U _INT2_DefaultInterruptHandler ]
+"71
+[; ;mcc_generated_files/system/src/interrupt.c: 71: }
+[e :UE 325 ]
+}
+[v $root$_INTERRUPT_InterruptManager `(v ~T0 @X0 0 e ]
+"80
+[; ;mcc_generated_files/system/src/interrupt.c: 80: void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
+[v _INTERRUPT_InterruptManager `(v ~T40 @X0 1 ef ]
+"81
+[; ;mcc_generated_files/system/src/interrupt.c: 81: {
+{
+[e :U _INTERRUPT_InterruptManager ]
+[f ]
+"83
+[; ;mcc_generated_files/system/src/interrupt.c: 83:     if(INTCONbits.PEIE == 1)
+[e $ ! == -> . . _INTCONbits 1 6 `i -> 1 `i 327  ]
+"84
+[; ;mcc_generated_files/system/src/interrupt.c: 84:     {
+{
+"85
+[; ;mcc_generated_files/system/src/interrupt.c: 85:         if(PIE2bits.EEIE == 1 && PIR2bits.EEIF == 1)
+[e $ ! && == -> . . _PIE2bits 0 4 `i -> 1 `i == -> . . _PIR2bits 0 4 `i -> 1 `i 328  ]
+"86
+[; ;mcc_generated_files/system/src/interrupt.c: 86:         {
+{
+"87
+[; ;mcc_generated_files/system/src/interrupt.c: 87:             NVM_ISR();
+[e ( _NVM_ISR ..  ]
+"88
+[; ;mcc_generated_files/system/src/interrupt.c: 88:         }
+}
+[e :U 328 ]
+"89
+[; ;mcc_generated_files/system/src/interrupt.c: 89:     }
+}
+[e :U 327 ]
+"90
+[; ;mcc_generated_files/system/src/interrupt.c: 90: }
+[e :UE 326 ]
+}
+"92
+[; ;mcc_generated_files/system/src/interrupt.c: 92: void INT0_ISR(void)
+[v _INT0_ISR `(v ~T0 @X0 1 ef ]
+"93
+[; ;mcc_generated_files/system/src/interrupt.c: 93: {
+{
+[e :U _INT0_ISR ]
+[f ]
+"94
+[; ;mcc_generated_files/system/src/interrupt.c: 94:     (INTCONbits.INT0IF = 0);
+[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
+"97
+[; ;mcc_generated_files/system/src/interrupt.c: 97:     INT0_CallBack();
+[e ( _INT0_CallBack ..  ]
+"98
+[; ;mcc_generated_files/system/src/interrupt.c: 98: }
+[e :UE 329 ]
+}
+"101
+[; ;mcc_generated_files/system/src/interrupt.c: 101: void INT0_CallBack(void)
+[v _INT0_CallBack `(v ~T0 @X0 1 ef ]
+"102
+[; ;mcc_generated_files/system/src/interrupt.c: 102: {
+{
+[e :U _INT0_CallBack ]
+[f ]
+"104
+[; ;mcc_generated_files/system/src/interrupt.c: 104:     if(INT0_InterruptHandler)
+[e $ ! != _INT0_InterruptHandler -> -> 0 `i `*F2937 331  ]
+"105
+[; ;mcc_generated_files/system/src/interrupt.c: 105:     {
+{
+"106
+[; ;mcc_generated_files/system/src/interrupt.c: 106:         INT0_InterruptHandler();
+[e ( *U _INT0_InterruptHandler ..  ]
+"107
+[; ;mcc_generated_files/system/src/interrupt.c: 107:     }
+}
+[e :U 331 ]
+"108
+[; ;mcc_generated_files/system/src/interrupt.c: 108: }
+[e :UE 330 ]
+}
+"110
+[; ;mcc_generated_files/system/src/interrupt.c: 110: void INT0_SetInterruptHandler(void (* InterruptHandler)(void)){
+[v _INT0_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F2939 ]
+{
+[e :U _INT0_SetInterruptHandler ]
+[v _InterruptHandler `*F2941 ~T0 @X0 1 r1 ]
+[f ]
+"111
+[; ;mcc_generated_files/system/src/interrupt.c: 111:     INT0_InterruptHandler = InterruptHandler;
+[e = _INT0_InterruptHandler _InterruptHandler ]
+"112
+[; ;mcc_generated_files/system/src/interrupt.c: 112: }
+[e :UE 332 ]
+}
+"114
+[; ;mcc_generated_files/system/src/interrupt.c: 114: void INT0_DefaultInterruptHandler(void){
+[v _INT0_DefaultInterruptHandler `(v ~T0 @X0 1 ef ]
+{
+[e :U _INT0_DefaultInterruptHandler ]
+[f ]
+"117
+[; ;mcc_generated_files/system/src/interrupt.c: 117: }
+[e :UE 333 ]
+}
+"118
+[; ;mcc_generated_files/system/src/interrupt.c: 118: void INT1_ISR(void)
+[v _INT1_ISR `(v ~T0 @X0 1 ef ]
+"119
+[; ;mcc_generated_files/system/src/interrupt.c: 119: {
+{
+[e :U _INT1_ISR ]
+[f ]
+"120
+[; ;mcc_generated_files/system/src/interrupt.c: 120:     (INTCON3bits.INT1IF = 0);
+[e = . . _INTCON3bits 0 0 -> -> 0 `i `uc ]
+"123
+[; ;mcc_generated_files/system/src/interrupt.c: 123:     INT1_CallBack();
+[e ( _INT1_CallBack ..  ]
+"124
+[; ;mcc_generated_files/system/src/interrupt.c: 124: }
+[e :UE 334 ]
+}
+"127
+[; ;mcc_generated_files/system/src/interrupt.c: 127: void INT1_CallBack(void)
+[v _INT1_CallBack `(v ~T0 @X0 1 ef ]
+"128
+[; ;mcc_generated_files/system/src/interrupt.c: 128: {
+{
+[e :U _INT1_CallBack ]
+[f ]
+"130
+[; ;mcc_generated_files/system/src/interrupt.c: 130:     if(INT1_InterruptHandler)
+[e $ ! != _INT1_InterruptHandler -> -> 0 `i `*F2946 336  ]
+"131
+[; ;mcc_generated_files/system/src/interrupt.c: 131:     {
+{
+"132
+[; ;mcc_generated_files/system/src/interrupt.c: 132:         INT1_InterruptHandler();
+[e ( *U _INT1_InterruptHandler ..  ]
+"133
+[; ;mcc_generated_files/system/src/interrupt.c: 133:     }
+}
+[e :U 336 ]
+"134
+[; ;mcc_generated_files/system/src/interrupt.c: 134: }
+[e :UE 335 ]
+}
+"136
+[; ;mcc_generated_files/system/src/interrupt.c: 136: void INT1_SetInterruptHandler(void (* InterruptHandler)(void)){
+[v _INT1_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F2948 ]
+{
+[e :U _INT1_SetInterruptHandler ]
+[v _InterruptHandler `*F2950 ~T0 @X0 1 r1 ]
+[f ]
+"137
+[; ;mcc_generated_files/system/src/interrupt.c: 137:     INT1_InterruptHandler = InterruptHandler;
+[e = _INT1_InterruptHandler _InterruptHandler ]
+"138
+[; ;mcc_generated_files/system/src/interrupt.c: 138: }
+[e :UE 337 ]
+}
+"140
+[; ;mcc_generated_files/system/src/interrupt.c: 140: void INT1_DefaultInterruptHandler(void){
+[v _INT1_DefaultInterruptHandler `(v ~T0 @X0 1 ef ]
+{
+[e :U _INT1_DefaultInterruptHandler ]
+[f ]
+"143
+[; ;mcc_generated_files/system/src/interrupt.c: 143: }
+[e :UE 338 ]
+}
+"144
+[; ;mcc_generated_files/system/src/interrupt.c: 144: void INT2_ISR(void)
+[v _INT2_ISR `(v ~T0 @X0 1 ef ]
+"145
+[; ;mcc_generated_files/system/src/interrupt.c: 145: {
+{
+[e :U _INT2_ISR ]
+[f ]
+"146
+[; ;mcc_generated_files/system/src/interrupt.c: 146:     (INTCON3bits.INT2IF = 0);
+[e = . . _INTCON3bits 0 1 -> -> 0 `i `uc ]
+"149
+[; ;mcc_generated_files/system/src/interrupt.c: 149:     INT2_CallBack();
+[e ( _INT2_CallBack ..  ]
+"150
+[; ;mcc_generated_files/system/src/interrupt.c: 150: }
+[e :UE 339 ]
+}
+"153
+[; ;mcc_generated_files/system/src/interrupt.c: 153: void INT2_CallBack(void)
+[v _INT2_CallBack `(v ~T0 @X0 1 ef ]
+"154
+[; ;mcc_generated_files/system/src/interrupt.c: 154: {
+{
+[e :U _INT2_CallBack ]
+[f ]
+"156
+[; ;mcc_generated_files/system/src/interrupt.c: 156:     if(INT2_InterruptHandler)
+[e $ ! != _INT2_InterruptHandler -> -> 0 `i `*F2955 341  ]
+"157
+[; ;mcc_generated_files/system/src/interrupt.c: 157:     {
+{
+"158
+[; ;mcc_generated_files/system/src/interrupt.c: 158:         INT2_InterruptHandler();
+[e ( *U _INT2_InterruptHandler ..  ]
+"159
+[; ;mcc_generated_files/system/src/interrupt.c: 159:     }
+}
+[e :U 341 ]
+"160
+[; ;mcc_generated_files/system/src/interrupt.c: 160: }
+[e :UE 340 ]
+}
+"162
+[; ;mcc_generated_files/system/src/interrupt.c: 162: void INT2_SetInterruptHandler(void (* InterruptHandler)(void)){
+[v _INT2_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F2957 ]
+{
+[e :U _INT2_SetInterruptHandler ]
+[v _InterruptHandler `*F2959 ~T0 @X0 1 r1 ]
+[f ]
+"163
+[; ;mcc_generated_files/system/src/interrupt.c: 163:     INT2_InterruptHandler = InterruptHandler;
+[e = _INT2_InterruptHandler _InterruptHandler ]
+"164
+[; ;mcc_generated_files/system/src/interrupt.c: 164: }
+[e :UE 342 ]
+}
+"166
+[; ;mcc_generated_files/system/src/interrupt.c: 166: void INT2_DefaultInterruptHandler(void){
+[v _INT2_DefaultInterruptHandler `(v ~T0 @X0 1 ef ]
+{
+[e :U _INT2_DefaultInterruptHandler ]
+[f ]
+"169
+[; ;mcc_generated_files/system/src/interrupt.c: 169: }
+[e :UE 343 ]
+}
