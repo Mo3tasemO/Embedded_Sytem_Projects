@@ -1,8 +1,37 @@
 Version 4.0 HI-TECH Software Intermediate Code
+"15 ./mcc_generated_files/system/../../HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.h
+[; ;./mcc_generated_files/system/../../HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.h: 15: typedef struct {
+[s S330 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S330 . Seconds Minutes Hours Day Month Year ]
 [p mainexit ]
-"55 ./mcc_generated_files/system/system.h
-[; ;./mcc_generated_files/system/system.h: 55: void SYSTEM_Initialize(void);
+"57 ./mcc_generated_files/system/system.h
+[; ;./mcc_generated_files/system/system.h: 57: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
+"7033 C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7033:     struct {
+[s S297 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S297 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
+"7043
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7043:     struct {
+[s S298 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S298 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
+"7053
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7053:     struct {
+[s S299 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S299 . . GIEL GIEH ]
+"7032
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7032: typedef union {
+[u S296 `S297 1 `S298 1 `S299 1 ]
+[n S296 . . . . ]
+"7059
+[; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7059: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
+[v _INTCONbits `VS296 ~T0 @X0 0 e@4082 ]
+"24 ./mcc_generated_files/system/../../HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.h
+[; ;./mcc_generated_files/system/../../HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.h: 24: RealTimeClock_DS1307_T RealTimeClock_DS1307_GET_DATE_TIME(void);
+[v _RealTimeClock_DS1307_GET_DATE_TIME `(S330 ~T0 @X0 0 ef ]
+"25
+[; ;./mcc_generated_files/system/../../HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.h: 25: void PRINT_RealTimeClock_DATA(void);
+[v _PRINT_RealTimeClock_DATA `(v ~T0 @X0 0 ef ]
 "38 C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h
 [; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 38: __asm("SSPMSK equ 0F77h");
 [; <" SSPMSK equ 0F77h ;# ">
@@ -444,8 +473,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7336
 [; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7336: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
+"40 main.c
+[; ;main.c: 40: RealTimeClock_DS1307_T RealTimeClock_DS1307;
+[v _RealTimeClock_DS1307 `S330 ~T0 @X0 1 e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"41 main.c
+"41
 [; ;main.c: 41: int main(void)
 [v _main `(i ~T0 @X0 1 ef ]
 "42
@@ -456,19 +488,31 @@ Version 4.0 HI-TECH Software Intermediate Code
 "43
 [; ;main.c: 43:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
+"49
+[; ;main.c: 49:     (INTCONbits.GIE = 1);
+[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
+"55
+[; ;main.c: 55:     (INTCONbits.PEIE = 1);
+[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
+"60
+[; ;main.c: 60:     while(1)
+[e :U 333 ]
 "61
-[; ;main.c: 61:     while(1)
-[e :U 327 ]
-"62
-[; ;main.c: 62:     {
+[; ;main.c: 61:     {
 {
+"62
+[; ;main.c: 62:         RealTimeClock_DS1307 = RealTimeClock_DS1307_GET_DATE_TIME();
+[e = _RealTimeClock_DS1307 ( _RealTimeClock_DS1307_GET_DATE_TIME ..  ]
 "63
-[; ;main.c: 63:     }
-}
-[e :U 326 ]
-[e $U 327  ]
-[e :U 328 ]
+[; ;main.c: 63:         PRINT_RealTimeClock_DATA();
+[e ( _PRINT_RealTimeClock_DATA ..  ]
 "64
-[; ;main.c: 64: }
-[e :UE 325 ]
+[; ;main.c: 64:     }
+}
+[e :U 332 ]
+[e $U 333  ]
+[e :U 334 ]
+"65
+[; ;main.c: 65: }
+[e :UE 331 ]
 }

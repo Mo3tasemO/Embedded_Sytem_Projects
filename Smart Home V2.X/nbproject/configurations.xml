@@ -4,9 +4,27 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <logicalFolder name="HAL_LAYER" displayName="HAL_LAYER" projectFiles="true">
+        <logicalFolder name="EUSART_LoggingDebugData"
+                       displayName="EUSART_LoggingDebugData"
+                       projectFiles="true">
+          <itemPath>HAL_LAYER/EUSART_LoggingDebugData/EUSART_LoggingDebugData.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="RealTimeClock_DS1307"
+                       displayName="RealTimeClock_DS1307"
+                       projectFiles="true">
+          <itemPath>HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <logicalFolder name="MCC Generated Files"
                      displayName="MCC Generated Files"
                      projectFiles="true">
+        <logicalFolder name="i2c_host" displayName="i2c_host" projectFiles="true">
+          <itemPath>mcc_generated_files/i2c_host/mssp.h</itemPath>
+          <itemPath>mcc_generated_files/i2c_host/i2c_host_types.h</itemPath>
+          <itemPath>mcc_generated_files/i2c_host/i2c_host_interface.h</itemPath>
+          <itemPath>mcc_generated_files/i2c_host/i2c_host_event_types.h</itemPath>
+        </logicalFolder>
         <logicalFolder name="nvm" displayName="nvm" projectFiles="true">
           <itemPath>mcc_generated_files/nvm/nvm.h</itemPath>
         </logicalFolder>
@@ -16,6 +34,9 @@
           <itemPath>mcc_generated_files/system/system.h</itemPath>
           <itemPath>mcc_generated_files/system/config_bits.h</itemPath>
           <itemPath>mcc_generated_files/system/pins.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="uart" displayName="uart" projectFiles="true">
+          <itemPath>mcc_generated_files/uart/eusart.h</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
@@ -32,9 +53,26 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="HAL_LAYER" displayName="HAL_LAYER" projectFiles="true">
+        <logicalFolder name="EUSART_LoggingDebugData"
+                       displayName="EUSART_LoggingDebugData"
+                       projectFiles="true">
+          <itemPath>HAL_LAYER/EUSART_LoggingDebugData/EUSART_LoggingDebugData.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="RealTimeClock_DS1307"
+                       displayName="RealTimeClock_DS1307"
+                       projectFiles="true">
+          <itemPath>HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.c</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <logicalFolder name="MCC Generated Files"
                      displayName="MCC Generated Files"
                      projectFiles="true">
+        <logicalFolder name="i2c_host" displayName="i2c_host" projectFiles="true">
+          <logicalFolder name="src" displayName="src" projectFiles="true">
+            <itemPath>mcc_generated_files/i2c_host/src/mssp.c</itemPath>
+          </logicalFolder>
+        </logicalFolder>
         <logicalFolder name="nvm" displayName="nvm" projectFiles="true">
           <logicalFolder name="src" displayName="src" projectFiles="true">
             <itemPath>mcc_generated_files/nvm/src/nvm.c</itemPath>
@@ -49,10 +87,18 @@
             <itemPath>mcc_generated_files/system/src/pins.c</itemPath>
           </logicalFolder>
         </logicalFolder>
+        <logicalFolder name="uart" displayName="uart" projectFiles="true">
+          <logicalFolder name="src" displayName="src" projectFiles="true">
+            <itemPath>mcc_generated_files/uart/src/eusart.c</itemPath>
+          </logicalFolder>
+        </logicalFolder>
       </logicalFolder>
       <itemPath>main.c</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>HAL_LAYER</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="default" type="2">
