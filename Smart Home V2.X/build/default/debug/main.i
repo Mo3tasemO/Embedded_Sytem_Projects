@@ -5115,7 +5115,7 @@ void CLOCK_Initialize(void);
 # 40 "./mcc_generated_files/system/config_bits.h" 2
 # 43 "./mcc_generated_files/system/system.h" 2
 # 1 "./mcc_generated_files/system/../system/pins.h" 1
-# 58 "./mcc_generated_files/system/../system/pins.h"
+# 138 "./mcc_generated_files/system/../system/pins.h"
 void PIN_MANAGER_Initialize (void);
 
 
@@ -5126,6 +5126,143 @@ void PIN_MANAGER_Initialize (void);
 
 void PIN_MANAGER_IOC(void);
 # 44 "./mcc_generated_files/system/system.h" 2
+# 1 "./mcc_generated_files/system/../uart/eusart.h" 1
+# 39 "./mcc_generated_files/system/../uart/eusart.h"
+# 1 "./mcc_generated_files/system/system.h" 1
+# 40 "./mcc_generated_files/system/../uart/eusart.h" 2
+# 61 "./mcc_generated_files/system/../uart/eusart.h"
+typedef union {
+    struct {
+        uint8_t perr : 1;
+        uint8_t ferr : 1;
+        uint8_t oerr : 1;
+        uint8_t reserved : 5;
+    };
+    size_t status;
+}eusart_status_t;
+# 81 "./mcc_generated_files/system/../uart/eusart.h"
+void EUSART_Initialize(void);
+
+
+
+
+
+
+
+void EUSART_Deinitialize(void);
+
+
+
+
+
+
+
+void EUSART_Enable(void);
+
+
+
+
+
+
+
+void EUSART_Disable(void);
+# 114 "./mcc_generated_files/system/../uart/eusart.h"
+void EUSART_TransmitEnable(void);
+
+
+
+
+
+
+
+void EUSART_TransmitDisable(void);
+# 131 "./mcc_generated_files/system/../uart/eusart.h"
+void EUSART_ReceiveEnable(void);
+
+
+
+
+
+
+
+void EUSART_ReceiveDisable(void);
+# 148 "./mcc_generated_files/system/../uart/eusart.h"
+void EUSART_SendBreakControlEnable(void);
+
+
+
+
+
+
+
+void EUSART_SendBreakControlDisable(void);
+
+
+
+
+
+
+
+void EUSART_AutoBaudSet(_Bool enable);
+
+
+
+
+
+
+
+_Bool EUSART_AutoBaudQuery(void);
+
+
+
+
+
+
+
+_Bool EUSART_IsAutoBaudDetectOverflow(void);
+
+
+
+
+
+
+
+void EUSART_AutoBaudDetectOverflowReset(void);
+# 197 "./mcc_generated_files/system/../uart/eusart.h"
+_Bool EUSART_IsRxReady(void);
+# 206 "./mcc_generated_files/system/../uart/eusart.h"
+_Bool EUSART_IsTxReady(void);
+# 215 "./mcc_generated_files/system/../uart/eusart.h"
+_Bool EUSART_IsTxDone(void);
+
+
+
+
+
+
+
+size_t EUSART_ErrorGet(void);
+# 233 "./mcc_generated_files/system/../uart/eusart.h"
+uint8_t EUSART_Read(void);
+# 243 "./mcc_generated_files/system/../uart/eusart.h"
+void EUSART_Write(uint8_t txData);
+
+
+
+
+
+
+
+void EUSART_FramingErrorCallbackRegister(void (* callbackHandler)(void));
+
+
+
+
+
+
+
+void EUSART_OverrunErrorCallbackRegister(void (* callbackHandler)(void));
+# 45 "./mcc_generated_files/system/system.h" 2
 # 1 "./mcc_generated_files/system/../nvm/nvm.h" 1
 # 87 "./mcc_generated_files/system/../nvm/nvm.h"
 typedef uint8_t flash_data_t;
@@ -5250,7 +5387,7 @@ void NVM_ISR(void);
 
 
 void NVM_CallbackRegister(void (*CallbackHandler)(void));
-# 45 "./mcc_generated_files/system/system.h" 2
+# 46 "./mcc_generated_files/system/system.h" 2
 # 1 "./mcc_generated_files/system/../system/interrupt.h" 1
 # 85 "./mcc_generated_files/system/../system/interrupt.h"
 void INTERRUPT_Initialize (void);
@@ -5284,20 +5421,216 @@ void INT2_SetInterruptHandler(void (* InterruptHandler)(void));
 extern void (*INT2_InterruptHandler)(void);
 # 345 "./mcc_generated_files/system/../system/interrupt.h"
 void INT2_DefaultInterruptHandler(void);
-# 46 "./mcc_generated_files/system/system.h" 2
-# 55 "./mcc_generated_files/system/system.h"
+# 47 "./mcc_generated_files/system/system.h" 2
+
+# 1 "./mcc_generated_files/system/../i2c_host/mssp.h" 1
+# 42 "./mcc_generated_files/system/../i2c_host/mssp.h"
+# 1 "./mcc_generated_files/system/../i2c_host/i2c_host_event_types.h" 1
+# 40 "./mcc_generated_files/system/../i2c_host/i2c_host_event_types.h"
+# 1 "./mcc_generated_files/system/../i2c_host/i2c_host_types.h" 1
+# 45 "./mcc_generated_files/system/../i2c_host/i2c_host_types.h"
+typedef enum
+{
+    I2C_ERROR_NONE,
+    I2C_ERROR_ADDR_NACK,
+    I2C_ERROR_DATA_NACK,
+    I2C_ERROR_BUS_COLLISION,
+} i2c_host_error_t;
+# 63 "./mcc_generated_files/system/../i2c_host/i2c_host_types.h"
+typedef struct i2c_transfer_setup
+{
+    uint32_t clkSpeed;
+} i2c_host_transfer_setup_t;
+# 41 "./mcc_generated_files/system/../i2c_host/i2c_host_event_types.h" 2
+# 1 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/stddef.h" 1 3
+# 19 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/stddef.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/bits/alltypes.h" 1 3
+# 138 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/bits/alltypes.h" 3
+typedef int ptrdiff_t;
+# 20 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/stddef.h" 2 3
+# 42 "./mcc_generated_files/system/../i2c_host/i2c_host_event_types.h" 2
+
+
+
+
+
+typedef enum
+{
+    I2C_STATE_IDLE = 0,
+    I2C_STATE_SEND_RD_ADDR,
+    I2C_STATE_SEND_WR_ADDR,
+    I2C_STATE_TX,
+    I2C_STATE_RX,
+    I2C_STATE_NACK,
+    I2C_STATE_ERROR,
+    I2C_STATE_STOP,
+    I2C_STATE_RESET
+} i2c_host_event_states_t;
+
+
+
+
+
+
+typedef struct
+{
+    _Bool busy;
+    uint16_t address;
+    uint8_t *writePtr;
+    size_t writeLength;
+    uint8_t *readPtr;
+    size_t readLength;
+    _Bool switchToRead;
+    i2c_host_error_t errorState;
+    i2c_host_event_states_t state;
+} i2c_host_event_status_t;
+# 43 "./mcc_generated_files/system/../i2c_host/mssp.h" 2
+# 1 "./mcc_generated_files/system/../i2c_host/i2c_host_interface.h" 1
+# 49 "./mcc_generated_files/system/../i2c_host/i2c_host_interface.h"
+typedef struct
+{
+
+
+
+    void (*Initialize)(void);
+
+
+
+
+    void (*Deinitialize)(void);
+
+
+
+
+    _Bool (*Write)(uint16_t address, uint8_t *data, size_t dataLength);
+
+
+
+
+    _Bool (*Read)(uint16_t address, uint8_t *data, size_t dataLength);
+
+
+
+
+    _Bool (*WriteRead)(uint16_t address, uint8_t *writeData, size_t writeLength, uint8_t *readData, size_t readLength);
+
+
+
+
+    _Bool (*TransferSetup)(struct i2c_transfer_setup* setup, uint32_t srcClkFreq);
+
+
+
+
+    i2c_host_error_t (*ErrorGet)(void);
+
+
+
+
+    _Bool (*IsBusy)(void);
+
+
+
+
+    void (*CallbackRegister)(void (*callback)(void));
+
+
+
+
+    void (*Tasks)(void);
+}i2c_host_interface_t;
+# 44 "./mcc_generated_files/system/../i2c_host/mssp.h" 2
+# 63 "./mcc_generated_files/system/../i2c_host/mssp.h"
+extern const i2c_host_interface_t I2C1_Host;
+# 72 "./mcc_generated_files/system/../i2c_host/mssp.h"
+void I2C1_Initialize(void);
+
+
+
+
+
+
+
+void I2C1_Deinitialize(void);
+# 109 "./mcc_generated_files/system/../i2c_host/mssp.h"
+_Bool I2C1_Write(uint16_t address, uint8_t *data, size_t dataLength);
+# 138 "./mcc_generated_files/system/../i2c_host/mssp.h"
+_Bool I2C1_Read(uint16_t address, uint8_t *data, size_t dataLength);
+# 169 "./mcc_generated_files/system/../i2c_host/mssp.h"
+_Bool I2C1_WriteRead(uint16_t address, uint8_t *writeData, size_t writeLength, uint8_t *readData, size_t readLength);
+# 182 "./mcc_generated_files/system/../i2c_host/mssp.h"
+i2c_host_error_t I2C1_ErrorGet(void);
+# 193 "./mcc_generated_files/system/../i2c_host/mssp.h"
+_Bool I2C1_IsBusy(void);
+
+
+
+
+
+
+
+void I2C1_CallbackRegister(void (*callback)(void));
+# 211 "./mcc_generated_files/system/../i2c_host/mssp.h"
+void I2C1_ISR(void);
+# 221 "./mcc_generated_files/system/../i2c_host/mssp.h"
+void I2C1_ERROR_ISR(void);
+# 49 "./mcc_generated_files/system/system.h" 2
+# 1 "./mcc_generated_files/system/../../HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.h" 1
+# 12 "./mcc_generated_files/system/../../HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.h"
+# 1 "./mcc_generated_files/system/../../HAL_LAYER/RealTimeClock_DS1307/../EUSART_LoggingDebugData/EUSART_LoggingDebugData.h" 1
+# 13 "./mcc_generated_files/system/../../HAL_LAYER/RealTimeClock_DS1307/../EUSART_LoggingDebugData/EUSART_LoggingDebugData.h"
+void EUSART_LoggingDebugData_Send_String(uint8_t *String, uint16_t String_len);
+# 13 "./mcc_generated_files/system/../../HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.h" 2
+
+
+typedef struct {
+    uint8_t Seconds;
+    uint8_t Minutes;
+    uint8_t Hours;
+    uint8_t Day;
+    uint8_t Month;
+    uint8_t Year;
+}RealTimeClock_DS1307_T;
+
+RealTimeClock_DS1307_T RealTimeClock_DS1307_GET_DATE_TIME(void);
+void PRINT_RealTimeClock_DATA(void);
+# 50 "./mcc_generated_files/system/system.h" 2
+
+
+
+
+
+
+
 void SYSTEM_Initialize(void);
 # 36 "main.c" 2
 
 
 
 
-
+RealTimeClock_DS1307_T RealTimeClock_DS1307;
 int main(void)
 {
     SYSTEM_Initialize();
-# 61 "main.c"
+
+
+
+
+
+    (INTCONbits.GIE = 1);
+
+
+
+
+
+    (INTCONbits.PEIE = 1);
+
+
+
+
     while(1)
     {
+        RealTimeClock_DS1307 = RealTimeClock_DS1307_GET_DATE_TIME();
+        PRINT_RealTimeClock_DATA();
     }
 }

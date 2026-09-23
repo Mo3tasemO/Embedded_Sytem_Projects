@@ -5104,7 +5104,7 @@ unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/xc.h" 2 3
 # 39 "mcc_generated_files/system/src/../pins.h" 2
-# 58 "mcc_generated_files/system/src/../pins.h"
+# 138 "mcc_generated_files/system/src/../pins.h"
 void PIN_MANAGER_Initialize (void);
 
 
@@ -5124,7 +5124,7 @@ void PIN_MANAGER_Initialize(void)
 
     LATA = 0x0;
     LATB = 0x0;
-    LATC = 0x0;
+    LATC = 0x58;
     LATD = 0x0;
     LATE = 0x0;
 
@@ -5136,7 +5136,7 @@ void PIN_MANAGER_Initialize(void)
 
     TRISA = 0xFF;
     TRISB = 0xFF;
-    TRISC = 0xFF;
+    TRISC = 0xBF;
     TRISD = 0xFF;
     TRISE = 0x7;
 
@@ -5153,6 +5153,8 @@ void PIN_MANAGER_Initialize(void)
     IOCB = 0x0;
 
 
+
+    INTCONbits.RBIE = 1;
 }
 
 void PIN_MANAGER_IOC(void)

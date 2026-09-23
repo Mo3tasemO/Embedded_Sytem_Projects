@@ -2,9 +2,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 "56 mcc_generated_files/system/src/../../system/clock.h
 [; ;mcc_generated_files/system/src/../../system/clock.h: 56: void CLOCK_Initialize(void);
 [v _CLOCK_Initialize `(v ~T0 @X0 0 ef ]
-"58 mcc_generated_files/system/src/../../system/pins.h
-[; ;mcc_generated_files/system/src/../../system/pins.h: 58: void PIN_MANAGER_Initialize (void);
+"138 mcc_generated_files/system/src/../../system/pins.h
+[; ;mcc_generated_files/system/src/../../system/pins.h: 138: void PIN_MANAGER_Initialize (void);
 [v _PIN_MANAGER_Initialize `(v ~T0 @X0 0 ef ]
+"72 mcc_generated_files/system/src/../../i2c_host/mssp.h
+[; ;mcc_generated_files/system/src/../../i2c_host/mssp.h: 72: void I2C1_Initialize(void);
+[v _I2C1_Initialize `(v ~T0 @X0 0 ef ]
+"81 mcc_generated_files/system/src/../../uart/eusart.h
+[; ;mcc_generated_files/system/src/../../uart/eusart.h: 81: void EUSART_Initialize(void);
+[v _EUSART_Initialize `(v ~T0 @X0 0 ef ]
 "122 mcc_generated_files/system/src/../../nvm/nvm.h
 [; ;mcc_generated_files/system/src/../../nvm/nvm.h: 122: void NVM_Initialize(void);
 [v _NVM_Initialize `(v ~T0 @X0 0 ef ]
@@ -467,12 +473,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/system/src/system.c: 42:     PIN_MANAGER_Initialize();
 [e ( _PIN_MANAGER_Initialize ..  ]
 "43
-[; ;mcc_generated_files/system/src/system.c: 43:     NVM_Initialize();
-[e ( _NVM_Initialize ..  ]
+[; ;mcc_generated_files/system/src/system.c: 43:     I2C1_Initialize();
+[e ( _I2C1_Initialize ..  ]
 "44
-[; ;mcc_generated_files/system/src/system.c: 44:     INTERRUPT_Initialize();
-[e ( _INTERRUPT_Initialize ..  ]
+[; ;mcc_generated_files/system/src/system.c: 44:     EUSART_Initialize();
+[e ( _EUSART_Initialize ..  ]
 "45
-[; ;mcc_generated_files/system/src/system.c: 45: }
-[e :UE 325 ]
+[; ;mcc_generated_files/system/src/system.c: 45:     NVM_Initialize();
+[e ( _NVM_Initialize ..  ]
+"46
+[; ;mcc_generated_files/system/src/system.c: 46:     INTERRUPT_Initialize();
+[e ( _INTERRUPT_Initialize ..  ]
+"47
+[; ;mcc_generated_files/system/src/system.c: 47: }
+[e :UE 331 ]
 }

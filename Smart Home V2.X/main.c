@@ -37,7 +37,7 @@
 /*
     Main application
 */
-
+RealTimeClock_DS1307_T RealTimeClock_DS1307;
 int main(void)
 {
     SYSTEM_Initialize();
@@ -46,19 +46,20 @@ int main(void)
     // Use the following macros to: 
 
     // Enable the Global Interrupts 
-    //INTERRUPT_GlobalInterruptEnable(); 
+    INTERRUPT_GlobalInterruptEnable(); 
 
     // Disable the Global Interrupts 
     //INTERRUPT_GlobalInterruptDisable(); 
 
     // Enable the Peripheral Interrupts 
-    //INTERRUPT_PeripheralInterruptEnable(); 
+    INTERRUPT_PeripheralInterruptEnable(); 
 
     // Disable the Peripheral Interrupts 
     //INTERRUPT_PeripheralInterruptDisable(); 
 
-
     while(1)
     {
+        RealTimeClock_DS1307 = RealTimeClock_DS1307_GET_DATE_TIME();
+        PRINT_RealTimeClock_DATA();
     }    
 }

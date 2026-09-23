@@ -86,6 +86,14 @@ void __interrupt() INTERRUPT_InterruptManager (void)
         {
             NVM_ISR();
         } 
+        if(PIE2bits.BCLIE == 1 && PIR2bits.BCLIF == 1)
+        {
+            I2C1_ERROR_ISR();
+        } 
+        if(PIE1bits.SSPIE == 1 && PIR1bits.SSPIF == 1)
+        {
+            I2C1_ISR();
+        } 
     }      
 }
 

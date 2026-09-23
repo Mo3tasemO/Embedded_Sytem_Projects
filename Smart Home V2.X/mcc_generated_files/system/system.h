@@ -41,10 +41,12 @@
 #include <stdbool.h>
 #include "config_bits.h"
 #include "../system/pins.h"
+#include "../uart/eusart.h"
 #include "../nvm/nvm.h"
 #include "../system/interrupt.h"
 #include "../system/clock.h"
-
+#include "../i2c_host/mssp.h"
+#include "../../HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.h"
 /**
  * @ingroup systemdriver
  * @brief Initializes the system module.
