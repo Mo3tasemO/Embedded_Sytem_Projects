@@ -35,7 +35,6 @@
 
 #include "../system.h"
 
-
 void SYSTEM_Initialize(void)
 {
     CLOCK_Initialize();

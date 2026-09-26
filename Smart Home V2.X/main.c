@@ -56,6 +56,8 @@ int main(void)
 
     // Disable the Peripheral Interrupts 
     //INTERRUPT_PeripheralInterruptDisable(); 
+    EXT_EEPROM_24C02C_WRITE_BYTE(SLAVE2_W_ADD, 0xA0, 0x30);
+    EXT_EEPROM_24C02C_WRITE_BYTE(SLAVE1_W_ADD, 0xA1, 0x20);
 
     while(1)
     {

@@ -5476,6 +5476,11 @@ typedef struct {
 RealTimeClock_DS1307_T RealTimeClock_DS1307_GET_DATE_TIME(void);
 void PRINT_RealTimeClock_DATA(void);
 # 50 "mcc_generated_files/uart/src/../../system/system.h" 2
+# 1 "mcc_generated_files/uart/src/../../system/../../HAL_LAYER/EXT_EEPROM_24C02C/EXT_EEPROM_24C02C.h" 1
+# 19 "mcc_generated_files/uart/src/../../system/../../HAL_LAYER/EXT_EEPROM_24C02C/EXT_EEPROM_24C02C.h"
+void EXT_EEPROM_24C02C_WRITE_BYTE(uint8_t address, uint8_t ee_address, uint8_t data);
+void EXT_EEPROM_24C02C_READ_BYTE(uint8_t w_address, uint8_t r_address, uint8_t ee_address, uint8_t *data);
+# 51 "mcc_generated_files/uart/src/../../system/system.h" 2
 
 
 

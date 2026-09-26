@@ -4,8 +4,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [s S330 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
 [n S330 . Seconds Minutes Hours Day Month Year ]
 [p mainexit ]
-"57 ./mcc_generated_files/system/system.h
-[; ;./mcc_generated_files/system/system.h: 57: void SYSTEM_Initialize(void);
+"58 ./mcc_generated_files/system/system.h
+[; ;./mcc_generated_files/system/system.h: 58: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
 "7033 C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h
 [; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7033:     struct {
@@ -26,6 +26,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7059
 [; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7059: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
 [v _INTCONbits `VS296 ~T0 @X0 0 e@4082 ]
+"19 ./mcc_generated_files/system/../../HAL_LAYER/EXT_EEPROM_24C02C/EXT_EEPROM_24C02C.h
+[; ;./mcc_generated_files/system/../../HAL_LAYER/EXT_EEPROM_24C02C/EXT_EEPROM_24C02C.h: 19: void EXT_EEPROM_24C02C_WRITE_BYTE(uint8_t address, uint8_t ee_address, uint8_t data);
+[v _EXT_EEPROM_24C02C_WRITE_BYTE `(v ~T0 @X0 0 ef3`uc`uc`uc ]
 "24 ./mcc_generated_files/system/../../HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.h
 [; ;./mcc_generated_files/system/../../HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.h: 24: RealTimeClock_DS1307_T RealTimeClock_DS1307_GET_DATE_TIME(void);
 [v _RealTimeClock_DS1307_GET_DATE_TIME `(S330 ~T0 @X0 0 ef ]
@@ -494,25 +497,31 @@ Version 4.0 HI-TECH Software Intermediate Code
 "55
 [; ;main.c: 55:     (INTCONbits.PEIE = 1);
 [e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
+"59
+[; ;main.c: 59:     EXT_EEPROM_24C02C_WRITE_BYTE(0xA2, 0xA0, 0x30);
+[e ( _EXT_EEPROM_24C02C_WRITE_BYTE (3 , , -> -> 162 `i `uc -> -> 160 `i `uc -> -> 48 `i `uc ]
 "60
-[; ;main.c: 60:     while(1)
-[e :U 333 ]
-"61
-[; ;main.c: 61:     {
-{
+[; ;main.c: 60:     EXT_EEPROM_24C02C_WRITE_BYTE(0xA6, 0xA1, 0x20);
+[e ( _EXT_EEPROM_24C02C_WRITE_BYTE (3 , , -> -> 166 `i `uc -> -> 161 `i `uc -> -> 32 `i `uc ]
 "62
-[; ;main.c: 62:         RealTimeClock_DS1307 = RealTimeClock_DS1307_GET_DATE_TIME();
-[e = _RealTimeClock_DS1307 ( _RealTimeClock_DS1307_GET_DATE_TIME ..  ]
+[; ;main.c: 62:     while(1)
+[e :U 333 ]
 "63
-[; ;main.c: 63:         PRINT_RealTimeClock_DATA();
-[e ( _PRINT_RealTimeClock_DATA ..  ]
+[; ;main.c: 63:     {
+{
 "64
-[; ;main.c: 64:     }
+[; ;main.c: 64:         RealTimeClock_DS1307 = RealTimeClock_DS1307_GET_DATE_TIME();
+[e = _RealTimeClock_DS1307 ( _RealTimeClock_DS1307_GET_DATE_TIME ..  ]
+"65
+[; ;main.c: 65:         PRINT_RealTimeClock_DATA();
+[e ( _PRINT_RealTimeClock_DATA ..  ]
+"66
+[; ;main.c: 66:     }
 }
 [e :U 332 ]
 [e $U 333  ]
 [e :U 334 ]
-"65
-[; ;main.c: 65: }
+"67
+[; ;main.c: 67: }
 [e :UE 331 ]
 }

@@ -10,6 +10,9 @@
             <make-dep-projects/>
             <sourceRootList>
                 <sourceRootElem>HAL_LAYER</sourceRootElem>
+                <sourceRootElem>mcc_generated_files/i2c_host</sourceRootElem>
+                <sourceRootElem>mcc_generated_files/i2c_examples</sourceRootElem>
+                <sourceRootElem>mcc_generated_files/I2C</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>
