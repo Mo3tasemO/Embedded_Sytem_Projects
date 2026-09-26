@@ -47,6 +47,7 @@
 #include "../system/clock.h"
 #include "../i2c_host/mssp.h"
 #include "../../HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.h"
+#include "../../HAL_LAYER/EXT_EEPROM_24C02C/EXT_EEPROM_24C02C.h"
 /**
  * @ingroup systemdriver
  * @brief Initializes the system module.

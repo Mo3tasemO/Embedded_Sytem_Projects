@@ -82,19 +82,27 @@ void __interrupt() INTERRUPT_InterruptManager (void)
     // interrupt handler
     if(INTCONbits.PEIE == 1)
     {
-        if(PIE2bits.EEIE == 1 && PIR2bits.EEIF == 1)
-        {
-            NVM_ISR();
-        } 
-        if(PIE2bits.BCLIE == 1 && PIR2bits.BCLIF == 1)
-        {
-            I2C1_ERROR_ISR();
-        } 
         if(PIE1bits.SSPIE == 1 && PIR1bits.SSPIF == 1)
         {
             I2C1_ISR();
         } 
+        else if(PIE2bits.EEIE == 1 && PIR2bits.EEIF == 1)
+        {
+            NVM_ISR();
+        } 
+        else if(PIE2bits.BCLIE == 1 && PIR2bits.BCLIF == 1)
+        {
+            I2C1_ERROR_ISR();
+        } 
+        else
+        {
+            //Unhandled Interrupt
+        }
     }      
+    else
+    {
+        //Unhandled Interrupt
+    }
 }
 
 void INT0_ISR(void)

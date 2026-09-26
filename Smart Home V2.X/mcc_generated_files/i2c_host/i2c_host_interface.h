@@ -62,7 +62,7 @@ typedef struct
     * @brief Pointer to the write function of the I2C host.
     */
     bool (*Write)(uint16_t address, uint8_t *data, size_t dataLength);
-
+        
     /**
     * @brief Pointer to the read function of the I2C host.
     */

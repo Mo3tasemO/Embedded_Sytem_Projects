@@ -89,6 +89,8 @@ NVM_ERROR 1
 [v ___omul __omul `(uo  1 e 8 0 ]
 "12 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\HAL_LAYER/EUSART_LoggingDebugData/EUSART_LoggingDebugData.c
 [v _EUSART_LoggingDebugData_Send_String EUSART_LoggingDebugData_Send_String `(v  1 e 1 0 ]
+"15 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\HAL_LAYER/EXT_EEPROM_24C02C/EXT_EEPROM_24C02C.c
+[v _EXT_EEPROM_24C02C_WRITE_BYTE EXT_EEPROM_24C02C_WRITE_BYTE `(v  1 e 1 0 ]
 "17 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.c
 [v _RealTimeClock_DS1307_GET_SECONDS RealTimeClock_DS1307_GET_SECONDS `(uc  1 s 1 RealTimeClock_DS1307_GET_SECONDS ]
 "22
@@ -169,27 +171,27 @@ NVM_ERROR 1
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 "80
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
-"109
+"117
 [v _INT0_CallBack INT0_CallBack `(v  1 e 1 0 ]
-"118
+"126
 [v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
-"122
+"130
 [v _INT0_DefaultInterruptHandler INT0_DefaultInterruptHandler `(v  1 e 1 0 ]
-"135
+"143
 [v _INT1_CallBack INT1_CallBack `(v  1 e 1 0 ]
-"144
+"152
 [v _INT1_SetInterruptHandler INT1_SetInterruptHandler `(v  1 e 1 0 ]
-"148
+"156
 [v _INT1_DefaultInterruptHandler INT1_DefaultInterruptHandler `(v  1 e 1 0 ]
-"161
+"169
 [v _INT2_CallBack INT2_CallBack `(v  1 e 1 0 ]
-"170
+"178
 [v _INT2_SetInterruptHandler INT2_SetInterruptHandler `(v  1 e 1 0 ]
-"174
+"182
 [v _INT2_DefaultInterruptHandler INT2_DefaultInterruptHandler `(v  1 e 1 0 ]
 "38 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\mcc_generated_files/system/src/pins.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"39 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\mcc_generated_files/system/src/system.c
+"38 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\mcc_generated_files/system/src/system.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "68 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\mcc_generated_files/uart/src/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
@@ -324,7 +326,7 @@ NVM_ERROR 1
 [v _EEADR EEADR `VEuc  1 e 1 @4009 ]
 "3765
 [v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
-[s S1418 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S1425 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -334,25 +336,25 @@ NVM_ERROR 1
 `uc 1 SPEN 1 0 :1:7 
 ]
 "3806
-[s S1427 . 1 `uc 1 . 1 0 :3:0 
+[s S1434 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 ADEN 1 0 :1:3 
 ]
-[s S1430 . 1 `uc 1 . 1 0 :5:0 
+[s S1437 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 SRENA 1 0 :1:5 
 ]
-[s S1433 . 1 `uc 1 . 1 0 :6:0 
+[s S1440 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RC8_9 1 0 :1:6 
 ]
-[s S1436 . 1 `uc 1 . 1 0 :6:0 
+[s S1443 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RC9 1 0 :1:6 
 ]
-[s S1439 . 1 `uc 1 RCD8 1 0 :1:0 
+[s S1446 . 1 `uc 1 RCD8 1 0 :1:0 
 ]
-[u S1441 . 1 `S1418 1 . 1 0 `S1427 1 . 1 0 `S1430 1 . 1 0 `S1433 1 . 1 0 `S1436 1 . 1 0 `S1439 1 . 1 0 ]
-[v _RCSTAbits RCSTAbits `VES1441  1 e 1 @4011 ]
+[u S1448 . 1 `S1425 1 . 1 0 `S1434 1 . 1 0 `S1437 1 . 1 0 `S1440 1 . 1 0 `S1443 1 . 1 0 `S1446 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES1448  1 e 1 @4011 ]
 "3975
 [v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
-[s S1472 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S1479 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -362,7 +364,7 @@ NVM_ERROR 1
 `uc 1 CSRC 1 0 :1:7 
 ]
 "4014
-[s S1481 . 1 `uc 1 TX9D1 1 0 :1:0 
+[s S1488 . 1 `uc 1 TX9D1 1 0 :1:0 
 `uc 1 TRMT1 1 0 :1:1 
 `uc 1 BRGH1 1 0 :1:2 
 `uc 1 SENDB1 1 0 :1:3 
@@ -371,13 +373,13 @@ NVM_ERROR 1
 `uc 1 TX91 1 0 :1:6 
 `uc 1 CSRC1 1 0 :1:7 
 ]
-[s S1490 . 1 `uc 1 . 1 0 :6:0 
+[s S1497 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 TX8_9 1 0 :1:6 
 ]
-[s S1493 . 1 `uc 1 TXD8 1 0 :1:0 
+[s S1500 . 1 `uc 1 TXD8 1 0 :1:0 
 ]
-[u S1495 . 1 `S1472 1 . 1 0 `S1481 1 . 1 0 `S1490 1 . 1 0 `S1493 1 . 1 0 ]
-[v _TXSTAbits TXSTAbits `VES1495  1 e 1 @4012 ]
+[u S1502 . 1 `S1479 1 . 1 0 `S1488 1 . 1 0 `S1497 1 . 1 0 `S1500 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES1502  1 e 1 @4012 ]
 "4231
 [v _TXREG TXREG `VEuc  1 e 1 @4013 ]
 "4243
@@ -388,7 +390,7 @@ NVM_ERROR 1
 [v _SPBRGH SPBRGH `VEuc  1 e 1 @4016 ]
 "4665
 [v _BAUDCON BAUDCON `VEuc  1 e 1 @4024 ]
-[s S1524 . 1 `uc 1 ABDEN 1 0 :1:0 
+[s S1531 . 1 `uc 1 ABDEN 1 0 :1:0 
 `uc 1 WUE 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 BRG16 1 0 :1:3 
@@ -398,17 +400,17 @@ NVM_ERROR 1
 `uc 1 ABDOVF 1 0 :1:7 
 ]
 "4699
-[s S1533 . 1 `uc 1 . 1 0 :4:0 
+[s S1540 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 SCKP 1 0 :1:4 
 ]
-[s S1536 . 1 `uc 1 . 1 0 :5:0 
+[s S1543 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 RXCKP 1 0 :1:5 
 ]
-[s S1539 . 1 `uc 1 . 1 0 :1:0 
+[s S1546 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 W4E 1 0 :1:1 
 ]
-[u S1542 . 1 `S1524 1 . 1 0 `S1533 1 . 1 0 `S1536 1 . 1 0 `S1539 1 . 1 0 ]
-[v _BAUDCONbits BAUDCONbits `VES1542  1 e 1 @4024 ]
+[u S1549 . 1 `S1531 1 . 1 0 `S1540 1 . 1 0 `S1543 1 . 1 0 `S1546 1 . 1 0 ]
+[v _BAUDCONbits BAUDCONbits `VES1549  1 e 1 @4024 ]
 "5325
 [v _SSPCON2 SSPCON2 `VEuc  1 e 1 @4037 ]
 [s S347 . 1 `uc 1 SEN 1 0 :1:0 
@@ -614,6 +616,8 @@ NVM_ERROR 1
 [v _TBLPTRH TBLPTRH `VEuc  1 e 1 @4087 ]
 "7195
 [v _TBLPTRU TBLPTRU `VEuc  1 e 1 @4088 ]
+"13 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\HAL_LAYER/EXT_EEPROM_24C02C/EXT_EEPROM_24C02C.c
+[v _data_buffer data_buffer `us  1 e 2 0 ]
 [s S24 . 6 `uc 1 Seconds 1 0 `uc 1 Minutes 1 1 `uc 1 Hours 1 2 `uc 1 Day 1 3 `uc 1 Month 1 4 `uc 1 Year 1 5 ]
 "10 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.c
 [v _RealTimeClock_DS1307@RealTimeClock_DS1307$F50 RealTimeClock_DS1307 `S24  1 s 6 RealTimeClock_DS1307 ]
@@ -650,14 +654,14 @@ NVM_ERROR 1
 [v _INT1_InterruptHandler INT1_InterruptHandler `*.37(v  1 e 2 0 ]
 "40
 [v _INT2_InterruptHandler INT2_InterruptHandler `*.37(v  1 e 2 0 ]
-[s S1381 . 1 `uc 1 perr 1 0 :1:0 
+[s S1388 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "51 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\mcc_generated_files/uart/src/eusart.c
-[u S1386 . 2 `S1381 1 . 1 0 `ui 1 status 2 0 ]
-[v _eusartRxLastError eusartRxLastError `VES1386  1 s 2 eusartRxLastError ]
+[u S1393 . 2 `S1388 1 . 1 0 `ui 1 status 2 0 ]
+[v _eusartRxLastError eusartRxLastError `VES1393  1 s 2 eusartRxLastError ]
 "57
 [v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 s 2 EUSART_FramingErrorHandler ]
 "58
@@ -665,12 +669,12 @@ NVM_ERROR 1
 "41 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"65
+"67
 } 0
-"39 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\mcc_generated_files/system/src/system.c
+"38 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\mcc_generated_files/system/src/system.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
-"47
+"46
 } 0
 "38 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\mcc_generated_files/system/src/pins.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
@@ -692,23 +696,23 @@ NVM_ERROR 1
 {
 "71
 } 0
-"170
+"178
 [v _INT2_SetInterruptHandler INT2_SetInterruptHandler `(v  1 e 1 0 ]
 {
 [v INT2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 14 ]
-"172
+"180
 } 0
-"144
+"152
 [v _INT1_SetInterruptHandler INT1_SetInterruptHandler `(v  1 e 1 0 ]
 {
 [v INT1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 14 ]
-"146
+"154
 } 0
-"118
+"126
 [v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
 {
 [v INT0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 14 ]
-"120
+"128
 } 0
 "84 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\mcc_generated_files/i2c_host/src/mssp.c
 [v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
@@ -784,16 +788,6 @@ NVM_ERROR 1
 [v I2C1_WriteRead@readLength readLength `ui  1 p 2 20 ]
 "164
 } 0
-"205
-[v _I2C1_WriteStart I2C1_WriteStart `(v  1 s 1 I2C1_WriteStart ]
-{
-"209
-} 0
-"173
-[v _I2C1_IsBusy I2C1_IsBusy `(a  1 e 1 0 ]
-{
-"176
-} 0
 "57 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.c
 [v _PRINT_RealTimeClock_DATA PRINT_RealTimeClock_DATA `(v  1 e 1 0 ]
 {
@@ -823,10 +817,38 @@ NVM_ERROR 1
 {
 "175
 } 0
+"15 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\HAL_LAYER/EXT_EEPROM_24C02C/EXT_EEPROM_24C02C.c
+[v _EXT_EEPROM_24C02C_WRITE_BYTE EXT_EEPROM_24C02C_WRITE_BYTE `(v  1 e 1 0 ]
+{
+[v EXT_EEPROM_24C02C_WRITE_BYTE@address address `uc  1 p 1 wreg ]
+[v EXT_EEPROM_24C02C_WRITE_BYTE@address address `uc  1 p 1 wreg ]
+[v EXT_EEPROM_24C02C_WRITE_BYTE@ee_address ee_address `uc  1 p 1 19 ]
+[v EXT_EEPROM_24C02C_WRITE_BYTE@data data `uc  1 p 1 20 ]
+[v EXT_EEPROM_24C02C_WRITE_BYTE@address address `uc  1 p 1 23 ]
+"20
+} 1
+"109 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\mcc_generated_files/i2c_host/src/mssp.c
+[v _I2C1_Write I2C1_Write `(a  1 e 1 0 ]
+{
+[v I2C1_Write@address address `us  1 p 2 14 ]
+[v I2C1_Write@data data `*.30uc  1 p 1 16 ]
+[v I2C1_Write@dataLength dataLength `ui  1 p 2 17 ]
+"126
+} 0
+"205
+[v _I2C1_WriteStart I2C1_WriteStart `(v  1 s 1 I2C1_WriteStart ]
+{
+"209
+} 0
+"173
+[v _I2C1_IsBusy I2C1_IsBusy `(a  1 e 1 0 ]
+{
+"176
+} 0
 "80 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\mcc_generated_files/system/src/interrupt.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
 {
-"98
+"106
 } 0
 "314 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\mcc_generated_files/nvm/src/nvm.c
 [v _NVM_ISR NVM_ISR `(v  1 e 1 0 ]

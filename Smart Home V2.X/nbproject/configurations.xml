@@ -10,6 +10,11 @@
                        projectFiles="true">
           <itemPath>HAL_LAYER/EUSART_LoggingDebugData/EUSART_LoggingDebugData.h</itemPath>
         </logicalFolder>
+        <logicalFolder name="EXT_EEPROM_24C02C"
+                       displayName="EXT_EEPROM_24C02C"
+                       projectFiles="true">
+          <itemPath>HAL_LAYER/EXT_EEPROM_24C02C/EXT_EEPROM_24C02C.h</itemPath>
+        </logicalFolder>
         <logicalFolder name="RealTimeClock_DS1307"
                        displayName="RealTimeClock_DS1307"
                        projectFiles="true">
@@ -59,6 +64,11 @@
                        projectFiles="true">
           <itemPath>HAL_LAYER/EUSART_LoggingDebugData/EUSART_LoggingDebugData.c</itemPath>
         </logicalFolder>
+        <logicalFolder name="EXT_EEPROM_24C02C"
+                       displayName="EXT_EEPROM_24C02C"
+                       projectFiles="true">
+          <itemPath>HAL_LAYER/EXT_EEPROM_24C02C/EXT_EEPROM_24C02C.c</itemPath>
+        </logicalFolder>
         <logicalFolder name="RealTimeClock_DS1307"
                        displayName="RealTimeClock_DS1307"
                        projectFiles="true">
@@ -98,6 +108,9 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>HAL_LAYER</Elem>
+    <Elem>mcc_generated_files/i2c_host</Elem>
+    <Elem>mcc_generated_files/i2c_examples</Elem>
+    <Elem>mcc_generated_files/I2C</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
