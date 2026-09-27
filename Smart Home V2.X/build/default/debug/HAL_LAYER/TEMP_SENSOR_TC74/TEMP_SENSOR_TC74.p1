@@ -1,0 +1,82 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"109 HAL_LAYER/TEMP_SENSOR_TC74/../../mcc_generated_files/i2c_host/mssp.h
+[; ;HAL_LAYER/TEMP_SENSOR_TC74/../../mcc_generated_files/i2c_host/mssp.h: 109: _Bool I2C1_Write(uint16_t address, uint8_t *data, size_t dataLength);
+[v _I2C1_Write `(a ~T0 @X0 0 ef3`us`*uc`ui ]
+"193
+[; ;HAL_LAYER/TEMP_SENSOR_TC74/../../mcc_generated_files/i2c_host/mssp.h: 193: _Bool I2C1_IsBusy(void);
+[v _I2C1_IsBusy `(a ~T0 @X0 0 ef ]
+"138
+[; ;HAL_LAYER/TEMP_SENSOR_TC74/../../mcc_generated_files/i2c_host/mssp.h: 138: _Bool I2C1_Read(uint16_t address, uint8_t *data, size_t dataLength);
+[v _I2C1_Read `(a ~T0 @X0 0 ef3`us`*uc`ui ]
+"12 HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.c
+[; ;HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.c: 12: uint16_t temp_sensor_data_buffer = 0;
+[v _temp_sensor_data_buffer `us ~T0 @X0 1 e ]
+[i _temp_sensor_data_buffer
+-> -> 0 `i `us
+]
+"14
+[; ;HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.c: 14: void TEMP_SENSOR_TC74_WRITE_DATA(uint8_t address, uint8_t command, uint8_t data){
+[v _TEMP_SENSOR_TC74_WRITE_DATA `(v ~T0 @X0 1 ef3`uc`uc`uc ]
+{
+[e :U _TEMP_SENSOR_TC74_WRITE_DATA ]
+[v _address `uc ~T0 @X0 1 r1 ]
+[v _command `uc ~T0 @X0 1 r2 ]
+[v _data `uc ~T0 @X0 1 r3 ]
+[f ]
+"15
+[; ;HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.c: 15:     temp_sensor_data_buffer = command + (data << 8);
+[e = _temp_sensor_data_buffer -> + -> _command `i << -> _data `i -> 8 `i `us ]
+"16
+[; ;HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.c: 16:     I2C1_Write(address, &temp_sensor_data_buffer, 2);
+[e ( _I2C1_Write (3 , , -> _address `us -> &U _temp_sensor_data_buffer `*uc -> -> 2 `i `ui ]
+"17
+[; ;HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.c: 17:     while(I2C1_IsBusy());
+[e $U 10  ]
+[e :U 11 ]
+[e :U 10 ]
+[e $ != -> ( _I2C1_IsBusy ..  `i -> 0 `i 11  ]
+[e :U 12 ]
+"18
+[; ;HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.c: 18: }
+[e :UE 9 ]
+}
+"19
+[; ;HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.c: 19: uint8_t TEMP_SENSOR_TC74_READ_DATA(uint8_t address, uint8_t command){
+[v _TEMP_SENSOR_TC74_READ_DATA `(uc ~T0 @X0 1 ef2`uc`uc ]
+{
+[e :U _TEMP_SENSOR_TC74_READ_DATA ]
+[v _address `uc ~T0 @X0 1 r1 ]
+[v _command `uc ~T0 @X0 1 r2 ]
+[f ]
+"20
+[; ;HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.c: 20:     uint8_t TEMP_value = 0;
+[v _TEMP_value `uc ~T0 @X0 1 a ]
+[e = _TEMP_value -> -> 0 `i `uc ]
+"21
+[; ;HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.c: 21:     I2C1_Write(address, &command, 1);
+[e ( _I2C1_Write (3 , , -> _address `us &U _command -> -> 1 `i `ui ]
+"22
+[; ;HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.c: 22:     while(I2C1_IsBusy());
+[e $U 14  ]
+[e :U 15 ]
+[e :U 14 ]
+[e $ != -> ( _I2C1_IsBusy ..  `i -> 0 `i 15  ]
+[e :U 16 ]
+"23
+[; ;HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.c: 23:     I2C1_Read(address, &TEMP_value, 1);
+[e ( _I2C1_Read (3 , , -> _address `us &U _TEMP_value -> -> 1 `i `ui ]
+"24
+[; ;HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.c: 24:     while(I2C1_IsBusy());
+[e $U 17  ]
+[e :U 18 ]
+[e :U 17 ]
+[e $ != -> ( _I2C1_IsBusy ..  `i -> 0 `i 18  ]
+[e :U 19 ]
+"25
+[; ;HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.c: 25:     return TEMP_value;
+[e ) _TEMP_value ]
+[e $UE 13  ]
+"26
+[; ;HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.c: 26: }
+[e :UE 13 ]
+}

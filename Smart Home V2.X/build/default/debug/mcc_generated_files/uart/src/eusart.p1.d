@@ -18,4 +18,6 @@ mcc_generated_files/uart/src/../../system/../../HAL_LAYER/RealTimeClock_DS1307/.
 mcc_generated_files/uart/src/../../system/../../HAL_LAYER/RealTimeClock_DS1307/../EUSART_LoggingDebugData/../../mcc_generated_files/uart/eusart.h  \
 mcc_generated_files/uart/src/../../system/../../HAL_LAYER/EXT_EEPROM_24C02C/EXT_EEPROM_24C02C.h  \
 mcc_generated_files/uart/src/../../system/../../HAL_LAYER/EXT_EEPROM_24C02C/../../mcc_generated_files/i2c_host/mssp.h  \
-mcc_generated_files/uart/src/../../system/../../HAL_LAYER/EXT_EEPROM_24C02C/../../mcc_generated_files/system/clock.h 
+mcc_generated_files/uart/src/../../system/../../HAL_LAYER/EXT_EEPROM_24C02C/../../mcc_generated_files/system/clock.h  \
+mcc_generated_files/uart/src/../../system/../../HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.h  \
+mcc_generated_files/uart/src/../../system/../../HAL_LAYER/TEMP_SENSOR_TC74/../../mcc_generated_files/i2c_host/mssp.h 

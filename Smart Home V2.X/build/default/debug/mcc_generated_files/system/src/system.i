@@ -5600,6 +5600,11 @@ void PRINT_RealTimeClock_DATA(void);
 void EXT_EEPROM_24C02C_WRITE_BYTE(uint8_t address, uint8_t ee_address, uint8_t data);
 void EXT_EEPROM_24C02C_READ_BYTE(uint8_t w_address, uint8_t r_address, uint8_t ee_address, uint8_t *data);
 # 51 "mcc_generated_files/system/src/../system.h" 2
+# 1 "mcc_generated_files/system/src/../../../HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.h" 1
+# 18 "mcc_generated_files/system/src/../../../HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.h"
+void TEMP_SENSOR_TC74_WRITE_DATA(uint8_t address, uint8_t command, uint8_t data);
+uint8_t TEMP_SENSOR_TC74_READ_DATA(uint8_t address, uint8_t command);
+# 52 "mcc_generated_files/system/src/../system.h" 2
 
 
 

@@ -18,4 +18,6 @@ HAL_LAYER/EUSART_LoggingDebugData/../../mcc_generated_files/uart/../system/../..
 HAL_LAYER/EUSART_LoggingDebugData/../../mcc_generated_files/uart/../system/../../HAL_LAYER/RealTimeClock_DS1307/../EUSART_LoggingDebugData/EUSART_LoggingDebugData.h  \
 HAL_LAYER/EUSART_LoggingDebugData/../../mcc_generated_files/uart/../system/../../HAL_LAYER/EXT_EEPROM_24C02C/EXT_EEPROM_24C02C.h  \
 HAL_LAYER/EUSART_LoggingDebugData/../../mcc_generated_files/uart/../system/../../HAL_LAYER/EXT_EEPROM_24C02C/../../mcc_generated_files/i2c_host/mssp.h  \
-HAL_LAYER/EUSART_LoggingDebugData/../../mcc_generated_files/uart/../system/../../HAL_LAYER/EXT_EEPROM_24C02C/../../mcc_generated_files/system/clock.h 
+HAL_LAYER/EUSART_LoggingDebugData/../../mcc_generated_files/uart/../system/../../HAL_LAYER/EXT_EEPROM_24C02C/../../mcc_generated_files/system/clock.h  \
+HAL_LAYER/EUSART_LoggingDebugData/../../mcc_generated_files/uart/../system/../../HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.h  \
+HAL_LAYER/EUSART_LoggingDebugData/../../mcc_generated_files/uart/../system/../../HAL_LAYER/TEMP_SENSOR_TC74/../../mcc_generated_files/i2c_host/mssp.h 

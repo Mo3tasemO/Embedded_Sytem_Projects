@@ -38,6 +38,7 @@
     Main application
 */
 RealTimeClock_DS1307_T RealTimeClock_DS1307;
+uint8_t TEMPERATURE_VALUE = 0;
 int main(void)
 {
     SYSTEM_Initialize();
@@ -61,6 +62,7 @@ int main(void)
 
     while(1)
     {
+        TEMPERATURE_VALUE = TEMP_SENSOR_TC74_READ_DATA(TEMP_SENSOR_TC74_W_ADDRESS, READ_TEMP_COMMAND);
         RealTimeClock_DS1307 = RealTimeClock_DS1307_GET_DATE_TIME();
         PRINT_RealTimeClock_DATA();
     }    

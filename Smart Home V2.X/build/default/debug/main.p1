@@ -4,8 +4,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [s S330 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
 [n S330 . Seconds Minutes Hours Day Month Year ]
 [p mainexit ]
-"58 ./mcc_generated_files/system/system.h
-[; ;./mcc_generated_files/system/system.h: 58: void SYSTEM_Initialize(void);
+"59 ./mcc_generated_files/system/system.h
+[; ;./mcc_generated_files/system/system.h: 59: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
 "7033 C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h
 [; ;C:/Users/Moata/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f46k20.h: 7033:     struct {
@@ -29,6 +29,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "19 ./mcc_generated_files/system/../../HAL_LAYER/EXT_EEPROM_24C02C/EXT_EEPROM_24C02C.h
 [; ;./mcc_generated_files/system/../../HAL_LAYER/EXT_EEPROM_24C02C/EXT_EEPROM_24C02C.h: 19: void EXT_EEPROM_24C02C_WRITE_BYTE(uint8_t address, uint8_t ee_address, uint8_t data);
 [v _EXT_EEPROM_24C02C_WRITE_BYTE `(v ~T0 @X0 0 ef3`uc`uc`uc ]
+"19 ./mcc_generated_files/system/../../HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.h
+[; ;./mcc_generated_files/system/../../HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.h: 19: uint8_t TEMP_SENSOR_TC74_READ_DATA(uint8_t address, uint8_t command);
+[v _TEMP_SENSOR_TC74_READ_DATA `(uc ~T0 @X0 0 ef2`uc`uc ]
 "24 ./mcc_generated_files/system/../../HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.h
 [; ;./mcc_generated_files/system/../../HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.h: 24: RealTimeClock_DS1307_T RealTimeClock_DS1307_GET_DATE_TIME(void);
 [v _RealTimeClock_DS1307_GET_DATE_TIME `(S330 ~T0 @X0 0 ef ]
@@ -479,49 +482,58 @@ Version 4.0 HI-TECH Software Intermediate Code
 "40 main.c
 [; ;main.c: 40: RealTimeClock_DS1307_T RealTimeClock_DS1307;
 [v _RealTimeClock_DS1307 `S330 ~T0 @X0 1 e ]
-[v $root$_main `(v ~T0 @X0 0 e ]
 "41
-[; ;main.c: 41: int main(void)
-[v _main `(i ~T0 @X0 1 ef ]
+[; ;main.c: 41: uint8_t TEMPERATURE_VALUE = 0;
+[v _TEMPERATURE_VALUE `uc ~T0 @X0 1 e ]
+[i _TEMPERATURE_VALUE
+-> -> 0 `i `uc
+]
+[v $root$_main `(v ~T0 @X0 0 e ]
 "42
-[; ;main.c: 42: {
+[; ;main.c: 42: int main(void)
+[v _main `(i ~T0 @X0 1 ef ]
+"43
+[; ;main.c: 43: {
 {
 [e :U _main ]
 [f ]
-"43
-[; ;main.c: 43:     SYSTEM_Initialize();
+"44
+[; ;main.c: 44:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"49
-[; ;main.c: 49:     (INTCONbits.GIE = 1);
+"50
+[; ;main.c: 50:     (INTCONbits.GIE = 1);
 [e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-"55
-[; ;main.c: 55:     (INTCONbits.PEIE = 1);
+"56
+[; ;main.c: 56:     (INTCONbits.PEIE = 1);
 [e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
-"59
-[; ;main.c: 59:     EXT_EEPROM_24C02C_WRITE_BYTE(0xA2, 0xA0, 0x30);
-[e ( _EXT_EEPROM_24C02C_WRITE_BYTE (3 , , -> -> 162 `i `uc -> -> 160 `i `uc -> -> 48 `i `uc ]
 "60
-[; ;main.c: 60:     EXT_EEPROM_24C02C_WRITE_BYTE(0xA6, 0xA1, 0x20);
+[; ;main.c: 60:     EXT_EEPROM_24C02C_WRITE_BYTE(0xA2, 0xA0, 0x30);
+[e ( _EXT_EEPROM_24C02C_WRITE_BYTE (3 , , -> -> 162 `i `uc -> -> 160 `i `uc -> -> 48 `i `uc ]
+"61
+[; ;main.c: 61:     EXT_EEPROM_24C02C_WRITE_BYTE(0xA6, 0xA1, 0x20);
 [e ( _EXT_EEPROM_24C02C_WRITE_BYTE (3 , , -> -> 166 `i `uc -> -> 161 `i `uc -> -> 32 `i `uc ]
-"62
-[; ;main.c: 62:     while(1)
-[e :U 333 ]
 "63
-[; ;main.c: 63:     {
-{
+[; ;main.c: 63:     while(1)
+[e :U 333 ]
 "64
-[; ;main.c: 64:         RealTimeClock_DS1307 = RealTimeClock_DS1307_GET_DATE_TIME();
-[e = _RealTimeClock_DS1307 ( _RealTimeClock_DS1307_GET_DATE_TIME ..  ]
+[; ;main.c: 64:     {
+{
 "65
-[; ;main.c: 65:         PRINT_RealTimeClock_DATA();
-[e ( _PRINT_RealTimeClock_DATA ..  ]
+[; ;main.c: 65:         TEMPERATURE_VALUE = TEMP_SENSOR_TC74_READ_DATA(0x9E, 0x00);
+[e = _TEMPERATURE_VALUE ( _TEMP_SENSOR_TC74_READ_DATA (2 , -> -> 158 `i `uc -> -> 0 `i `uc ]
 "66
-[; ;main.c: 66:     }
+[; ;main.c: 66:         RealTimeClock_DS1307 = RealTimeClock_DS1307_GET_DATE_TIME();
+[e = _RealTimeClock_DS1307 ( _RealTimeClock_DS1307_GET_DATE_TIME ..  ]
+"67
+[; ;main.c: 67:         PRINT_RealTimeClock_DATA();
+[e ( _PRINT_RealTimeClock_DATA ..  ]
+"68
+[; ;main.c: 68:     }
 }
 [e :U 332 ]
 [e $U 333  ]
 [e :U 334 ]
-"67
-[; ;main.c: 67: }
+"69
+[; ;main.c: 69: }
 [e :UE 331 ]
 }
