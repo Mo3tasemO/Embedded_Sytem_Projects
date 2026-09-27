@@ -5470,6 +5470,11 @@ void INT2_DefaultInterruptHandler(void);
 void EXT_EEPROM_24C02C_WRITE_BYTE(uint8_t address, uint8_t ee_address, uint8_t data);
 void EXT_EEPROM_24C02C_READ_BYTE(uint8_t w_address, uint8_t r_address, uint8_t ee_address, uint8_t *data);
 # 51 "HAL_LAYER/RealTimeClock_DS1307/../EUSART_LoggingDebugData/../../mcc_generated_files/uart/../system/system.h" 2
+# 1 "HAL_LAYER/RealTimeClock_DS1307/../EUSART_LoggingDebugData/../../mcc_generated_files/uart/../system/../../HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.h" 1
+# 18 "HAL_LAYER/RealTimeClock_DS1307/../EUSART_LoggingDebugData/../../mcc_generated_files/uart/../system/../../HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.h"
+void TEMP_SENSOR_TC74_WRITE_DATA(uint8_t address, uint8_t command, uint8_t data);
+uint8_t TEMP_SENSOR_TC74_READ_DATA(uint8_t address, uint8_t command);
+# 52 "HAL_LAYER/RealTimeClock_DS1307/../EUSART_LoggingDebugData/../../mcc_generated_files/uart/../system/system.h" 2
 
 
 

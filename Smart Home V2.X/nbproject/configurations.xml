@@ -20,6 +20,11 @@
                        projectFiles="true">
           <itemPath>HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.h</itemPath>
         </logicalFolder>
+        <logicalFolder name="TEMP_SENSOR_TC74"
+                       displayName="TEMP_SENSOR_TC74"
+                       projectFiles="true">
+          <itemPath>HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.h</itemPath>
+        </logicalFolder>
       </logicalFolder>
       <logicalFolder name="MCC Generated Files"
                      displayName="MCC Generated Files"
@@ -73,6 +78,11 @@
                        displayName="RealTimeClock_DS1307"
                        projectFiles="true">
           <itemPath>HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="TEMP_SENSOR_TC74"
+                       displayName="TEMP_SENSOR_TC74"
+                       projectFiles="true">
+          <itemPath>HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.c</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="MCC Generated Files"
