@@ -57,13 +57,15 @@ int main(void)
 
     // Disable the Peripheral Interrupts 
     //INTERRUPT_PeripheralInterruptDisable(); 
-    EXT_EEPROM_24C02C_WRITE_BYTE(SLAVE2_W_ADD, 0xA0, 0x30);
-    EXT_EEPROM_24C02C_WRITE_BYTE(SLAVE1_W_ADD, 0xA1, 0x20);
+//    EXT_EEPROM_24C02C_WRITE_BYTE(SLAVE2_W_ADD, 0xA0, 0x30);
+//    EXT_EEPROM_24C02C_WRITE_BYTE(SLAVE1_W_ADD, 0xA1, 0x20);
 
     while(1)
     {
         TEMPERATURE_VALUE = TEMP_SENSOR_TC74_READ_DATA(TEMP_SENSOR_TC74_W_ADDRESS, READ_TEMP_COMMAND);
         RealTimeClock_DS1307 = RealTimeClock_DS1307_GET_DATE_TIME();
         PRINT_RealTimeClock_DATA();
+        I2C1_Write(0x50, &TEMPERATURE_VALUE, 1);
+        while(I2C1_IsBusy());
     }    
 }

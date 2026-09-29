@@ -89,8 +89,6 @@ NVM_ERROR 1
 [v ___omul __omul `(uo  1 e 8 0 ]
 "12 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\HAL_LAYER/EUSART_LoggingDebugData/EUSART_LoggingDebugData.c
 [v _EUSART_LoggingDebugData_Send_String EUSART_LoggingDebugData_Send_String `(v  1 e 1 0 ]
-"15 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\HAL_LAYER/EXT_EEPROM_24C02C/EXT_EEPROM_24C02C.c
-[v _EXT_EEPROM_24C02C_WRITE_BYTE EXT_EEPROM_24C02C_WRITE_BYTE `(v  1 e 1 0 ]
 "17 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.c
 [v _RealTimeClock_DS1307_GET_SECONDS RealTimeClock_DS1307_GET_SECONDS `(uc  1 s 1 RealTimeClock_DS1307_GET_SECONDS ]
 "22
@@ -237,7 +235,7 @@ NVM_ERROR 1
 [v _TRISE TRISE `VEuc  1 e 1 @3990 ]
 "3056
 [v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3995 ]
-[s S259 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[s S271 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 CCP1IE 1 0 :1:2 
 `uc 1 SSPIE 1 0 :1:3 
@@ -247,13 +245,13 @@ NVM_ERROR 1
 `uc 1 PSPIE 1 0 :1:7 
 ]
 "3148
-[s S268 . 1 `uc 1 . 1 0 :4:0 
+[s S280 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TX1IE 1 0 :1:4 
 `uc 1 RC1IE 1 0 :1:5 
 ]
-[u S272 . 1 `S259 1 . 1 0 `S268 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES272  1 e 1 @3997 ]
-[s S390 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S284 . 1 `S271 1 . 1 0 `S280 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES284  1 e 1 @3997 ]
+[s S402 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSPIF 1 0 :1:3 
@@ -263,13 +261,13 @@ NVM_ERROR 1
 `uc 1 PSPIF 1 0 :1:7 
 ]
 "3225
-[s S399 . 1 `uc 1 . 1 0 :4:0 
+[s S411 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TX1IF 1 0 :1:4 
 `uc 1 RC1IF 1 0 :1:5 
 ]
-[u S403 . 1 `S390 1 . 1 0 `S399 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES403  1 e 1 @3998 ]
-[s S289 . 1 `uc 1 CCP2IE 1 0 :1:0 
+[u S415 . 1 `S402 1 . 1 0 `S411 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES415  1 e 1 @3998 ]
+[s S301 . 1 `uc 1 CCP2IE 1 0 :1:0 
 `uc 1 TMR3IE 1 0 :1:1 
 `uc 1 HLVDIE 1 0 :1:2 
 `uc 1 BCLIE 1 0 :1:3 
@@ -279,15 +277,15 @@ NVM_ERROR 1
 `uc 1 OSCFIE 1 0 :1:7 
 ]
 "3382
-[s S298 . 1 `uc 1 . 1 0 :2:0 
+[s S310 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 LVDIE 1 0 :1:2 
 ]
-[s S301 . 1 `uc 1 . 1 0 :6:0 
+[s S313 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 CMIE 1 0 :1:6 
 ]
-[u S304 . 1 `S289 1 . 1 0 `S298 1 . 1 0 `S301 1 . 1 0 ]
-[v _PIE2bits PIE2bits `VES304  1 e 1 @4000 ]
-[s S420 . 1 `uc 1 CCP2IF 1 0 :1:0 
+[u S316 . 1 `S301 1 . 1 0 `S310 1 . 1 0 `S313 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES316  1 e 1 @4000 ]
+[s S432 . 1 `uc 1 CCP2IF 1 0 :1:0 
 `uc 1 TMR3IF 1 0 :1:1 
 `uc 1 HLVDIF 1 0 :1:2 
 `uc 1 BCLIF 1 0 :1:3 
@@ -297,15 +295,15 @@ NVM_ERROR 1
 `uc 1 OSCFIF 1 0 :1:7 
 ]
 "3462
-[s S429 . 1 `uc 1 . 1 0 :2:0 
+[s S441 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 LVDIF 1 0 :1:2 
 ]
-[s S432 . 1 `uc 1 . 1 0 :6:0 
+[s S444 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 CMIF 1 0 :1:6 
 ]
-[u S435 . 1 `S420 1 . 1 0 `S429 1 . 1 0 `S432 1 . 1 0 ]
-[v _PIR2bits PIR2bits `VES435  1 e 1 @4001 ]
-[s S772 . 1 `uc 1 RD 1 0 :1:0 
+[u S447 . 1 `S432 1 . 1 0 `S441 1 . 1 0 `S444 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES447  1 e 1 @4001 ]
+[s S784 . 1 `uc 1 RD 1 0 :1:0 
 `uc 1 WR 1 0 :1:1 
 `uc 1 WREN 1 0 :1:2 
 `uc 1 WRERR 1 0 :1:3 
@@ -315,11 +313,11 @@ NVM_ERROR 1
 `uc 1 EEPGD 1 0 :1:7 
 ]
 "3618
-[s S781 . 1 `uc 1 . 1 0 :6:0 
+[s S793 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 EEFS 1 0 :1:6 
 ]
-[u S784 . 1 `S772 1 . 1 0 `S781 1 . 1 0 ]
-[v _EECON1bits EECON1bits `VES784  1 e 1 @4006 ]
+[u S796 . 1 `S784 1 . 1 0 `S793 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES796  1 e 1 @4006 ]
 "3663
 [v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
 "3670
@@ -328,7 +326,7 @@ NVM_ERROR 1
 [v _EEADR EEADR `VEuc  1 e 1 @4009 ]
 "3765
 [v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
-[s S1388 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S1400 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -338,25 +336,25 @@ NVM_ERROR 1
 `uc 1 SPEN 1 0 :1:7 
 ]
 "3806
-[s S1397 . 1 `uc 1 . 1 0 :3:0 
+[s S1409 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 ADEN 1 0 :1:3 
 ]
-[s S1400 . 1 `uc 1 . 1 0 :5:0 
+[s S1412 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 SRENA 1 0 :1:5 
 ]
-[s S1403 . 1 `uc 1 . 1 0 :6:0 
+[s S1415 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RC8_9 1 0 :1:6 
 ]
-[s S1406 . 1 `uc 1 . 1 0 :6:0 
+[s S1418 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RC9 1 0 :1:6 
 ]
-[s S1409 . 1 `uc 1 RCD8 1 0 :1:0 
+[s S1421 . 1 `uc 1 RCD8 1 0 :1:0 
 ]
-[u S1411 . 1 `S1388 1 . 1 0 `S1397 1 . 1 0 `S1400 1 . 1 0 `S1403 1 . 1 0 `S1406 1 . 1 0 `S1409 1 . 1 0 ]
-[v _RCSTAbits RCSTAbits `VES1411  1 e 1 @4011 ]
+[u S1423 . 1 `S1400 1 . 1 0 `S1409 1 . 1 0 `S1412 1 . 1 0 `S1415 1 . 1 0 `S1418 1 . 1 0 `S1421 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES1423  1 e 1 @4011 ]
 "3975
 [v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
-[s S1442 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S1454 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -366,7 +364,7 @@ NVM_ERROR 1
 `uc 1 CSRC 1 0 :1:7 
 ]
 "4014
-[s S1451 . 1 `uc 1 TX9D1 1 0 :1:0 
+[s S1463 . 1 `uc 1 TX9D1 1 0 :1:0 
 `uc 1 TRMT1 1 0 :1:1 
 `uc 1 BRGH1 1 0 :1:2 
 `uc 1 SENDB1 1 0 :1:3 
@@ -375,13 +373,13 @@ NVM_ERROR 1
 `uc 1 TX91 1 0 :1:6 
 `uc 1 CSRC1 1 0 :1:7 
 ]
-[s S1460 . 1 `uc 1 . 1 0 :6:0 
+[s S1472 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 TX8_9 1 0 :1:6 
 ]
-[s S1463 . 1 `uc 1 TXD8 1 0 :1:0 
+[s S1475 . 1 `uc 1 TXD8 1 0 :1:0 
 ]
-[u S1465 . 1 `S1442 1 . 1 0 `S1451 1 . 1 0 `S1460 1 . 1 0 `S1463 1 . 1 0 ]
-[v _TXSTAbits TXSTAbits `VES1465  1 e 1 @4012 ]
+[u S1477 . 1 `S1454 1 . 1 0 `S1463 1 . 1 0 `S1472 1 . 1 0 `S1475 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES1477  1 e 1 @4012 ]
 "4231
 [v _TXREG TXREG `VEuc  1 e 1 @4013 ]
 "4243
@@ -392,7 +390,7 @@ NVM_ERROR 1
 [v _SPBRGH SPBRGH `VEuc  1 e 1 @4016 ]
 "4665
 [v _BAUDCON BAUDCON `VEuc  1 e 1 @4024 ]
-[s S1494 . 1 `uc 1 ABDEN 1 0 :1:0 
+[s S1506 . 1 `uc 1 ABDEN 1 0 :1:0 
 `uc 1 WUE 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 BRG16 1 0 :1:3 
@@ -402,20 +400,20 @@ NVM_ERROR 1
 `uc 1 ABDOVF 1 0 :1:7 
 ]
 "4699
-[s S1503 . 1 `uc 1 . 1 0 :4:0 
+[s S1515 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 SCKP 1 0 :1:4 
 ]
-[s S1506 . 1 `uc 1 . 1 0 :5:0 
+[s S1518 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 RXCKP 1 0 :1:5 
 ]
-[s S1509 . 1 `uc 1 . 1 0 :1:0 
+[s S1521 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 W4E 1 0 :1:1 
 ]
-[u S1512 . 1 `S1494 1 . 1 0 `S1503 1 . 1 0 `S1506 1 . 1 0 `S1509 1 . 1 0 ]
-[v _BAUDCONbits BAUDCONbits `VES1512  1 e 1 @4024 ]
+[u S1524 . 1 `S1506 1 . 1 0 `S1515 1 . 1 0 `S1518 1 . 1 0 `S1521 1 . 1 0 ]
+[v _BAUDCONbits BAUDCONbits `VES1524  1 e 1 @4024 ]
 "5325
 [v _SSPCON2 SSPCON2 `VEuc  1 e 1 @4037 ]
-[s S369 . 1 `uc 1 SEN 1 0 :1:0 
+[s S381 . 1 `uc 1 SEN 1 0 :1:0 
 `uc 1 RSEN 1 0 :1:1 
 `uc 1 PEN 1 0 :1:2 
 `uc 1 RCEN 1 0 :1:3 
@@ -425,34 +423,34 @@ NVM_ERROR 1
 `uc 1 GCEN 1 0 :1:7 
 ]
 "5342
-[u S378 . 1 `S369 1 . 1 0 ]
-[v _SSPCON2bits SSPCON2bits `VES378  1 e 1 @4037 ]
+[u S390 . 1 `S381 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES390  1 e 1 @4037 ]
 "5387
 [v _SSPCON1 SSPCON1 `VEuc  1 e 1 @4038 ]
-[s S324 . 1 `uc 1 SSPM 1 0 :4:0 
+[s S336 . 1 `uc 1 SSPM 1 0 :4:0 
 `uc 1 CKP 1 0 :1:4 
 `uc 1 SSPEN 1 0 :1:5 
 `uc 1 SSPOV 1 0 :1:6 
 `uc 1 WCOL 1 0 :1:7 
 ]
 "5407
-[s S330 . 1 `uc 1 SSPM0 1 0 :1:0 
+[s S342 . 1 `uc 1 SSPM0 1 0 :1:0 
 `uc 1 SSPM1 1 0 :1:1 
 `uc 1 SSPM2 1 0 :1:2 
 `uc 1 SSPM3 1 0 :1:3 
 ]
-[u S335 . 1 `S324 1 . 1 0 `S330 1 . 1 0 ]
-[v _SSPCON1bits SSPCON1bits `VES335  1 e 1 @4038 ]
+[u S347 . 1 `S336 1 . 1 0 `S342 1 . 1 0 ]
+[v _SSPCON1bits SSPCON1bits `VES347  1 e 1 @4038 ]
 "5457
 [v _SSPSTAT SSPSTAT `VEuc  1 e 1 @4039 ]
-[s S455 . 1 `uc 1 . 1 0 :2:0 
+[s S467 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_NOT_W 1 0 :1:2 
 ]
 "5537
-[s S458 . 1 `uc 1 . 1 0 :5:0 
+[s S470 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 D_NOT_A 1 0 :1:5 
 ]
-[s S461 . 1 `uc 1 BF 1 0 :1:0 
+[s S473 . 1 `uc 1 BF 1 0 :1:0 
 `uc 1 UA 1 0 :1:1 
 `uc 1 R_nW 1 0 :1:2 
 `uc 1 S 1 0 :1:3 
@@ -461,73 +459,73 @@ NVM_ERROR 1
 `uc 1 CKE 1 0 :1:6 
 `uc 1 SMP 1 0 :1:7 
 ]
-[s S470 . 1 `uc 1 . 1 0 :2:0 
+[s S482 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D 1 0 :1:5 
 ]
-[s S475 . 1 `uc 1 . 1 0 :2:0 
+[s S487 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 W 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 A 1 0 :1:5 
 ]
-[s S480 . 1 `uc 1 . 1 0 :2:0 
+[s S492 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nW 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nA 1 0 :1:5 
 ]
-[s S485 . 1 `uc 1 . 1 0 :2:0 
+[s S497 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_W 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D_A 1 0 :1:5 
 ]
-[s S490 . 1 `uc 1 . 1 0 :2:0 
+[s S502 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_WRITE 1 0 :1:2 
 ]
-[s S493 . 1 `uc 1 . 1 0 :5:0 
+[s S505 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 NOT_ADDRESS 1 0 :1:5 
 ]
-[s S496 . 1 `uc 1 . 1 0 :2:0 
+[s S508 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nWRITE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nADDRESS 1 0 :1:5 
 ]
-[s S501 . 1 `uc 1 . 1 0 :3:0 
+[s S513 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 START 1 0 :1:3 
 `uc 1 STOP 1 0 :1:4 
 ]
-[s S505 . 1 `uc 1 . 1 0 :2:0 
+[s S517 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 RW 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 DA 1 0 :1:5 
 ]
-[s S510 . 1 `uc 1 . 1 0 :2:0 
+[s S522 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_W 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 NOT_A 1 0 :1:5 
 ]
-[u S515 . 1 `S455 1 . 1 0 `S458 1 . 1 0 `S461 1 . 1 0 `S470 1 . 1 0 `S475 1 . 1 0 `S480 1 . 1 0 `S485 1 . 1 0 `S490 1 . 1 0 `S493 1 . 1 0 `S496 1 . 1 0 `S501 1 . 1 0 `S505 1 . 1 0 `S510 1 . 1 0 ]
-[v _SSPSTATbits SSPSTATbits `VES515  1 e 1 @4039 ]
+[u S527 . 1 `S467 1 . 1 0 `S470 1 . 1 0 `S473 1 . 1 0 `S482 1 . 1 0 `S487 1 . 1 0 `S492 1 . 1 0 `S497 1 . 1 0 `S502 1 . 1 0 `S505 1 . 1 0 `S508 1 . 1 0 `S513 1 . 1 0 `S517 1 . 1 0 `S522 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES527  1 e 1 @4039 ]
 "5682
 [v _SSPADD SSPADD `VEuc  1 e 1 @4040 ]
 "5689
 [v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
-[s S931 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+[s S943 . 1 `uc 1 NOT_BOR 1 0 :1:0 
 ]
 "6051
-[s S933 . 1 `uc 1 . 1 0 :1:0 
+[s S945 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_POR 1 0 :1:1 
 ]
-[s S936 . 1 `uc 1 . 1 0 :2:0 
+[s S948 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_PD 1 0 :1:2 
 ]
-[s S939 . 1 `uc 1 . 1 0 :3:0 
+[s S951 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_TO 1 0 :1:3 
 ]
-[s S942 . 1 `uc 1 . 1 0 :4:0 
+[s S954 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 NOT_RI 1 0 :1:4 
 ]
-[s S945 . 1 `uc 1 nBOR 1 0 :1:0 
+[s S957 . 1 `uc 1 nBOR 1 0 :1:0 
 `uc 1 nPOR 1 0 :1:1 
 `uc 1 nPD 1 0 :1:2 
 `uc 1 nTO 1 0 :1:3 
@@ -536,17 +534,17 @@ NVM_ERROR 1
 `uc 1 SBOREN 1 0 :1:6 
 `uc 1 IPEN 1 0 :1:7 
 ]
-[s S954 . 1 `uc 1 BOR 1 0 :1:0 
+[s S966 . 1 `uc 1 BOR 1 0 :1:0 
 `uc 1 POR 1 0 :1:1 
 `uc 1 PD 1 0 :1:2 
 `uc 1 TO 1 0 :1:3 
 `uc 1 RI 1 0 :1:4 
 ]
-[u S960 . 1 `S931 1 . 1 0 `S933 1 . 1 0 `S936 1 . 1 0 `S939 1 . 1 0 `S942 1 . 1 0 `S945 1 . 1 0 `S954 1 . 1 0 ]
-[v _RCONbits RCONbits `VES960  1 e 1 @4048 ]
+[u S972 . 1 `S943 1 . 1 0 `S945 1 . 1 0 `S948 1 . 1 0 `S951 1 . 1 0 `S954 1 . 1 0 `S957 1 . 1 0 `S966 1 . 1 0 ]
+[v _RCONbits RCONbits `VES972  1 e 1 @4048 ]
 "6439
 [v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
-[s S1070 . 1 `uc 1 INT1IF 1 0 :1:0 
+[s S1082 . 1 `uc 1 INT1IF 1 0 :1:0 
 `uc 1 INT2IF 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 INT1IE 1 0 :1:3 
@@ -556,7 +554,7 @@ NVM_ERROR 1
 `uc 1 INT2IP 1 0 :1:7 
 ]
 "6892
-[s S1079 . 1 `uc 1 INT1F 1 0 :1:0 
+[s S1091 . 1 `uc 1 INT1F 1 0 :1:0 
 `uc 1 INT2F 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 INT1E 1 0 :1:3 
@@ -565,13 +563,13 @@ NVM_ERROR 1
 `uc 1 INT1P 1 0 :1:6 
 `uc 1 INT2P 1 0 :1:7 
 ]
-[u S1088 . 1 `S1070 1 . 1 0 `S1079 1 . 1 0 ]
-[v _INTCON3bits INTCON3bits `VES1088  1 e 1 @4080 ]
-[s S1025 . 1 `uc 1 . 1 0 :7:0 
+[u S1100 . 1 `S1082 1 . 1 0 `S1091 1 . 1 0 ]
+[v _INTCON3bits INTCON3bits `VES1100  1 e 1 @4080 ]
+[s S1037 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 NOT_RBPU 1 0 :1:7 
 ]
 "6982
-[s S1028 . 1 `uc 1 RBIP 1 0 :1:0 
+[s S1040 . 1 `uc 1 RBIP 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 TMR0IP 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -580,12 +578,12 @@ NVM_ERROR 1
 `uc 1 INTEDG0 1 0 :1:6 
 `uc 1 nRBPU 1 0 :1:7 
 ]
-[s S1037 . 1 `uc 1 . 1 0 :7:0 
+[s S1049 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 RBPU 1 0 :1:7 
 ]
-[u S1040 . 1 `S1025 1 . 1 0 `S1028 1 . 1 0 `S1037 1 . 1 0 ]
-[v _INTCON2bits INTCON2bits `VES1040  1 e 1 @4081 ]
-[s S807 . 1 `uc 1 RBIF 1 0 :1:0 
+[u S1052 . 1 `S1037 1 . 1 0 `S1040 1 . 1 0 `S1049 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES1052  1 e 1 @4081 ]
+[s S819 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INT0IF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -595,7 +593,7 @@ NVM_ERROR 1
 `uc 1 GIE_GIEH 1 0 :1:7 
 ]
 "7059
-[s S816 . 1 `uc 1 . 1 0 :1:0 
+[s S828 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT0F 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -604,12 +602,12 @@ NVM_ERROR 1
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-[s S825 . 1 `uc 1 . 1 0 :6:0 
+[s S837 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 GIEL 1 0 :1:6 
 `uc 1 GIEH 1 0 :1:7 
 ]
-[u S829 . 1 `S807 1 . 1 0 `S816 1 . 1 0 `S825 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES829  1 e 1 @4082 ]
+[u S841 . 1 `S819 1 . 1 0 `S828 1 . 1 0 `S837 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES841  1 e 1 @4082 ]
 "7165
 [v _TABLAT TABLAT `VEuc  1 e 1 @4085 ]
 "7181
@@ -643,9 +641,9 @@ NVM_ERROR 1
 [v _TEMPERATURE_VALUE TEMPERATURE_VALUE `uc  1 e 1 0 ]
 "68 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\mcc_generated_files/i2c_host/src/mssp.c
 [v _I2C1_Callback I2C1_Callback `*.37(v  1 s 2 I2C1_Callback ]
-[s S208 . 12 `a 1 busy 1 0 `us 1 address 2 1 `*.30uc 1 writePtr 1 3 `ui 1 writeLength 2 4 `*.30uc 1 readPtr 1 6 `ui 1 readLength 2 7 `a 1 switchToRead 1 9 `E2854 1 errorState 1 10 `E2864 1 state 1 11 ]
+[s S220 . 12 `a 1 busy 1 0 `us 1 address 2 1 `*.30uc 1 writePtr 1 3 `ui 1 writeLength 2 4 `*.30uc 1 readPtr 1 6 `ui 1 readLength 2 7 `a 1 switchToRead 1 9 `E2854 1 errorState 1 10 `E2864 1 state 1 11 ]
 "69
-[v _i2c1Status i2c1Status `VES208  1 s 12 i2c1Status ]
+[v _i2c1Status i2c1Status `VES220  1 s 12 i2c1Status ]
 "72
 [v _i2c1_eventTable i2c1_eventTable `C[9]*.37(E2864  1 s 18 i2c1_eventTable ]
 "39 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\mcc_generated_files/nvm/src/nvm.c
@@ -660,14 +658,14 @@ NVM_ERROR 1
 [v _INT1_InterruptHandler INT1_InterruptHandler `*.37(v  1 e 2 0 ]
 "40
 [v _INT2_InterruptHandler INT2_InterruptHandler `*.37(v  1 e 2 0 ]
-[s S1351 . 1 `uc 1 perr 1 0 :1:0 
+[s S1363 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "51 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\mcc_generated_files/uart/src/eusart.c
-[u S1356 . 2 `S1351 1 . 1 0 `ui 1 status 2 0 ]
-[v _eusartRxLastError eusartRxLastError `VES1356  1 s 2 eusartRxLastError ]
+[u S1368 . 2 `S1363 1 . 1 0 `ui 1 status 2 0 ]
+[v _eusartRxLastError eusartRxLastError `VES1368  1 s 2 eusartRxLastError ]
 "57
 [v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 s 2 EUSART_FramingErrorHandler ]
 "58
@@ -675,7 +673,7 @@ NVM_ERROR 1
 "42 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"69
+"71
 } 0
 "19 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\HAL_LAYER/TEMP_SENSOR_TC74/TEMP_SENSOR_TC74.c
 [v _TEMP_SENSOR_TC74_READ_DATA TEMP_SENSOR_TC74_READ_DATA `(uc  1 e 1 0 ]
@@ -689,7 +687,15 @@ NVM_ERROR 1
 [v TEMP_SENSOR_TC74_READ_DATA@address address `uc  1 p 1 20 ]
 "26
 } 1
-"128 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\mcc_generated_files/i2c_host/src/mssp.c
+"109 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\mcc_generated_files/i2c_host/src/mssp.c
+[v _I2C1_Write I2C1_Write `(a  1 e 1 0 ]
+{
+[v I2C1_Write@address address `us  1 p 2 14 ]
+[v I2C1_Write@data data `*.30uc  1 p 1 16 ]
+[v I2C1_Write@dataLength dataLength `ui  1 p 2 17 ]
+"126
+} 0
+"128
 [v _I2C1_Read I2C1_Read `(a  1 e 1 0 ]
 {
 [v I2C1_Read@address address `us  1 p 2 14 ]
@@ -819,6 +825,16 @@ NVM_ERROR 1
 [v I2C1_WriteRead@readLength readLength `ui  1 p 2 20 ]
 "164
 } 0
+"205
+[v _I2C1_WriteStart I2C1_WriteStart `(v  1 s 1 I2C1_WriteStart ]
+{
+"209
+} 0
+"173
+[v _I2C1_IsBusy I2C1_IsBusy `(a  1 e 1 0 ]
+{
+"176
+} 0
 "57 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\HAL_LAYER/RealTimeClock_DS1307/RealTimeClock_DS1307.c
 [v _PRINT_RealTimeClock_DATA PRINT_RealTimeClock_DATA `(v  1 e 1 0 ]
 {
@@ -848,34 +864,6 @@ NVM_ERROR 1
 {
 "175
 } 0
-"15 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\HAL_LAYER/EXT_EEPROM_24C02C/EXT_EEPROM_24C02C.c
-[v _EXT_EEPROM_24C02C_WRITE_BYTE EXT_EEPROM_24C02C_WRITE_BYTE `(v  1 e 1 0 ]
-{
-[v EXT_EEPROM_24C02C_WRITE_BYTE@address address `uc  1 p 1 wreg ]
-[v EXT_EEPROM_24C02C_WRITE_BYTE@address address `uc  1 p 1 wreg ]
-[v EXT_EEPROM_24C02C_WRITE_BYTE@ee_address ee_address `uc  1 p 1 19 ]
-[v EXT_EEPROM_24C02C_WRITE_BYTE@data data `uc  1 p 1 20 ]
-[v EXT_EEPROM_24C02C_WRITE_BYTE@address address `uc  1 p 1 23 ]
-"20
-} 1
-"109 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\mcc_generated_files/i2c_host/src/mssp.c
-[v _I2C1_Write I2C1_Write `(a  1 e 1 0 ]
-{
-[v I2C1_Write@address address `us  1 p 2 14 ]
-[v I2C1_Write@data data `*.30uc  1 p 1 16 ]
-[v I2C1_Write@dataLength dataLength `ui  1 p 2 17 ]
-"126
-} 0
-"205
-[v _I2C1_WriteStart I2C1_WriteStart `(v  1 s 1 I2C1_WriteStart ]
-{
-"209
-} 0
-"173
-[v _I2C1_IsBusy I2C1_IsBusy `(a  1 e 1 0 ]
-{
-"176
-} 0
 "80 D:\Projects\Embedded_Sytem_Projects\Smart Home V2.X\mcc_generated_files/system/src/interrupt.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
 {
@@ -895,6 +883,11 @@ NVM_ERROR 1
 [v _I2C1_EventHandler I2C1_EventHandler `(v  1 s 1 I2C1_EventHandler ]
 {
 "250
+} 0
+"211
+[v _I2C1_Close I2C1_Close `(v  1 s 1 I2C1_Close ]
+{
+"222
 } 0
 "191
 [v _I2C1_ERROR_ISR I2C1_ERROR_ISR `(v  1 e 1 0 ]
@@ -958,9 +951,4 @@ NVM_ERROR 1
 "281
 [v I2C1_EVENT_TX@retEventState retEventState `E2864  1 a 1 0 ]
 "304
-} 0
-"211
-[v _I2C1_Close I2C1_Close `(v  1 s 1 I2C1_Close ]
-{
-"222
 } 0
