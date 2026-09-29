@@ -355,7 +355,7 @@ static i2c_host_event_states_t I2C1_EVENT_ERROR(void)
 static i2c_host_event_states_t I2C1_EVENT_STOP(void)
 {
     SSPCON2bits.PEN = 1;
-    I2C1_Close();
+//    I2C1_Close();
     return I2C_STATE_IDLE;
 }
 

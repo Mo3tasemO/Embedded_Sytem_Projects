@@ -3,9 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Projects/Embedded_Sytem_Projects/Smart%20Home%20V2.X/HAL_LAYER/EXT_EEPROM_24C02C/EXT_EEPROM_24C02C.h</file>
             <file>file:/D:/Projects/Embedded_Sytem_Projects/Smart%20Home%20V2.X/main.c</file>
-            <file>file:/D:/Projects/Embedded_Sytem_Projects/Smart%20Home%20V2.X/HAL_LAYER/EXT_EEPROM_24C02C/EXT_EEPROM_24C02C.c</file>
+            <file>file:/D:/Projects/Embedded_Sytem_Projects/Smart%20Home%20V2.X/mcc_generated_files/i2c_host/src/mssp.c</file>
         </group>
     </open-files>
 </project-private>

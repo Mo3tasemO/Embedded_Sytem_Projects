@@ -1617,9 +1617,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "357
 [; ;mcc_generated_files/i2c_host/src/mssp.c: 357:     SSPCON2bits.PEN = 1;
 [e = . . _SSPCON2bits 0 2 -> -> 1 `i `uc ]
-"358
-[; ;mcc_generated_files/i2c_host/src/mssp.c: 358:     I2C1_Close();
-[e ( _I2C1_Close ..  ]
 "359
 [; ;mcc_generated_files/i2c_host/src/mssp.c: 359:     return I2C_STATE_IDLE;
 [e ) . `E2864 0 ]
