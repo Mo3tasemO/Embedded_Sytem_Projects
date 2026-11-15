@@ -12,5 +12,20 @@
 /* Section : Includes */
 #include "ECU_LAYER/DC_MOTORS/HAL_DC_MOTOR.h"
 #include "ECU_LAYER/L293D_H_Bridge/HAL_L298D_H_Bridge.h"
+#include "ECU_LAYER/SERVO_MOTOR/HAL_SERVO_MOTOR.h"
+
+
+
+void ECU_INITIALIZE(void){
+	L298D_H_Bridge_INIT();
+	DC_MOTOR_INIT();
+	SERVO_MOTOR_INIT();
+
+}
+
+
+
+
+
 
 #endif /* APPLICATION_H_ */
