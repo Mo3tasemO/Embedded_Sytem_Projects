@@ -210,7 +210,6 @@ typedef struct {
 	void (*TIMER2_INTERRUPT_HANDLER_OVF)(void);
 	void (*TIMER2_INTERRUPT_HANDLER_COMP)(void);
 #endif
-	pin_config_t oc2_pin;
 	uint16 Preload;
 	TIMER2_MODE_SELECT_T Mode_Select;
 	TIMER2_PRESCALER_SELECT_T Prescaler;
@@ -229,7 +228,7 @@ typedef struct {
 Std_ReturnType TIMER2_INIT(const TIMER2_t *_Timer);
 Std_ReturnType TIMER2_WRITE_VALUE(const TIMER2_t *_Timer, uint8 Preload_Val);
 Std_ReturnType TIMER2_READ_VALUE(const TIMER2_t *_Timer, uint8 *ret_value);
-void TIMER2_GENERATE_PWM(uint8 OC0_Val);
+Std_ReturnType TIMER2_GENERATE_PWM(uint8 OC0_Val);
 
 
 
