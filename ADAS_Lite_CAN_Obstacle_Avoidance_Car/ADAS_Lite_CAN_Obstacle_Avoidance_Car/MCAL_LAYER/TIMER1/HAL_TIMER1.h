@@ -14,18 +14,18 @@
 #include "../GPIO/HAL_GPIO.h"
 /* Section: Macro Declarations */
 
-#define	TCCR1A	(*(volatile uint8*)(0x2F))
-#define	TCCR1B  (*(volatile uint8*)(0x2E))
-#define	TCNT1H  (*(volatile uint8*)(0x2D))
-#define	TCNT1L  (*(volatile uint8*)(0x2C))
-#define	OCR1AH  (*(volatile uint8*)(0x2B))
-#define	OCR1AL	(*(volatile uint8*)(0x2A))
-#define	OCR1BH  (*(volatile uint8*)(0x29))
-#define	OCR1BL  (*(volatile uint8*)(0x28))
-#define	ICR1H   (*(volatile uint8*)(0x27))
-#define	ICR1L   (*(volatile uint8*)(0x26))
-#define	TIMSK	(*(volatile uint8*)(0x39))
-#define	TIFR    (*(volatile uint8*)(0x38))
+#define	TCCR1A	(*(volatile uint8*)(0x4F))
+#define	TCCR1B  (*(volatile uint8*)(0x4E))
+#define	TCNT1H  (*(volatile uint8*)(0x4D))
+#define	TCNT1L  (*(volatile uint8*)(0x4C))
+#define	OCR1AH  (*(volatile uint8*)(0x4B))
+#define	OCR1AL	(*(volatile uint8*)(0x4A))
+#define	OCR1BH  (*(volatile uint8*)(0x49))
+#define	OCR1BL  (*(volatile uint8*)(0x48))
+#define	ICR1H   (*(volatile uint8*)(0x47))
+#define	ICR1L   (*(volatile uint8*)(0x46))
+#define	TIMSK	(*(volatile uint8*)(0x59))
+#define	TIFR    (*(volatile uint8*)(0x58))
 
 // Timer/Counter Control Register_BITS
 
@@ -59,8 +59,22 @@
 #define	OCF1A	4
 #define	OCF1B	3
 #define	ICF1	5
+// Input Capture Unit Config
+#define TIMER1_ICU_NOISE_CANCLER_ENABLE			1
+#define TIMER1_ICU_NOISE_CANCLER_DISABLE		0
 
+#define TIMER1_ICU_FALLING_EDGE		0
+#define TIMER1_ICU_RAISING_EDGE		1
+
+#define TIMER1_ICU_ENABLE			1
+#define TIMER1_ICU_DISABLE			0
 /* Section: Macro Functions Declarations */
+
+#define TIMER1_STOP_CLOCK()	do{						      \
+								CLEAR_BIT(TCCR1B, CS10);\
+								CLEAR_BIT(TCCR1B, CS11);\
+								CLEAR_BIT(TCCR1B, CS12);\
+							}while(0)
 
 // Compare Output Mode NON_PWM
 #define	TIMER1_COMPARE_OUTPUT_NON_PWM_NORMAL_MODE()	do{						      \
@@ -239,10 +253,11 @@
 													SET_BIT(TCCR1B, WGM13);\
 												}while(0)
 
-#define TIMER1_INPUT_CAPTURE_NOISE_CANCLER_ENABLE()		(SET_BIT(TCCR1B, ICNC1))
+#define TIMER1_INPUT_CAPTURE_NOISE_CANCLER_ENABLE()			(SET_BIT(TCCR1B, ICNC1))
+#define TIMER1_INPUT_CAPTURE_NOISE_CANCLER_DISABLE()		(CLEAR_BIT(TCCR1B, ICNC1))
 
 #define TIMER1_INPUT_CAPTURE_FALLING_EDGE()				(CLEAR_BIT(TCCR1B, ICES1))
-																					// ICR1 is used as TOP value for Edge Selection
+// ICR1 is used as TOP value for Edge Selection
 #define TIMER1_INPUT_CAPTURE_RAISING_EDGE()				(SET_BIT(TCCR1B, ICES1))
 
 #if TIMER1_INTERRUPT_FEATURE_ENABLE==INTERRUPT_FEATURE_ENABLE
@@ -252,19 +267,22 @@
 #define TIMER1_OUTPUT_COMPARE_B_MATCH_INTERRUPT_ENABLE()	(SET_BIT(TIMSK, OCIE1B))
 #define TIMER1_OVERFLOW_INTERRUPT_ENABLE()					(SET_BIT(TIMSK, TOIE1))
 
+#define TIMER1_INPUT_CAPTURE_INTERRUPT_DISABLE()				(CLEAR_BIT(TIMSK, TICIE1))
+#define TIMER1_OUTPUT_COMPARE_A_MATCH_INTERRUPT_DISABLE()	(CLEAR_BIT(TIMSK, OCIE1A))
+#define TIMER1_OUTPUT_COMPARE_B_MATCH_INTERRUPT_DISABLE()	(CLEAR_BIT(TIMSK, OCIE1B))
+#define TIMER1_OVERFLOW_INTERRUPT_DISABLE()					(CLEAR_BIT(TIMSK, TOIE1))
 
 #define TIMER1_INPUT_CAPTURE_INTERRUPT_CLEAR_FLAG()				(SET_BIT(TIFR, ICF1))
 #define TIMER1_OUTPUT_COMPARE_A_MATCH_INTERRUPT_CLEAR_FLAG()	(SET_BIT(TIFR, OCF1A))
 #define TIMER1_OUTPUT_COMPARE_B_MATCH_INTERRUPT_CLEAR_FLAG()	(SET_BIT(TIFR, OCF1B))
 #define TIMER1_OVERFLOW_INTERRUPT_CLEAR_FLAG()				    (SET_BIT(TIFR, TOV1))
 
-
 #endif
 
 /* Section: Data Type Declarations */
 
 /*	 					Clock Select 					*/
-typedef enum{
+typedef enum {
 	TIMER1_NO_CLOCK_SOURCE = 0,
 	TIMER1_NO_PRESCALING_DIV_1,
 	TIMER1_PRESCALER_DIV_8,
@@ -273,74 +291,80 @@ typedef enum{
 	TIMER1_PRESCALER_DIV_1024,
 	TIMER1_EXT_CLOCK_FALLING_EDGE,
 	TIMER1_EXT_CLOCK_RAISING_EDGE
-}TIMER1_CLOCK_SELECT;
+} TIMER1_CLOCK_SELECT;
 
 typedef enum {
-    TIMER1_NORMAL = 0,
-    TIMER1_PC_PWM_8BIT,
-    TIMER1_PC_PWM_9BIT,
-    TIMER1_PC_PWM_10BIT,
-    TIMER1_CTC_TOP_OCR1A,
-    TIMER1_FAST_PWM_8BIT,
-    TIMER1_FAST_PWM_9BIT,
-    TIMER1_FAST_PWM_10BIT,
-    TIMER1_PFC_PWM_TOP_ICR1,
-    TIMER1_PFC_PWM_TOP_OCR1A,
-    TIMER1_PC_PWM_TOP_ICR1,
-    TIMER1_PC_PWM_TOP_OCR1A,
-    TIMER1_CTC_TOP_ICR1,
-    TIMER1_FAST_PWM_TOP_ICR1 = 14,
-    TIMER1_FAST_PWM_TOP_OCR1A
+	TIMER1_NORMAL = 0,
+	TIMER1_PC_PWM_8BIT,
+	TIMER1_PC_PWM_9BIT,
+	TIMER1_PC_PWM_10BIT,
+	TIMER1_CTC_TOP_OCR1A,
+	TIMER1_FAST_PWM_8BIT,
+	TIMER1_FAST_PWM_9BIT,
+	TIMER1_FAST_PWM_10BIT,
+	TIMER1_PFC_PWM_TOP_ICR1,
+	TIMER1_PFC_PWM_TOP_OCR1A,
+	TIMER1_PC_PWM_TOP_ICR1,
+	TIMER1_PC_PWM_TOP_OCR1A,
+	TIMER1_CTC_TOP_ICR1,
+	TIMER1_FAST_PWM_TOP_ICR1 = 14,
+	TIMER1_FAST_PWM_TOP_OCR1A
 } TIMER1_MODE_SELECT_T;
 
 typedef enum {
-    TIMER1_OC_NORMAL = 0,
-    TIMER1_OC_TOGGLE,
-    TIMER1_OC_CLEAR ,
-    TIMER1_OC_SET
-} TIMER1_COMPARE_OUTPUT_MODE_T;
+	TIMER1_OC_NORMAL = 0,
+	TIMER1_OC_TOGGLE,
+	TIMER1_OC_CLEAR,
+	TIMER1_OC_SET,
+	TIMER1_OC_FORCE
+} TIMER1_COMPARE_OUTPUT_OPERATION_T;
 
 typedef enum {
-    TIMER1_FPWM_NORMAL = 0,
-    TIMER1_FPWM_TOGGLE_OC1A,
-    TIMER1_FPWM_NON_INVERTING,
-    TIMER1_FPWM_INVERTING
-} TIMER1_FAST_PWM_OUTPUT_MODE_T;
+	TIMER1_FPWM_NORMAL = 0,
+	TIMER1_FPWM_TOGGLE_OC1A,
+	TIMER1_FPWM_NON_INVERTING,
+	TIMER1_FPWM_INVERTING
+} TIMER1_FAST_PWM_OUTPUT_OPERATION_T;
 
-typedef struct {
-	uint8 Input_Capture_Noise_Canceler_cfg : 1;
-	uint8 Input_Capture_Edge_Select : 1;
-	uint8 Reserved : 6;
-}TIMER1_INPUT_CAPTURE_CFG_T;
 typedef enum {
-    TIMER1_PCPWM_NORMAL = 0,
-    TIMER1_PCPWM_TOGGLE_OC1A,
-    TIMER1_PCPWM_NON_INVERTING,
-    TIMER1_PCPWM_INVERTING
-} TIMER1_PHASE_CORRECT_OUTPUT_MODE_T;
+	TIMER1_PCPWM_NORMAL = 0,
+	TIMER1_PCPWM_TOGGLE_OC1A,
+	TIMER1_PCPWM_NON_INVERTING,
+	TIMER1_PCPWM_INVERTING
+} TIMER1_PF_C_OUTPUT_OPERATION_T;
+
 typedef enum {
 	TIMER1_CHANNEL_A,
 	TIMER1_CHANNEL_B
 } TIMER1_CHANNEL_T;
 
+typedef struct {
+	uint16 ICU_payload;
+	uint8 Input_Capture_cfg : 1;
+	uint8 Input_Capture_Noise_Canceler_cfg :1;
+	uint8 Input_Capture_Edge_Select :1;
+	uint8 Reserved :5;
+} TIMER1_INPUT_CAPTURE_CFG_T;
 
 typedef struct {
 #if TIMER1_INTERRUPT_FEATURE_ENABLE==INTERRUPT_FEATURE_ENABLE
 	void (*TIMER1_INTERRUPT_HANDLER_OVF)(void);
 	void (*TIMER1_INTERRUPT_HANDLER_COMPA)(void);
 	void (*TIMER1_INTERRUPT_HANDLER_COMPB)(void);
-	void (*TIMER1_INTERRUPT_HANDLER_INPUT_CAP)(void);
+	void (*TIMER1_INTERRUPT_HANDLER_ICU)(void);
 #endif
-	uint16 Preload;				/* initial TCNT1 value                                    */
-	uint16 Top;					/* ICR1 or OCR1A, depending on the selected mode          */
-	uint16 Compare_A;			/* OCR1A (ignored in modes where OCR1A is TOP)            */
-	uint16 Compare_B;			/* OCR1B                                                  */
+	uint16 Preload; /* initial TCNT1 value                                    */
+	uint16 Top; /* ICR1 or OCR1A, depending on the selected mode          */
+	uint16 Compare_A; /* OCR1A (ignored in modes where OCR1A is TOP)            */
+	uint16 Compare_B; /* OCR1B                                                  */
 	TIMER1_MODE_SELECT_T Mode_Select;
 	TIMER1_CLOCK_SELECT Prescaler;
-	uint8 COM1A_Mode : 2;
-	uint8 COM1B_Mode : 2;
-	uint8 Timer1_Reserved : 4;
-	TIMER1_INPUT_CAPTURE_CFG_T	IN_CAP_cfg;
+	TIMER1_FAST_PWM_OUTPUT_OPERATION_T	FPWM_op;
+	TIMER1_PF_C_OUTPUT_OPERATION_T PC_op;
+	TIMER1_INPUT_CAPTURE_CFG_T ICU_cfg;
+	uint8 COM1A_Mode :2;
+	uint8 COM1B_Mode :2;
+	uint8 Timer1_Reserved :4;
 }TIMER1_T;
 
 /* Section: Function Declarations */
@@ -352,8 +376,9 @@ Std_ReturnType TIMER1_STOP(const TIMER1_T *_Timer);
 Std_ReturnType TIMER1_WRITE_VALUE(const TIMER1_T *_Timer, uint16 Preload_Val);
 Std_ReturnType TIMER1_READ_VALUE(const TIMER1_T *_Timer, uint16 *ret_value);
 Std_ReturnType TIMER1_SET_TOP(const TIMER1_T *_Timer, uint16 Top_Val);
-Std_ReturnType TIMER1_SET_COMPARE(const TIMER1_T *_Timer, TIMER1_CHANNEL_T Channel, uint16 Compare_Val);
-Std_ReturnType TIMER1_GENERATE_PWM(const TIMER1_T *_Timer, TIMER1_CHANNEL_T Channel, uint16 OC1_Val);
-
+Std_ReturnType TIMER1_SET_COMPARE(const TIMER1_T *_Timer,
+		TIMER1_CHANNEL_T Channel, uint16 Compare_Val);
+Std_ReturnType TIMER1_GENERATE_PWM(const TIMER1_T *_Timer,
+		TIMER1_CHANNEL_T Channel, uint16 OC1_Val);
 
 #endif /* MCAL_LAYER_TIMER1_HAL_TIMER1_H_ */

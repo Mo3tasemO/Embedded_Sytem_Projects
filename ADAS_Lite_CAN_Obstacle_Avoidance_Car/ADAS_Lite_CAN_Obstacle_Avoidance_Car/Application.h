@@ -10,7 +10,7 @@
 
 
 /* Section : Includes */
-
-
+#include "ECU_LAYER/DC_MOTORS/HAL_DC_MOTOR.h"
+#include "ECU_LAYER/L293D_H_Bridge/HAL_L298D_H_Bridge.h"
 
 #endif /* APPLICATION_H_ */
