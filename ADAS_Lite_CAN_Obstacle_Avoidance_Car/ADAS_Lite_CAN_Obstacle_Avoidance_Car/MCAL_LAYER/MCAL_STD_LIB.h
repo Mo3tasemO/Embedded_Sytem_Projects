@@ -13,6 +13,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+#define F_CPU	8000000UL
 #include <util/delay.h>
 
 

@@ -5,33 +5,68 @@
  *      Author: Moata
  */
 
-
 #include "HAL_ULTRASONIC.h"
-void TIMER2_DEFAULT_INTERRUPT_HANDLER_OVF(void);
 
-TIMER2_t timer2_obj = {
-		.Mode_Select = TIMER2_FAST_PWM,
-		.Clock_Select = TIMER2_PRESCALLER_CLOCK_SOURCE,
-		.COM_Mode = TIMER2_FAST_PWM_MODE,
-		.COM_Operaion = TIMER2_CLEAR_OC2_SELECTED,
-		.Prescaler = TIMER2_PRESCALER_DIV_1,
-		.Preload = 0,
-		.TIMER2_INTERRUPT_HANDLER_OVF = TIMER2_DEFAULT_INTERRUPT_HANDLER_OVF
-};
+#define ULTRASONIC_TIMER1_PRESCALER   8UL
 
+static void ULTRASONIC_TRIGER(void);
 
-Std_ReturnType ULTRASONIC_INIT(void){
-	Std_ReturnType ret = E_NOT_OK;
-	ret = TIMER2_INIT(&timer2_obj);
-	ret = TIMER2_GENERATE_PWM(79);
-	ret = E_OK;
-	return ret;
+pin_config_t trig_pin = { .port = PORTC_INDEX, .pin = GPIO_PIN6, .direction =
+		GPIO_DIRECTION_OUTPUT, .logic = GPIO_LOW };
+
+void ULTRASONIC_INIT(void) {
+	GPIO_PIN_INIT(&trig_pin);
 }
 
-uint16 ULTRASONIC_MEASURE_DISTANCE(void){
+uint16 ULTRASONIC_MEASURE_DISTANCE(void)
+{
+    uint32 ticks_copy;
+    uint32 pulse_us;
+    uint16 waited_us = 0;
+    uint8 sreg_backup;
+    uint8 capture_complete;
 
+    ULTRASONIC_CAPTURE_RESET();
+    ULTRASONIC_TRIGER();
+
+    while ((echo_ready == 0) && (waited_us < 45000U)) {
+        _delay_us(10);
+        waited_us += 10U;
+    }
+
+    /* Read the completion flag and captured width together. */
+    sreg_backup = SREG;
+    CLEAR_BIT(SREG, I_BIT);
+
+    capture_complete = echo_ready;
+    ticks_copy = timer1_ticks;
+
+    SREG = sreg_backup;
+
+    if (capture_complete == 0) {
+        return ULTRASONIC_NO_ECHO;
+    }
+
+    pulse_us = (ticks_copy * ULTRASONIC_TIMER1_PRESCALER)
+               / (F_CPU / 1000000UL);
+
+    if (pulse_us > 25000UL) {
+        return ULTRASONIC_OUT_OF_RANGE;
+    }
+
+    return (uint16)(pulse_us / 58UL);
 }
 
-void TIMER2_DEFAULT_INTERRUPT_HANDLER_OVF(void){
+static void ULTRASONIC_TRIGER(void) {
+
+	GPIO_PIN_WRITE_LOGIC(&trig_pin, GPIO_LOW);
+
+	_delay_us(2);
+
+	GPIO_PIN_WRITE_LOGIC(&trig_pin, GPIO_HIGH);
+
+	_delay_us(10);
+
+	GPIO_PIN_WRITE_LOGIC(&trig_pin, GPIO_LOW);
 
 }

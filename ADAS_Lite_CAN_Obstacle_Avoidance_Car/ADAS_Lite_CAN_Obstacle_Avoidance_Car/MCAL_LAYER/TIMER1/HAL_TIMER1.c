@@ -27,11 +27,16 @@ Std_ReturnType TIMER1_INIT(const TIMER1_T *_Timer) {
 				.direction = GPIO_DIRECTION_OUTPUT, .logic = GPIO_LOW };
 		pin_config_t OC1B_pin = { .port = PORTD_INDEX, .pin = GPIO_PIN4,
 				.direction = GPIO_DIRECTION_OUTPUT, .logic = GPIO_LOW };
+		pin_config_t ICU_pin = { .port = PORTD_INDEX, .pin = GPIO_PIN6,
+						.direction = GPIO_DIRECTION_INPUT, .logic = GPIO_LOW };
 		if (0 != _Timer->COM1A_Mode) {
 			ret &= GPIO_PIN_INIT(&OC1A_pin);
 		}
 		if (0 != _Timer->COM1B_Mode) {
 			ret &= GPIO_PIN_INIT(&OC1B_pin);
+		}
+		if (0 != _Timer->ICU_cfg.Input_Capture_cfg) {
+					ret &= GPIO_PIN_INIT(&ICU_pin);
 		}
 		TIMER1_MODE_SELECT(_Timer);
 		TIMER1_ICU_CFG_SELECT(_Timer);
@@ -465,8 +470,6 @@ static void TIMER1_ICU_CFG_SELECT(const TIMER1_T *_Timer) {
 		} else {
 			/* Nothing */
 		}
-	} else if (TIMER1_ICU_DISABLE == _Timer->ICU_cfg.Input_Capture_cfg) {
-		/* FIX: removed TIMER1_PC_PWM_TOP_ICR1_MODE() here, it silently overwrote the WGM bits chosen in MODE_SELECT */
 	} else {
 		/* Nothing */
 	}
