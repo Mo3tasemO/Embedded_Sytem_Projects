@@ -19,14 +19,14 @@ pin_config_t DC_MOTOR_2_PIN = {
 		.logic = GPIO_LOW
 };
 pin_config_t DC_MOTOR_3_PIN = {
-		.port = PORTC_INDEX,
-		.pin = GPIO_PIN2,
+		.port = PORTD_INDEX,
+		.pin = GPIO_PIN3,
 		.direction = GPIO_DIRECTION_OUTPUT,
 		.logic = GPIO_LOW
 };
 pin_config_t DC_MOTOR_4_PIN = {
-		.port = PORTC_INDEX,
-		.pin = GPIO_PIN3,
+		.port = PORTD_INDEX,
+		.pin = GPIO_PIN2,
 		.direction = GPIO_DIRECTION_OUTPUT,
 		.logic = GPIO_LOW
 };

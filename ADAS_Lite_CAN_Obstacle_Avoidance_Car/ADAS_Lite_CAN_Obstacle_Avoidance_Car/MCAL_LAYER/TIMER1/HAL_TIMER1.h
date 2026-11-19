@@ -272,10 +272,13 @@
 #define TIMER1_OUTPUT_COMPARE_B_MATCH_INTERRUPT_DISABLE()	(CLEAR_BIT(TIMSK, OCIE1B))
 #define TIMER1_OVERFLOW_INTERRUPT_DISABLE()					(CLEAR_BIT(TIMSK, TOIE1))
 
-#define TIMER1_INPUT_CAPTURE_INTERRUPT_CLEAR_FLAG()				(SET_BIT(TIFR, ICF1))
-#define TIMER1_OUTPUT_COMPARE_A_MATCH_INTERRUPT_CLEAR_FLAG()	(SET_BIT(TIFR, OCF1A))
-#define TIMER1_OUTPUT_COMPARE_B_MATCH_INTERRUPT_CLEAR_FLAG()	(SET_BIT(TIFR, OCF1B))
-#define TIMER1_OVERFLOW_INTERRUPT_CLEAR_FLAG()				    (SET_BIT(TIFR, TOV1))
+#define TIMER1_INPUT_CAPTURE_INTERRUPT_CLEAR_FLAG() 			(TIFR = (1U << ICF1))
+
+#define TIMER1_OUTPUT_COMPARE_A_MATCH_INTERRUPT_CLEAR_FLAG() 	(TIFR = (1U << OCF1A))
+
+#define TIMER1_OUTPUT_COMPARE_B_MATCH_INTERRUPT_CLEAR_FLAG() 	(TIFR = (1U << OCF1B))
+
+#define TIMER1_OVERFLOW_INTERRUPT_CLEAR_FLAG()					(TIFR = (1U << TOV1))
 
 #endif
 
@@ -334,13 +337,12 @@ typedef enum {
 } TIMER1_PF_C_OUTPUT_OPERATION_T;
 
 typedef enum {
-	TIMER1_CHANNEL_A,
-	TIMER1_CHANNEL_B
+	TIMER1_CHANNEL_A, TIMER1_CHANNEL_B
 } TIMER1_CHANNEL_T;
 
 typedef struct {
 	uint16 ICU_payload;
-	uint8 Input_Capture_cfg : 1;
+	uint8 Input_Capture_cfg :1;
 	uint8 Input_Capture_Noise_Canceler_cfg :1;
 	uint8 Input_Capture_Edge_Select :1;
 	uint8 Reserved :5;
@@ -359,13 +361,13 @@ typedef struct {
 	uint16 Compare_B; /* OCR1B                                                  */
 	TIMER1_MODE_SELECT_T Mode_Select;
 	TIMER1_CLOCK_SELECT Prescaler;
-	TIMER1_FAST_PWM_OUTPUT_OPERATION_T	FPWM_op;
+	TIMER1_FAST_PWM_OUTPUT_OPERATION_T FPWM_op;
 	TIMER1_PF_C_OUTPUT_OPERATION_T PC_op;
 	TIMER1_INPUT_CAPTURE_CFG_T ICU_cfg;
 	uint8 COM1A_Mode :2;
 	uint8 COM1B_Mode :2;
 	uint8 Timer1_Reserved :4;
-}TIMER1_T;
+} TIMER1_T;
 
 /* Section: Function Declarations */
 
